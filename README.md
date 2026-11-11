@@ -59,3 +59,7 @@ docs/         Screenshots
 ```
 
 Written in Kotlin with Jetpack Compose. The grid, keyboard and icons are drawn in Compose, so the app uses nothing beyond AndroidX.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
