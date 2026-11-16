@@ -60,7 +60,7 @@ There is no tag for a plain definition. Clue 1 is already the definition, so clu
 - Clue 2 shares no content word with clue 1, not even in another form (hump and humped). Small words such as "a", "of", "the" and "it" do not count.
 - Clue 2 is not a synonym of clue 1 as a whole.
 
-For OCTAGON, whose clue 1 is "Eight-sided shape", `Shape of a stop sign` fails: it shares "shape". `A stop sign is one` passes.
+For OCTOPUS, whose clue 1 is "Sea creature with eight arms", `It has eight arms` fails: it shares "eight" and "arms". `It has three hearts` passes.
 
 ### BLANK
 
@@ -77,20 +77,21 @@ For OCTAGON, whose clue 1 is "Eight-sided shape", `Shape of a stop sign` fails: 
 - **Examples:** `Knife's partner` (FORK), `Opposite of shallow` (DEEP), `Supply's partner` (DEMAND).
 - **Suits:** words with one fixed partner (knife and fork) or one clear opposite. An opposite keeps the part of speech: `Opposite of profit` is LOSS, a noun, and `Opposite of ascend` is DESCEND, a verb.
 - **Pick another tag when** the word has no single partner or opposite (`Opposite of big` could be SMALL, LITTLE or TINY; `Opposite of victory` could be DEFEAT or LOSS), a cousin has rivals (`Oboe's cousin` could be CLARINET or BASSOON), clue 1 already names the partner (PEPPER's clue 1 is "Spice often served with salt", so `Salt's partner` adds nothing new), or the tier is Hard, where PAIR is not allowed.
+- **Check the other word:** if the word you name is also an answer, look up its clue 1. If that clue contains your answer, pick another pair. PUSH's clue 1 is "Opposite of pull", so `Opposite of push` for PULL would show each answer in the other's clue when a grid holds both.
 
 ### EXAMPLE
 
 - **What:** one member of a group stands for the group. The answer is the group.
 - **Signal:** "for one", "say", "for example", "perhaps". Never "e.g.".
 - **Examples:** `Trout, for one` (FISH), `Vesuvius, for one` (VOLCANO), `Old Faithful, for one` (GEYSER).
-- **Suits:** nouns that name a class (FISH, MAMMAL, DESERT, DINOSAUR). Names may appear in the clue (Sahara, Old Faithful).
+- **Suits:** nouns that name a class (FISH, RIVER, DESERT, DINOSAUR). Names may appear in the clue (Sahara, Old Faithful).
 - **Pick another tag when** the word is not a class, the member fits another word as well (`Dog, for one` could be PET, ANIMAL or MAMMAL; `Ant, for one` could be INSECT or BUG), or clue 1 already gives examples (CITRUS's clue 1 is "Lemon or lime, for example").
 
 ### FACT
 
 - **What:** something true about the thing that is not its definition.
 - **Signal:** none. It is often a sentence about "it" or "one".
-- **Examples:** `It eats mostly bamboo` (PANDA), `A stop sign is one` (OCTAGON), `Panama sits on one` (ISTHMUS).
+- **Examples:** `It eats mostly bamboo` (PANDA), `It has three hearts` (OCTOPUS), `Panama sits on one` (ISTHMUS).
 - **Suits:** nouns with a well-known fact that does not change.
 - **Pick another tag when** you are not certain the fact is true (section 7), or the "fact" is the definition again. `Shape with eight sides` defines OCTAGON; it is not a fact about it.
 
@@ -113,7 +114,7 @@ For OCTAGON, whose clue 1 is "Eight-sided shape", `Shape of a stop sign` fails: 
 - **Examples:** `"Not a chance!"` (NEVER), `"That hurts!"` (OUCH), `[If only]` (SIGH).
 - **One answer only:** `[Oh well]` fails, because SHRUG fits as well as SIGH.
 - **Suits:** words people say on their own (HELLO, SORRY, NEVER, OUCH) and sounds or gestures (SIGH, YAWN, GASP).
-- **Pick another tag when** the answer cannot stand alone as something said, or the tier is Medium or Hard, where SPEECH is not allowed.
+- **Pick another tag when** the answer is neither a word people say on its own nor a sound or gesture, or the tier is Medium or Hard, where SPEECH is not allowed.
 
 ### PUN (Medium and Hard)
 
@@ -127,10 +128,10 @@ For OCTAGON, whose clue 1 is "Eight-sided shape", `Shape of a stop sign` fails: 
 
 - **What:** a plain statement whose natural reading points one way, while the answer uses another ordinary meaning of a word in it.
 - **Signal:** none, and never a `?`.
-- **Examples:** `It may be drawn at night` (CURTAIN: drawn shut, not sketched), `It has a positive side` (BATTERY: a terminal, not an upbeat outlook), `It may be pulled in a race` (HAMSTRING: strained, not towed).
+- **Examples:** `It may be drawn at night` (CURTAIN: drawn shut, not sketched), `It has a positive side` (BATTERY: a terminal, not an upbeat outlook), `It brings the house to order` (GAVEL: a legislature, not a home).
 - **The test:** a MISDIRECT rests on a word in the clue that has two senses, and the surface reading takes the wrong one. A one-word synonym of clue 1 fails, even when it is a homograph. EVADE's clue 1 is "Avoid", so `Duck` fails: it is a synonym of "Avoid" that happens to also name a bird. CURTAIN's clue 1 is "Window drape", so `It may be drawn at night` passes: it rests on "drawn", which the surface reads as sketched.
 - **Ways to do it:**
-  - a true statement with a two-sense word in it ("drawn", "positive", "pulled");
+  - a true statement with a two-sense word in it ("drawn", "positive", "house");
   - a set phrase with a second, literal reading: `Grounds keeper` for FILTER reads as a gardener but means the thing that holds coffee grounds.
 - **Rule:** under the intended reading, the clue is true word for word, using ordinary dictionary meanings.
 - **Pick another tag when** the clue is true only as a joke (that is a PUN), the intended meaning is rare, or the tier is Easy, where MISDIRECT is not allowed.
@@ -297,7 +298,7 @@ A clue 2 that matches clue 1 exactly, ignoring case, fails the checker. A clue 2
 Worked examples, with real clue 1 lines:
 
 - **SPIDER.** Clue 1: "Eight-legged web spinner". Weak: `It has eight legs` (FACT) is clue 1 in other words. Better: `Tarantula, for one` (EXAMPLE).
-- **OCTAGON.** Clue 1: "Eight-sided shape". Weak: `Shape with eight sides` (FACT) is the definition again. Better: `A stop sign is one` (FACT).
+- **OCTAGON.** Clue 1: "Eight-sided shape". Weak: `Shape with eight sides` (FACT) is the definition again. Better: `Its angles add up to 1,080 degrees` (FACT).
 - **ACTION.** Clue 1: "Lights, camera, ___!". Weak: any BLANK, since clue 1 is a blank. Better: `Word before figure, hero or plan` (LINK). Without "plan", SPORTS, CULT and FOLK fit too.
 - **TOOL.** Clue 1: "Hammer or saw, say". Weak: `Wrench, for one` (EXAMPLE) repeats clue 1's style. Better: `Word before box, kit or shed` (LINK). Without "shed", PRESS and SEWING fit too.
 - **PEPPER.** Clue 1: "Spice often served with salt". Weak: `Salt's partner` (PAIR) uses the same hook. Better: `Word before mint or mill` (LINK).
@@ -316,7 +317,7 @@ MILK	BLANK	Don't cry over spilled ___
 DEEP	PAIR	Opposite of shallow
 FULL	PAIR	Opposite of empty
 FORK	PAIR	Knife's partner
-PULL	PAIR	Opposite of push
+SINK	PAIR	Opposite of float
 FISH	EXAMPLE	Trout, for one
 BIRD	EXAMPLE	Sparrow, for one
 RIVER	EXAMPLE	Nile, for one
@@ -346,8 +347,8 @@ DEMAND	PAIR	Supply's partner
 DINOSAUR	EXAMPLE	Triceratops, for one
 VOLCANO	EXAMPLE	Vesuvius, for one
 POEM	EXAMPLE	Haiku, say
-OCTAGON	FACT	A stop sign is one
-HEXAGON	FACT	Each cell of a honeycomb is one
+OCTOPUS	FACT	It has three hearts
+ICEBERG	FACT	Most of it is underwater
 EQUATOR	FACT	Ecuador is named for it
 THUNDER	LINK	Word before storm, bolt or clap
 BUTTER	LINK	Word before cup or fly
@@ -378,8 +379,8 @@ HEADLONG	LINK	Word with dive or rush
 CHRYSALIS	PUN	Case for a makeover?
 APIARY	PUN	Hive of activity?
 AVIARY	PUN	Wing of a zoo?
-HAMSTRING	MISDIRECT	It may be pulled in a race
-HOSIERY	MISDIRECT	It may develop a run
+OBELISK	MISDIRECT	Needle in a square
+MARQUEE	MISDIRECT	Sign of a hit show
 GAVEL	MISDIRECT	It brings the house to order
 STALE	CRYPTIC-HIDDEN	Some best ale is flat (5)
 ENVOY	CRYPTIC-HIDDEN	Messenger seen in seven voyages (5)
