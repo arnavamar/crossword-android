@@ -78,6 +78,22 @@ class CheckAlt(unittest.TestCase):
     def test_a_year_in_brackets_is_not_a_letter_count(self):
         self.assertEqual(cc.check_alt("ATOM", "M", "FACT", "Split in Manchester (1917)", CLUE1), [])
 
+    def test_a_hidden_word_may_start_with_a_prefix_of_the_answer(self):
+        for word, clue in [("PLANET", "Plan ethically for a world (6)"),
+                           ("TEAMWORK", "Our team works with joy (8)"),
+                           ("STARLET", "Big star let down a young actress (7)"),
+                           ("ALIENATE", "Alien ate my homework: to estrange (8)")]:
+            with self.subTest(word=word):
+                self.assertEqual(cc.check_alt(word, "H", "CRYPTIC-HIDDEN", clue, ""), [])
+
+    def test_a_hidden_word_clue_still_must_not_contain_the_answer(self):
+        problems = cc.check_alt("PLANET", "H", "CRYPTIC-HIDDEN", "Planet ethics matter (6)", "")
+        self.assertTrue(any("gives away PLANET" in p for p in problems), problems)
+
+    def test_only_hidden_word_clues_may_start_with_a_prefix_of_the_answer(self):
+        problems = cc.check_alt("PLANET", "H", "CRYPTIC-ANAGRAM", "Plan ethically for a world (6)", "")
+        self.assertTrue(any("clue word 'plan' gives away PLANET" in p for p in problems), problems)
+
 
 # Twenty Easy words whose clue 2 tags match MIX["E"] exactly.
 WORDS = [f"AB{c}" for c in "ABCDEFGHIJKLMNOPQRST"]

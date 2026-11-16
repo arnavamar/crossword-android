@@ -37,11 +37,14 @@ def common_prefix(a, b):
     return n
 
 
-def answer_in_clue(word, clue):
+def answer_in_clue(word, clue, whole_answer_only=False):
+    """The clue word that gives away word. whole_answer_only skips prefixes and near matches."""
     w = word.lower()
     for cw in re.findall(r"[a-z]+", clue.lower()):
         if cw == w or cw.startswith(w):
             return cw
+        if whole_answer_only:
+            continue
         if len(cw) >= 4 and w.startswith(cw):
             return cw
         if common_prefix(w, cw) >= min(5, max(4, len(w) - 1)):
@@ -49,8 +52,8 @@ def answer_in_clue(word, clue):
     return None
 
 
-def clue_problems(word, clue):
-    """The rules every clue follows, clue 1 or clue 2."""
+def clue_problems(word, clue, whole_answer_only=False):
+    """The rules every clue follows, clue 1 or clue 2. See answer_in_clue for whole_answer_only."""
     if not clue:
         return ["empty clue"]
     problems = []
@@ -60,7 +63,7 @@ def clue_problems(word, clue):
         problems.append(f"clue has non-ASCII characters: {clue}")
     if clue.endswith("."):
         problems.append(f"clue ends with a full stop: {clue}")
-    hit = answer_in_clue(word, clue)
+    hit = answer_in_clue(word, clue, whole_answer_only)
     if hit:
         problems.append(f"clue word '{hit}' gives away {word}: {clue}")
     return problems
@@ -112,7 +115,8 @@ def check_alt(word, tier, style, clue, clue1):
         problems.append(f"unknown style {style!r}")
     elif mix_key(style) not in MIX[tier]:
         problems.append(f"{style} is not allowed on tier {tier}")
-    problems += clue_problems(word, clue)
+    # A hidden-word clue spans the answer across words, so its first word may start it.
+    problems += clue_problems(word, clue, whole_answer_only=style == "CRYPTIC-HIDDEN")
     if not clue:
         return problems
     if clue1 and clue.lower() == clue1.lower():
