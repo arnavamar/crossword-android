@@ -24,19 +24,19 @@ Readers check every clue 2 against this guide. When the guide and your taste dis
 
 The clue and the answer are the same part of speech, in the same tense and the same number.
 
-- **Part of speech.** A noun answer gets a noun clue, a verb answer a verb clue, an adjective answer an adjective clue. ADORE is a verb. `Opposite of loathe` works, because "loathe" is a verb too. `Great fondness` is a noun phrase and does not.
+- **Part of speech.** A noun answer gets a noun clue, a verb answer a verb clue, an adjective answer an adjective clue. INHALE is a verb. `Opposite of exhale` works, because "exhale" is a verb too. `Gulp of air` is a noun phrase and does not.
 - **Tense.** Most verb answers are base forms (SWIM, not SWAM). Keep the clue in the base form too. `Do the backstroke, say` fits SWIM. `Did the backstroke, say` would need SWAM. A few answers end in -ED (GILDED, JADED); clue those with a past form or an adjective.
-- **Number.** A plural answer needs a plural clue, a singular answer a singular clue. `It has 88 keys` fits PIANO; `They have 88 keys` would need PIANOS. A blank takes the answer exactly as listed: `Raining cats and ___` needs DOGS, so it cannot clue DOG. `Ant or bee, say` is singular (INSECT); `Ants and bees, say` would be plural (INSECTS).
+- **Number.** A plural answer needs a plural clue, a singular answer a singular clue. `It eats mostly bamboo` fits PANDA; `They eat mostly bamboo` would need PANDAS. A blank takes the answer exactly as listed: `Raining cats and ___` needs DOGS, so it cannot clue DOG. `Sparrow, for one` is singular (BIRD); `Sparrows and robins, say` would be plural (BIRDS).
 
 ### The swap test
 
 Put the answer in a short sentence. Then put the clue where the answer was. If the sentence still reads as good English with the same meaning, the clue agrees.
 
-- EVADE: "She tried to evade the reporters." With `Duck`: "She tried to duck the reporters." This passes. With `Escape artist`: "She tried to escape artist the reporters." This fails.
-- A clue written as a sentence about "it" or "they" swaps the answer in for the pronoun: `It has 88 keys` becomes "A piano has 88 keys." "They" means a plural answer.
+- LIBRARY: "She works at the library." With `Building full of stories?`: "She works at the building full of stories." This passes. With `Lends books`: "She works at the lends books." This fails.
+- A clue written as a sentence about "it" or "they" swaps the answer in for the pronoun: `It eats mostly bamboo` becomes "A panda eats mostly bamboo." "They" means a plural answer.
 - A blank: the answer fills the blank, and the phrase is a real, common one.
 - A LINK clue: the answer joined to each named word makes a real word or phrase.
-- A SPEECH clue: the answer is something a person could say instead of the quoted words.
+- A SPEECH clue: the answer is something a person could say instead of the quoted words, or the sound or gesture that shows what the brackets hold.
 - A cryptic clue: its definition part passes the swap test on its own.
 
 ### The answer stays out of the clue
@@ -55,7 +55,12 @@ The one exception is a hidden-word cryptic, where the answer runs across two or 
 
 Each clue 2 carries one tag, and the tag must describe the clue. The checker tests only a few signs (a blank, a question mark, a letter count, the letters of some cryptics), so a wrong tag can pass the script and still fail a reader.
 
-There is no tag for a plain definition. Clue 1 is already the definition, so clue 2 never is.
+There is no tag for a plain definition. Clue 1 is already the definition, so clue 2 never is. Two tests decide it:
+
+- Clue 2 shares no content word with clue 1, not even in another form (hump and humped). Small words such as "a", "of", "the" and "it" do not count.
+- Clue 2 is not a synonym of clue 1 as a whole.
+
+For OCTAGON, whose clue 1 is "Eight-sided shape", `Shape of a stop sign` fails: it shares "shape". `A stop sign is one` passes.
 
 ### BLANK
 
@@ -69,23 +74,23 @@ There is no tag for a plain definition. Clue 1 is already the definition, so clu
 
 - **What:** one half of a well-known pair, an opposite, or a close cousin. The answer is the other one.
 - **Signal:** "partner", "Opposite of", "cousin", "relative".
-- **Examples:** `Knife's partner` (FORK), `Opposite of shallow` (DEEP), `Oboe's cousin` (CLARINET).
-- **Suits:** words with one fixed partner (knife and fork) or one clear opposite. An opposite keeps the part of speech: `Opposite of victory` is DEFEAT the noun, and `Opposite of reject` is ACCEPT the verb.
-- **Pick another tag when** the word has no single partner or opposite (`Opposite of big` could be SMALL, LITTLE or TINY), clue 1 already names the partner (PEPPER's clue 1 is "Spice often served with salt", so `Salt's partner` adds nothing new), or the tier is Hard, where PAIR is not allowed.
+- **Examples:** `Knife's partner` (FORK), `Opposite of shallow` (DEEP), `Supply's partner` (DEMAND).
+- **Suits:** words with one fixed partner (knife and fork) or one clear opposite. An opposite keeps the part of speech: `Opposite of profit` is LOSS, a noun, and `Opposite of ascend` is DESCEND, a verb.
+- **Pick another tag when** the word has no single partner or opposite (`Opposite of big` could be SMALL, LITTLE or TINY; `Opposite of victory` could be DEFEAT or LOSS), a cousin has rivals (`Oboe's cousin` could be CLARINET or BASSOON), clue 1 already names the partner (PEPPER's clue 1 is "Spice often served with salt", so `Salt's partner` adds nothing new), or the tier is Hard, where PAIR is not allowed.
 
 ### EXAMPLE
 
 - **What:** one member of a group stands for the group. The answer is the group.
 - **Signal:** "for one", "say", "for example", "perhaps". Never "e.g.".
-- **Examples:** `Salmon, for one` (FISH), `Whale, for one` (MAMMAL), `Old Faithful, for one` (GEYSER).
+- **Examples:** `Trout, for one` (FISH), `Vesuvius, for one` (VOLCANO), `Old Faithful, for one` (GEYSER).
 - **Suits:** nouns that name a class (FISH, MAMMAL, DESERT, DINOSAUR). Names may appear in the clue (Sahara, Old Faithful).
-- **Pick another tag when** the word is not a class, the member belongs to several classes and the tier is Easy (`Dog, for one` could be PET, ANIMAL or MAMMAL), or clue 1 already gives examples (CITRUS's clue 1 is "Lemon or lime, for example").
+- **Pick another tag when** the word is not a class, the member fits another word as well (`Dog, for one` could be PET, ANIMAL or MAMMAL; `Ant, for one` could be INSECT or BUG), or clue 1 already gives examples (CITRUS's clue 1 is "Lemon or lime, for example").
 
 ### FACT
 
 - **What:** something true about the thing that is not its definition.
-- **Signal:** none. It is often a sentence about "it", or a phrase such as "Shape of".
-- **Examples:** `It has 88 keys` (PIANO), `Shape of a stop sign` (OCTAGON), `Panama sits on one` (ISTHMUS).
+- **Signal:** none. It is often a sentence about "it" or "one".
+- **Examples:** `It eats mostly bamboo` (PANDA), `A stop sign is one` (OCTAGON), `Panama sits on one` (ISTHMUS).
 - **Suits:** nouns with a well-known fact that does not change.
 - **Pick another tag when** you are not certain the fact is true (section 7), or the "fact" is the definition again. `Shape with eight sides` defines OCTAGON; it is not a fact about it.
 
@@ -96,16 +101,17 @@ There is no tag for a plain definition. Clue 1 is already the definition, so clu
 - **Examples:** `Word before cup or fly` (BUTTER: buttercup, butterfly), `Type of shark or lily` (TIGER), `Word with sin or number` (CARDINAL).
 - **Rules:**
   - Every joined result is a real, common word or phrase.
-  - Name two or three words, so that one answer fits. `Word before fall or proof` fits WATER, but WIND fits too (windfall, windproof). `Word before fall, proof or melon` leaves only WATER.
+  - Name two or three words, so that one answer fits. `Word before fall or proof` fits WATER, but WIND fits too (windfall, windproof). `Word before fall, proof or melon` leaves only WATER. Check the pool for a rival of the same length before you settle.
   - "Kind of" and "Type of" put the answer first: `Type of shark` is a tiger shark.
   - Easy and Medium say "before" or "after". Bare "Word with" hides which side the answer goes on, so keep it for Hard.
 - **Pick another tag when** the joined words are rare, or clue 1 is a blank built on the same phrase (POLAR's clue 1 is "___ bear, white animal of the Arctic", so `Kind of bear` repeats it).
 
 ### SPEECH (Easy only)
 
-- **What:** words a person says, in double quotes, or a sound or gesture, in square brackets. The answer means the same thing.
-- **Signal:** the whole clue sits in quotes or brackets. Quotes mean words said aloud. Brackets mean a sound or an action, not words.
-- **Examples:** `"Not a chance!"` (NEVER), `"That hurts!"` (OUCH), `[Oh well]` (SIGH).
+- **What:** words a person says, in double quotes, or what a sound or gesture expresses, in square brackets.
+- **Signal:** the whole clue sits in quotes or brackets. With quotes, the answer means the same as the quoted words. With brackets, the brackets hold what a sound or gesture expresses, and the answer is that sound or gesture.
+- **Examples:** `"Not a chance!"` (NEVER), `"That hurts!"` (OUCH), `[If only]` (SIGH).
+- **One answer only:** `[Oh well]` fails, because SHRUG fits as well as SIGH.
 - **Suits:** words people say on their own (HELLO, SORRY, NEVER, OUCH) and sounds or gestures (SIGH, YAWN, GASP).
 - **Pick another tag when** the answer cannot stand alone as something said, or the tier is Medium or Hard, where SPEECH is not allowed.
 
@@ -113,7 +119,7 @@ There is no tag for a plain definition. Clue 1 is already the definition, so clu
 
 - **What:** a clue that bends a word or a phrase. Read the usual way, it points somewhere else.
 - **Signal:** it ends with `?`. The question mark warns the solver not to take the clue at face value.
-- **Examples:** `Bank deposit?` (SILT), `Building full of stories?` (LIBRARY), `Changing room?` (CHRYSALIS).
+- **Examples:** `Bank deposit?` (SILT), `Building full of stories?` (LIBRARY), `Case for a makeover?` (CHRYSALIS).
 - **Rule:** once the solver sees the joke, the clue fits the answer exactly, agreement included.
 - **Pick another tag when** there is no second reading (a plain definition with a `?` is not a pun), or the tier is Easy, where PUN is not allowed.
 
@@ -121,11 +127,11 @@ There is no tag for a plain definition. Clue 1 is already the definition, so clu
 
 - **What:** a plain statement whose natural reading points one way, while the answer uses another ordinary meaning of a word in it.
 - **Signal:** none, and never a `?`.
-- **Examples:** `It may be drawn at night` (CURTAIN: drawn shut, not sketched), `Duck` (EVADE: the verb, not the bird), `Head case` (CRANIUM).
+- **Examples:** `It may be drawn at night` (CURTAIN: drawn shut, not sketched), `It has a positive side` (BATTERY: a terminal, not an upbeat outlook), `It may be pulled in a race` (HAMSTRING: strained, not towed).
+- **The test:** a MISDIRECT rests on a word in the clue that has two senses, and the surface reading takes the wrong one. A one-word synonym of clue 1 fails, even when it is a homograph. EVADE's clue 1 is "Avoid", so `Duck` fails: it is a synonym of "Avoid" that happens to also name a bird. CURTAIN's clue 1 is "Window drape", so `It may be drawn at night` passes: it rests on "drawn", which the surface reads as sketched.
 - **Ways to do it:**
-  - a word with two meanings ("drawn");
-  - a word that is both noun and verb ("Duck");
-  - a capital at the start that hides a common word: `China` for PORCELAIN reads as the country but means the dishes.
+  - a true statement with a two-sense word in it ("drawn", "positive", "pulled");
+  - a set phrase with a second, literal reading: `Grounds keeper` for FILTER reads as a gardener but means the thing that holds coffee grounds.
 - **Rule:** under the intended reading, the clue is true word for word, using ordinary dictionary meanings.
 - **Pick another tag when** the clue is true only as a joke (that is a PUN), the intended meaning is rare, or the tier is Easy, where MISDIRECT is not allowed.
 
@@ -191,14 +197,14 @@ A short link word such as "is", "for", "to", "in", "as" or "shows" may join the 
 - No direction words that depend on the grid, such as "up", "rising" or "heading west". The same clue can show on an Across entry or a Down entry.
 - The definition obeys agreement (section 2) on its own.
 - The whole clue should read as a sentence or phrase a person might say.
-- Where you can, use a different definition word from clue 1.
+- The definition shares no content word with clue 1, not even in another form (section 8). LISTEN's clue 1 is "Pay attention with your ears", so a definition such as "Pay attention" is out.
 
 ### CRYPTIC-HIDDEN
 
 - **How:** the answer sits in a run of letters across two or more neighboring words.
 - **Indicators:** some, partly, in part, seen in, found in, held by, hides.
 - **Examples:**
-  - `Some best ale is not fresh (5)` is STALE, in beST ALE.
+  - `Some best ale is flat (5)` is STALE, in beST ALE.
   - `Messenger seen in seven voyages (5)` is ENVOY, in sevEN VOYages.
   - `Death partly made miserable (6)` is DEMISE, in maDE MISErable.
 - **Checker:** the answer must cross a gap between words. It may not sit whole inside one word.
@@ -220,7 +226,6 @@ A short link word such as "is", "for", "to", "in", "as" or "shows" may join the 
 - **How:** the letters of one word, or of a run of words, rearranged, make the answer.
 - **Indicators:** words for change or disorder, such as mixed, wildly, broken, somehow, scrambled, shuffled, badly, rearranged.
 - **Examples:**
-  - `Pay attention, silent somehow (6)` is LISTEN, from SILENT.
   - `Broken thread shows scarcity (6)` is DEARTH, from THREAD.
   - `Fervent, ranted wildly (6)` is ARDENT, from RANTED.
   - `Mixed dances rise (6)` is ASCEND, from DANCES.
@@ -232,11 +237,11 @@ A short link word such as "is", "for", "to", "in", "as" or "shows" may join the 
 - **How:** two definitions of the answer side by side, with no wordplay. Each defines the answer on its own and in the same form. A link such as "and" or "to" may join them.
 - **Indicators:** none.
 - **Examples:**
-  - `Season to jump (6)` is SPRING.
+  - `Coil to jump (6)` is SPRING.
   - `Grasp a measure of depth (6)` is FATHOM.
   - `Skip a pickled bud (5)` is CAPER.
   - `Cling and sever (6)` is CLEAVE.
-- **Rule:** the two meanings are clearly different (a season and a jump), not two shades of one meaning.
+- **Rule:** the two meanings are clearly different (a coil and a jump), not two shades of one meaning.
 - **Checker:** the letter count only. Readers check both definitions.
 
 ### CRYPTIC-CHARADE
@@ -283,6 +288,8 @@ You will see each word's clue 1 as you write its clue 2. Clue 2 must:
 
 - use a different style from clue 1. If clue 1 is a blank, do not use BLANK. If clue 1 gives examples, do not use EXAMPLE.
 - give a new way in. It is never clue 1 in other words, and never a plain definition.
+- share no content word with clue 1, not even in another form. DROMEDARY's clue 1 is "One-humped camel", so `It stores fat, not water, in its hump` fails: "hump" is a form of "humped". `It stores fat, not water, on its back` passes.
+- not be a synonym of clue 1 as a whole. A one-word synonym fails even when it is a homograph: `Duck` for EVADE, whose clue 1 is "Avoid".
 - carry the tag that describes it.
 
 A clue 2 that matches clue 1 exactly, ignoring case, fails the checker. A clue 2 that rewords clue 1 passes the checker and fails a reader.
@@ -290,9 +297,9 @@ A clue 2 that matches clue 1 exactly, ignoring case, fails the checker. A clue 2
 Worked examples, with real clue 1 lines:
 
 - **SPIDER.** Clue 1: "Eight-legged web spinner". Weak: `It has eight legs` (FACT) is clue 1 in other words. Better: `Tarantula, for one` (EXAMPLE).
-- **OCTAGON.** Clue 1: "Eight-sided shape". Weak: `Shape with eight sides` (FACT) is the definition again. Better: `Shape of a stop sign` (FACT).
-- **ACTION.** Clue 1: "Lights, camera, ___!". Weak: any BLANK, since clue 1 is a blank. Better: `Word before figure or hero` (LINK).
-- **TOOL.** Clue 1: "Hammer or saw, say". Weak: `Wrench, for one` (EXAMPLE) repeats clue 1's style. Better: `Word before box or kit` (LINK).
+- **OCTAGON.** Clue 1: "Eight-sided shape". Weak: `Shape with eight sides` (FACT) is the definition again. Better: `A stop sign is one` (FACT).
+- **ACTION.** Clue 1: "Lights, camera, ___!". Weak: any BLANK, since clue 1 is a blank. Better: `Word before figure, hero or plan` (LINK). Without "plan", SPORTS, CULT and FOLK fit too.
+- **TOOL.** Clue 1: "Hammer or saw, say". Weak: `Wrench, for one` (EXAMPLE) repeats clue 1's style. Better: `Word before box, kit or shed` (LINK). Without "shed", PRESS and SEWING fit too.
 - **PEPPER.** Clue 1: "Spice often served with salt". Weak: `Salt's partner` (PAIR) uses the same hook. Better: `Word before mint or mill` (LINK).
 
 ## 9. Examples
@@ -309,23 +316,23 @@ MILK	BLANK	Don't cry over spilled ___
 DEEP	PAIR	Opposite of shallow
 FULL	PAIR	Opposite of empty
 FORK	PAIR	Knife's partner
-DEFEAT	PAIR	Opposite of victory
-FISH	EXAMPLE	Salmon, for one
-BIRD	EXAMPLE	Robin, for one
-INSECT	EXAMPLE	Ant or bee, say
+PULL	PAIR	Opposite of push
+FISH	EXAMPLE	Trout, for one
+BIRD	EXAMPLE	Sparrow, for one
+RIVER	EXAMPLE	Nile, for one
 DESERT	EXAMPLE	Sahara, for one
-EAGLE	FACT	National bird of the United States
+EAGLE	FACT	National emblem of the United States
 PANDA	FACT	It eats mostly bamboo
-OXYGEN	FACT	Plants give it off
+OXYGEN	FACT	About a fifth of the air
 ICE	FACT	It floats in a cold drink
 WATER	LINK	Word before fall, proof or melon
-RAIN	LINK	Word before bow or coat
+RAIN	LINK	Word before bow, coat or forest
 FOOT	LINK	Word before ball or step
 CAKE	LINK	Word after pan or cup
 NEVER	SPEECH	"Not a chance!"
 OUCH	SPEECH	"That hurts!"
 HELLO	SPEECH	"Hi there!"
-SIGH	SPEECH	[Oh well]
+SIGH	SPEECH	[If only]
 ```
 
 ```tsv medium
@@ -333,16 +340,14 @@ DISGUISE	BLANK	A blessing in ___
 WEATHER	BLANK	Feeling under the ___
 BARREL	BLANK	Lock, stock and ___
 RURAL	PAIR	Opposite of urban
-ACCEPT	PAIR	Opposite of reject
-MODERN	PAIR	Opposite of ancient
-CLARINET	PAIR	Oboe's cousin
-MAMMAL	EXAMPLE	Whale, for one
+IMPORT	PAIR	Opposite of export
+MINIMUM	PAIR	Opposite of maximum
+DEMAND	PAIR	Supply's partner
 DINOSAUR	EXAMPLE	Triceratops, for one
-VOLCANO	EXAMPLE	Mount Fuji, for one
+VOLCANO	EXAMPLE	Vesuvius, for one
 POEM	EXAMPLE	Haiku, say
-OCTAGON	FACT	Shape of a stop sign
-HEXAGON	FACT	Shape of each cell in a honeycomb
-SKELETON	FACT	In an adult, it has 206 bones
+OCTAGON	FACT	A stop sign is one
+HEXAGON	FACT	Each cell of a honeycomb is one
 EQUATOR	FACT	Ecuador is named for it
 THUNDER	LINK	Word before storm, bolt or clap
 BUTTER	LINK	Word before cup or fly
@@ -352,7 +357,7 @@ SILT	PUN	Bank deposit?
 LIBRARY	PUN	Building full of stories?
 SPONGE	PUN	Absorbing character?
 CURTAIN	MISDIRECT	It may be drawn at night
-EVADE	MISDIRECT	Duck
+BATTERY	MISDIRECT	It has a positive side
 FILTER	MISDIRECT	Grounds keeper
 ```
 
@@ -361,33 +366,32 @@ JETSAM	BLANK	Flotsam and ___
 TEMPEST	BLANK	A ___ in a teapot
 JUGULAR	BLANK	Go for the ___
 GEYSER	EXAMPLE	Old Faithful, for one
-CARNIVORE	EXAMPLE	Wolf, for one
+SATELLITE	EXAMPLE	Sputnik, for one
 LEVIATHAN	EXAMPLE	Kraken, for one
-DROMEDARY	FACT	It stores fat, not water, in its hump
+DROMEDARY	FACT	It stores fat, not water, on its back
 ISTHMUS	FACT	Panama sits on one
 CHAMELEON	FACT	Its eyes can move separately
 CYGNET	FACT	The ugly duckling was really one
 CARDINAL	LINK	Word with sin or number
 FORENSIC	LINK	Kind of evidence or accountant
-HERCULEAN	LINK	Kind of task or effort
-CHRYSALIS	PUN	Changing room?
+HEADLONG	LINK	Word with dive or rush
+CHRYSALIS	PUN	Case for a makeover?
 APIARY	PUN	Hive of activity?
-AVIARY	PUN	Home tweet home?
-CRANIUM	MISDIRECT	Head case
-CRESCENDO	MISDIRECT	Building passage
-DECANTER	MISDIRECT	Port container
-STALE	CRYPTIC-HIDDEN	Some best ale is not fresh (5)
+AVIARY	PUN	Wing of a zoo?
+HAMSTRING	MISDIRECT	It may be pulled in a race
+HOSIERY	MISDIRECT	It may develop a run
+GAVEL	MISDIRECT	It brings the house to order
+STALE	CRYPTIC-HIDDEN	Some best ale is flat (5)
 ENVOY	CRYPTIC-HIDDEN	Messenger seen in seven voyages (5)
 DEMISE	CRYPTIC-HIDDEN	Death partly made miserable (6)
 PLANET	CRYPTIC-HIDDEN	Some plan ethically for a world (6)
 ADEPT	CRYPTIC-INITIALS	Expert heads of a dance ensemble perform tonight (5)
 ABHOR	CRYPTIC-INITIALS	Detest all bad habits of rivals initially (5)
 ADORN	CRYPTIC-INITIALS	Beautify all doors of rooms nicely, for starters (5)
-LISTEN	CRYPTIC-ANAGRAM	Pay attention, silent somehow (6)
 DEARTH	CRYPTIC-ANAGRAM	Broken thread shows scarcity (6)
 ARDENT	CRYPTIC-ANAGRAM	Fervent, ranted wildly (6)
 ASCEND	CRYPTIC-ANAGRAM	Mixed dances rise (6)
-SPRING	CRYPTIC-DOUBLE	Season to jump (6)
+SPRING	CRYPTIC-DOUBLE	Coil to jump (6)
 FATHOM	CRYPTIC-DOUBLE	Grasp a measure of depth (6)
 CAPER	CRYPTIC-DOUBLE	Skip a pickled bud (5)
 CLEAVE	CRYPTIC-DOUBLE	Cling and sever (6)
