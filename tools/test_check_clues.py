@@ -96,6 +96,44 @@ class CheckAlt(unittest.TestCase):
         self.assertTrue(any("clue word 'plan' gives away PLANET" in p for p in problems), problems)
 
 
+class BritishSpelling(unittest.TestCase):
+    def test_british_spellings_are_found(self):
+        self.assertEqual(cc.british_words("Neighbouring colour"), ["neighbouring", "colour"])
+        self.assertEqual(cc.british_words("Grey theatre programme"), ["grey", "theatre", "programme"])
+
+    def test_american_and_shared_words_pass(self):
+        self.assertEqual(cc.british_words("Wise exercise, a surprise promise in the center"), [])
+
+    def test_each_family_is_found(self):
+        for clue in ["Travelled far", "Rubber tyre", "Plough a field", "Night pyjamas", "Ring and jewellery",
+                     "Write a cheque", "Realise it", "Analyse the data", "Floor of a building: storey",
+                     "Street kerb", "Green mould", "Lip moustache", "Metal: aluminium", "Honoured guest",
+                     "Colourful", "Kilometres away", "A fibre", "Pretence", "Ageing well"]:
+            with self.subTest(clue=clue):
+                self.assertEqual(len(cc.british_words(clue)), 1, clue)
+
+    def test_words_that_are_american_too_pass(self):
+        for clue in ["Greyhound racing", "Programmed to win", "Glamour and flour", "Four hours of pouring",
+                     "A tour of the harbor", "Colorful gray theater", "A wise promise", "Premises",
+                     "Analyses and emphasis"]:
+            with self.subTest(clue=clue):
+                self.assertEqual(cc.british_words(clue), [], clue)
+
+    def test_a_clue_1_with_a_british_spelling_is_a_problem(self):
+        problems = cc.clue_problems("PAINT", "Colour applied with a brush")
+        self.assertTrue(any("British spelling" in p and "colour" in p for p in problems), problems)
+
+    def test_a_clue_2_with_a_british_spelling_is_a_problem(self):
+        problems = cc.check_alt("PIANO", "E", "FACT", "It has 88 keys, all neighbouring", CLUE1)
+        self.assertTrue(any("British spelling" in p and "neighbouring" in p for p in problems), problems)
+
+    def test_a_clue_1_file_reports_the_line(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            write(Path(tmp) / "AB.E.tsv", ["ABC\tFine clue", "ABD\tTravelled far"])
+            problems, _, _ = cc.check(Path(tmp))
+        self.assertTrue(any(p.startswith("AB.E.tsv:2") and "British spelling" in p for p in problems), problems)
+
+
 # Twenty Easy words whose clue 2 tags match MIX["E"] exactly.
 WORDS = [f"AB{c}" for c in "ABCDEFGHIJKLMNOPQRST"]
 E_IN_BAND = ["BLANK"] * 6 + ["PAIR"] * 3 + ["EXAMPLE"] * 4 + ["FACT"] * 4 + ["LINK"] * 2 + ["SPEECH"]

@@ -28,6 +28,64 @@ BAND = 5  # points either side
 LETTER_COUNT = re.compile(r"\s*\((\d{1,2})\)$")  # a cryptic clue ends with one, like (5)
 
 
+def _forms(stems, endings):
+    return [stem + end for stem in stems.split() for end in endings]
+
+
+# British spellings, an explicit list and not a suffix pattern: "wise", "exercise", "promise",
+# "glamour", "greyhound" and "programmed" are American too. Stems that take regular endings
+# are expanded by _forms; everything else is spelled out, one family a line.
+BRITISH = frozenset(
+    # -our: colour, favour, neighbour
+    _forms("behaviour colour favour flavour honour humour labour neighbour odour rumour savour vapour "
+           "valour vigour harbour armour ardour candour clamour endeavour fervour parlour rigour "
+           "saviour splendour succour tumour demeanour arbour rancour watercolour multicoloured "
+           "tricolour technicolour discolour",
+           ("", "s", "ed", "ing", "ful", "less", "ist", "able", "ably", "ite", "ites", "er", "ers",
+            "ly", "hood", "hoods", "al", "y"))
+    # -ise and -isation: realise, organise (-yse: analyse; no "analyses", the plural of analysis)
+    + _forms("realis organis recognis apologis criticis emphasis summaris civilis colonis sympathis "
+             "memoris specialis authoris capitalis characteris finalis familiaris harmonis idolis "
+             "immunis legalis materialis minimis maximis modernis mobilis neutralis normalis optimis "
+             "patronis pasteuris popularis privatis publicis rationalis revolutionis scrutinis "
+             "socialis standardis stabilis sterilis symbolis terroris theoris utilis visualis "
+             "vandalis energis equalis fertilis fossilis hospitalis hypnotis industrialis jeopardis "
+             "localis magnetis baptis categoris centralis dramatis economis evangelis glamoris "
+             "globalis humanis itemis mesmeris naturalis penalis plagiaris pulveris randomis satiris "
+             "sanitis subsidis synchronis synthesis tantalis tyrannis unionis urbanis westernis "
+             "computeris",
+             ("e", "es", "ed", "ing", "ation", "ations", "er", "ers"))
+    + _forms("analys paralys catalys dialys hydrolys", ("e", "ed", "ing", "er", "ers"))
+    # doubled l: travelled, jewelled
+    + _forms("travel label model level fuel signal counsel channel tunnel marshal quarrel rival "
+             "unrival dial equal total panel pencil shovel swivel unravel cancel jewel libel",
+             ("led", "ling", "ler", "lers"))
+    # -re: centre, theatre
+    + "centre centres centred centring centrepiece centrepieces theatre theatres metre metres "
+      "kilometre kilometres centimetre centimetres millimetre millimetres litre litres millilitre "
+      "millilitres fibre fibres fibreglass lustre sabre sabres spectre sombre calibre meagre ochre "
+      "mitre sceptre manoeuvre manoeuvres manoeuvred manoeuvring reconnoitre saltpetre sepulchre "
+      # -ence: defence, licence, pretence; practise
+      "defence defences offence offences licence licences pretence pretences practise practised "
+      "practises practising "
+      # one-offs
+      "aluminium ageing artefact artefacts cheque cheques chequered chequebook cosy cosier cosiest "
+      "cosily draught draughty enquire enquired enquires enquiring enquiry enquiries fulfil fulfils "
+      "fulfilment enrol enrols enrolment gaol gaoler grey greys greyer greyest greyish greyed greying "
+      "instalment instalments judgement judgements acknowledgement kerb kerbs kerbside mediaeval "
+      "moustache moustaches mould moulds moulded moulding mouldy moult moulted smoulder smouldered "
+      "smouldering plough ploughs ploughed ploughing ploughman ploughmen snowplough pyjama pyjamas "
+      "pedlar programme programmes sceptic sceptics sceptical scepticism sulphur sulphate sulphide "
+      "sulphuric storey storeys tyre tyres yoghurt yoghurts waggon orientated skilful skilfully "
+      "wilful wilfully speciality specialities jewellery jeweller jewellers marvellous woollen "
+      "counsellor counsellors "
+      # ae and oe
+      "anaesthetic anaesthetics anaesthesia encyclopaedia paediatric paediatrician orthopaedic "
+      "haemoglobin haemorrhage leukaemia oestrogen foetus foetal faeces diarrhoea gynaecology "
+      "palaeontology anaemia anaemic oesophagus".split()
+)
+
+
 def common_prefix(a, b):
     n = 0
     for x, y in zip(a, b):
@@ -52,6 +110,11 @@ def answer_in_clue(word, clue, whole_answer_only=False):
     return None
 
 
+def british_words(clue):
+    """The British spellings in clue, lowercased, in order. The list is BRITISH."""
+    return [w for w in re.findall(r"[a-z]+", clue.lower()) if w in BRITISH]
+
+
 def clue_problems(word, clue, whole_answer_only=False):
     """The rules every clue follows, clue 1 or clue 2. See answer_in_clue for whole_answer_only."""
     if not clue:
@@ -63,6 +126,9 @@ def clue_problems(word, clue, whole_answer_only=False):
         problems.append(f"clue has non-ASCII characters: {clue}")
     if clue.endswith("."):
         problems.append(f"clue ends with a full stop: {clue}")
+    british = british_words(clue)
+    if british:
+        problems.append(f"British spelling ({', '.join(british)}), use American: {clue}")
     hit = answer_in_clue(word, clue, whole_answer_only)
     if hit:
         problems.append(f"clue word '{hit}' gives away {word}: {clue}")
