@@ -4,6 +4,7 @@ Run from the repo root: python -m unittest discover -s tools -p "test_*.py" -v
 """
 import contextlib
 import io
+import re
 import sys
 import tempfile
 import unittest
@@ -189,6 +190,31 @@ class AltFiles(unittest.TestCase):
         write(self.dir / "CD.E.tsv", ["CAT\tFirst clue"])
         problems, _, _ = self.check([alt_line(w, "FACT") for w in WORDS])
         self.assertEqual(problems, ["CD.E.tsv: no alt file"])
+
+
+GUIDE = Path(__file__).parent / "clue-style-guide.md"
+GUIDE_TIERS = {"easy": "E", "medium": "M", "hard": "H"}
+
+
+class StyleGuide(unittest.TestCase):
+    def test_style_guide_examples_pass(self):
+        self.assertTrue(GUIDE.is_file(), f"{GUIDE} is missing")
+        blocks = re.findall(r"^```tsv (easy|medium|hard)\n(.*?)^```",
+                            GUIDE.read_text(encoding="utf-8"), re.M | re.S)
+        self.assertEqual(sorted(name for name, _ in blocks), ["easy", "hard", "medium"])
+        for name, body in blocks:
+            tier = GUIDE_TIERS[name]
+            lines = [[p.strip() for p in raw.split("\t")] for raw in body.splitlines() if raw.strip()]
+            styles = [line[1] for line in lines if len(line) == 3]
+            allowed = [t for key in cc.MIX[tier] for t in (cc.CRYPTIC_TAGS if key == "CRYPTIC" else [key])]
+            for tag in allowed:
+                with self.subTest(block=name, tag=tag):
+                    self.assertGreaterEqual(styles.count(tag), 3)
+            for line in lines:
+                with self.subTest(block=name, line=line):
+                    self.assertEqual(len(line), 3, "need WORD<TAB>STYLE<TAB>Clue")
+                    word, style, clue = line
+                    self.assertEqual(cc.check_alt(word, tier, style, clue, ""), [])
 
 
 if __name__ == "__main__":
