@@ -77,7 +77,7 @@ For OCTOPUS, whose clue 1 is "Sea creature with eight arms", `It has eight arms`
 - **Examples:** `Knife's partner` (FORK), `Opposite of shallow` (DEEP), `Supply's partner` (DEMAND).
 - **Suits:** words with one fixed partner (knife and fork) or one clear opposite. An opposite keeps the part of speech: `Opposite of profit` is LOSS, a noun, and `Opposite of ascend` is DESCEND, a verb.
 - **Pick another tag when** the word has no single partner or opposite (`Opposite of big` could be SMALL, LITTLE or TINY; `Opposite of victory` could be DEFEAT or LOSS), a cousin has rivals (`Oboe's cousin` could be CLARINET or BASSOON), clue 1 already names the partner (PEPPER's clue 1 is "Spice often served with salt", so `Salt's partner` adds nothing new), or the tier is Hard, where PAIR is not allowed.
-- **Check the other word:** if the word you name is also an answer, look up its clue 1. If that clue contains your answer, pick another pair. PUSH's clue 1 is "Opposite of pull", so `Opposite of push` for PULL would show each answer in the other's clue when a grid holds both.
+- **Check the other word:** if the word you name is also an answer, look up its clue 1. If that clue contains your answer, or a form of it, pick another pair. PUSH's clue 1 is "Opposite of pull", so `Opposite of push` for PULL would show each answer in the other's clue when a grid holds both.
 
 ### EXAMPLE
 
@@ -128,11 +128,12 @@ For OCTOPUS, whose clue 1 is "Sea creature with eight arms", `It has eight arms`
 
 - **What:** a plain statement whose natural reading points one way, while the answer uses another ordinary meaning of a word in it.
 - **Signal:** none, and never a `?`.
-- **Examples:** `It may be drawn at night` (CURTAIN: drawn shut, not sketched), `It has a positive side` (BATTERY: a terminal, not an upbeat outlook), `It brings the house to order` (GAVEL: a legislature, not a home).
+- **Examples:** `It may be drawn at night` (CURTAIN: drawn shut, not sketched), `It has a positive side` (BATTERY: a terminal, not an upbeat outlook), `Drake with a green head` (MALLARD: a male duck, not a man named Drake).
 - **The test:** a MISDIRECT rests on a word in the clue that has two senses, and the surface reading takes the wrong one. A one-word synonym of clue 1 fails, even when it is a homograph. EVADE's clue 1 is "Avoid", so `Duck` fails: it is a synonym of "Avoid" that happens to also name a bird. CURTAIN's clue 1 is "Window drape", so `It may be drawn at night` passes: it rests on "drawn", which the surface reads as sketched.
 - **Ways to do it:**
-  - a true statement with a two-sense word in it ("drawn", "positive", "house");
-  - a set phrase with a second, literal reading: `Grounds keeper` for FILTER reads as a gardener but means the thing that holds coffee grounds.
+  - a true statement with a two-sense word in it ("drawn", "positive");
+  - a set phrase with a second, literal reading: `Grounds keeper` for FILTER reads as a gardener but means the thing that holds coffee grounds;
+  - a capital at the start that hides a common word: in `Drake with a green head`, "Drake" reads as a man's name but means a male duck.
 - **Rule:** under the intended reading, the clue is true word for word, using ordinary dictionary meanings.
 - **Pick another tag when** the clue is true only as a joke (that is a PUN), the intended meaning is rare, or the tier is Easy, where MISDIRECT is not allowed.
 
@@ -380,8 +381,8 @@ CHRYSALIS	PUN	Case for a makeover?
 APIARY	PUN	Hive of activity?
 AVIARY	PUN	Wing of a zoo?
 OBELISK	MISDIRECT	Needle in a square
-MARQUEE	MISDIRECT	Sign of a hit show
-GAVEL	MISDIRECT	It brings the house to order
+MALLARD	MISDIRECT	Drake with a green head
+TRAPEZE	MISDIRECT	A bar for high fliers
 STALE	CRYPTIC-HIDDEN	Some best ale is flat (5)
 ENVOY	CRYPTIC-HIDDEN	Messenger seen in seven voyages (5)
 DEMISE	CRYPTIC-HIDDEN	Death partly made miserable (6)
