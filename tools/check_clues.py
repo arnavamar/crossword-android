@@ -28,13 +28,24 @@ BAND = 5  # points either side
 LETTER_COUNT = re.compile(r"\s*\((\d{1,2})\)$")  # a cryptic clue ends with one, like (5)
 
 
+SPELLING_FILE = Path(__file__).parent / "british_spellings.txt"
+
+
 def _forms(stems, endings):
     return [stem + end for stem in stems.split() for end in endings]
 
 
+def _read_words(path):
+    """The words in a one-word-per-line file. Lines starting with # are comments."""
+    lines = (line.strip() for line in path.read_text(encoding="utf-8").splitlines())
+    return {line for line in lines if line and not line.startswith("#")}
+
+
 # British spellings, an explicit list and not a suffix pattern: "wise", "exercise", "promise",
-# "glamour", "greyhound" and "programmed" are American too. Stems that take regular endings
-# are expanded by _forms; everything else is spelled out, one family a line.
+# "glamour", "greyhound" and "programmed" are American too. This list is the hand-written core;
+# british_spellings.txt (generated from aspell, see its header) is added to it below. Stems that
+# take regular endings are expanded by _forms; everything else is spelled out, one family a line.
+# The words that aspell's en_US also lists (armour, grey, tyre, hiccough and others) live here.
 BRITISH = frozenset(
     # -our: colour, favour, neighbour
     _forms("behaviour colour favour flavour honour humour labour neighbour odour rumour savour vapour "
@@ -43,7 +54,8 @@ BRITISH = frozenset(
            "tricolour technicolour discolour",
            ("", "s", "ed", "ing", "ful", "less", "ist", "able", "ably", "ite", "ites", "er", "ers",
             "ly", "hood", "hoods", "al", "y"))
-    # -ise and -isation: realise, organise (-yse: analyse; no "analyses", the plural of analysis)
+    # -ise and -isation: realise, organise. -yse: analyse. Not "analyses": it is the plural of
+    # "analysis", so a British "she analyses it" passes. That is a known miss.
     + _forms("realis organis recognis apologis criticis emphasis summaris civilis colonis sympathis "
              "memoris specialis authoris capitalis characteris finalis familiaris harmonis idolis "
              "immunis legalis materialis minimis maximis modernis mobilis neutralis normalis optimis "
@@ -82,8 +94,11 @@ BRITISH = frozenset(
       # ae and oe
       "anaesthetic anaesthetics anaesthesia encyclopaedia paediatric paediatrician orthopaedic "
       "haemoglobin haemorrhage leukaemia oestrogen foetus foetal faeces diarrhoea gynaecology "
-      "palaeontology anaemia anaemic oesophagus".split()
-)
+      "palaeontology anaemia anaemic oesophagus "
+      # one-offs that aspell does not list in en_GB-ise, or lists in en_US too
+      "hiccough hiccoughs hiccoughed hiccoughing cypher cyphers cyphered annexe connexion "
+      "connexions reflexion reflexions".split()
+) | _read_words(SPELLING_FILE)
 
 
 def common_prefix(a, b):

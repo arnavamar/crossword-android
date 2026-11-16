@@ -119,6 +119,34 @@ class BritishSpelling(unittest.TestCase):
             with self.subTest(clue=clue):
                 self.assertEqual(cc.british_words(clue), [], clue)
 
+    def test_words_the_first_list_missed_are_found(self):
+        missed = ("customise prioritise digitise recognisable organisational marvelled chiselled pedalled "
+                  "gruelling councillor colourfully unfavourable unsavoury dishonour favouritism "
+                  "misbehaviour epicentre amphitheatre lacklustre aeroplane learnt spoilt dreamt spelt "
+                  "spilt instil enthral appal chilli tranquillity hiccough cypher inflexion annexe").split()
+        for word in missed:
+            with self.subTest(word=word):
+                self.assertEqual(cc.british_words(f"A {word.capitalize()} story"), [word])
+
+    def test_american_spellings_of_british_families_pass(self):
+        american = ("traveler canceled labeled modeled fiber liter meager somber tire program center theater "
+                    "acre ogre genre mediocre massacre exercise revise advertise compromise paralyze analyze "
+                    "customize prioritize organizational marveled chiseled grueling councilor colorfully "
+                    "unfavorable dishonor misbehavior epicenter amphitheater airplane learned spilled "
+                    "instill enthrall appall chili tranquility hiccup cipher inflection annex").split()
+        for word in american:
+            with self.subTest(word=word):
+                self.assertEqual(cc.british_words(f"A {word} story"), [])
+
+    def test_the_word_file_is_sorted_lowercase_words_with_a_comment_header(self):
+        lines = cc.SPELLING_FILE.read_text(encoding="utf-8").splitlines()
+        self.assertTrue(lines[0].startswith("#"))
+        words = [line for line in lines if not line.startswith("#")]
+        self.assertEqual(words, sorted(set(words)))
+        self.assertTrue(all(re.fullmatch(r"[a-z]+", w) for w in words), "words must be a-z only")
+        self.assertGreater(len(words), 1000)
+        self.assertNotIn(b"\r", cc.SPELLING_FILE.read_bytes())
+
     def test_a_clue_1_with_a_british_spelling_is_a_problem(self):
         problems = cc.clue_problems("PAINT", "Colour applied with a brush")
         self.assertTrue(any("British spelling" in p and "colour" in p for p in problems), problems)
