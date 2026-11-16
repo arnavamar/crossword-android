@@ -4,6 +4,7 @@ import com.crossword.game.model.Direction
 import com.crossword.game.model.GameState
 import com.crossword.game.model.Hints
 import com.crossword.game.model.Puzzle
+import com.crossword.game.model.Word
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -14,7 +15,11 @@ class GameStateTest {
     // C A T      CAT across at (0,0), CAR down at (0,0), TEA down at (0,2)
     // A . E
     // R . A
-    private val words = listOf("CAT" to "Pet that purrs", "CAR" to "Vehicle", "TEA" to "Hot drink")
+    private val words = listOf(
+        Word("CAT", listOf("Pet that purrs")),
+        Word("CAR", listOf("Vehicle")),
+        Word("TEA", listOf("Hot drink")),
+    )
     private val puzzle = Puzzle.parse("3,3;0,0,0,0;1,0,0,1;2,0,2,1", words)
 
     @Test

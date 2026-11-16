@@ -5,6 +5,7 @@ import android.content.res.AssetManager
 import com.crossword.game.model.Direction
 import com.crossword.game.model.GameState
 import com.crossword.game.model.Puzzle
+import com.crossword.game.model.Word
 
 /** [words] is how many words each level of this difficulty holds. */
 enum class Difficulty(val label: String, val key: String, val words: IntRange) {
@@ -15,14 +16,15 @@ enum class Difficulty(val label: String, val key: String, val words: IntRange) {
 
 /** Reads the generated level files from assets, one difficulty at a time, on first use. */
 class PuzzleRepository(private val assets: AssetManager) {
-    private class Pack(val words: List<Pair<String, String>>, val levels: List<String>)
+    private class Pack(val words: List<Word>, val levels: List<String>)
 
     private val packs = mutableMapOf<Difficulty, Pack>()
 
     private fun pack(d: Difficulty): Pack = packs.getOrPut(d) {
+        // Each word line is the answer, then one tab-separated field per clue.
         val words = readLines("${d.key}_words.tsv").map { line ->
-            val tab = line.indexOf('\t')
-            line.substring(0, tab) to line.substring(tab + 1)
+            val fields = line.split('\t')
+            Word(fields[0], fields.drop(1))
         }
         Pack(words, readLines("${d.key}_levels.txt"))
     }

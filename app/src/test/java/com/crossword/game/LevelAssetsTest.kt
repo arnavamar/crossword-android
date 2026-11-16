@@ -2,6 +2,7 @@ package com.crossword.game
 
 import com.crossword.game.model.Direction
 import com.crossword.game.model.Puzzle
+import com.crossword.game.model.Word
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -12,8 +13,8 @@ class LevelAssetsTest {
     private val assets = File("src/main/assets")
 
     private fun words(tier: String) = File(assets, "${tier}_words.tsv").readLines().filter { it.isNotBlank() }.map {
-        val (w, c) = it.split('\t')
-        w to c
+        val fields = it.split('\t')
+        Word(fields[0], fields.drop(1))
     }
 
     private fun levels(tier: String) = File(assets, "${tier}_levels.txt").readLines().filter { it.isNotBlank() }

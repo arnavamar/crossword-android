@@ -1,0 +1,30 @@
+package com.crossword.game
+
+import com.crossword.game.model.Puzzle
+import com.crossword.game.model.Word
+import org.junit.Assert.assertEquals
+import org.junit.Test
+
+class PuzzleParseTest {
+    // C A T      CAT across at (0,0), CAR down at (0,0), TEA down at (0,2)
+    // A . E
+    // R . A
+    private val words = listOf(
+        Word("CAT", listOf("Pet that purrs", "Tom or tabby")),
+        Word("CAR", listOf("Vehicle")),
+        Word("TEA", listOf("Hot drink", "Leaves in hot water")),
+    )
+
+    @Test
+    fun fifthFieldPicksTheClue() {
+        val p = Puzzle.parse("3,3;0,0,0,0,1;1,0,0,1,0;2,0,2,1", words)
+        assertEquals("Tom or tabby", p.across.single().clue)
+        assertEquals("Vehicle", p.down.single { it.answer == "CAR" }.clue)
+        assertEquals("Hot drink", p.down.single { it.answer == "TEA" }.clue) // no fifth field
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun aClueIndexTheWordLacksIsRejected() {
+        Puzzle.parse("3,3;0,0,0,0;1,0,0,1,1;2,0,2,1", words) // CAR has one clue
+    }
+}
