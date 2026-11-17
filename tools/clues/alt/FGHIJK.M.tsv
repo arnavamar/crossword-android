@@ -1,9 +1,9 @@
-FABRIC	PUN	Stuff for a suit?
+FABRIC	FACT	Its basic weaves are plain, twill and satin
 FACADE	PUN	House's public face?
 FACET	PUN	Brilliant plane?
 FACTORY	PUN	Plant without roots?
 FACULTY	EXAMPLE	Sight or hearing, say
-FALCON	EXAMPLE	Peregrine, for one
+FALCON	BLANK	The Maltese ___
 FALLACY	EXAMPLE	Straw man argument, say
 FAMINE	BLANK	Feast or ___
 FAMOUS	PAIR	Opposite of obscure
@@ -16,7 +16,7 @@ FATAL	LINK	Word before attraction or error
 FATIGUE	LINK	Word after metal or battle
 FEATHER	EXAMPLE	Quill, for one
 FEATURE	LINK	Word before film or length
-FEEBLE	PAIR	Opposite of mighty
+FEEBLE	LINK	Word before excuse or smile
 FERTILE	PAIR	Opposite of barren
 FESTIVAL	EXAMPLE	Coachella, for one
 FIASCO	FACT	In Italian, it also names a flask
@@ -26,7 +26,7 @@ FIERY	LINK	Word before furnace or red
 FILTER	FACT	Many cigarettes have one at the tip
 FINANCE	LINK	Word after high or personal
 FIXTURE	LINK	Word after light or plumbing
-FLAIR	LINK	Word after artistic, creative or Gallic
+FLAIR	FACT	In French, it once meant a sense of smell
 FLANNEL	LINK	Word before shirt or pajamas
 FLAW	EXAMPLE	Achilles' heel, say
 FLEECE	MISDIRECT	Rip off, as a tourist
@@ -38,40 +38,40 @@ FLINCH	BLANK	Who will ___ first?
 FLOURISH	BLANK	Signed with a ___
 FLUENT	MISDIRECT	At home in French, say
 FLUID	LINK	Word after brake or lighter
-FOCUS	PUN	Center of attention?
+FOCUS	LINK	Word before group or point
 FOLIAGE	FACT	Fall visitors flock to Vermont to see it
 FOLKLORE	EXAMPLE	Robin Hood legends, say
 FORBID	BLANK	God ___!
 FORECAST	MISDIRECT	It may call for showers
 FOREIGN	PAIR	Opposite of domestic
-FORESEE	FACT	Do what clairvoyants claim to
+FORESEE	PUN	Do some advance sightseeing?
 FORGIVE	BLANK	___ and forget
-FORMAL	EXAMPLE	Prom, for one
+FORMAL	LINK	Word before garden, logic or wear
 FORMULA	FACT	Babies may drink it from a bottle
 FORTUNE	PUN	What a teller may tell?
 FOSTER	LINK	Word before home or parent
 FRACTION	FACT	It has a numerator and a denominator
 FRAGILE	BLANK	___: handle with care
 FRANTIC	LINK	Word before search or phone call
-FRAUD	EXAMPLE	Ponzi scheme, for one
+FRAUD	LINK	Word before alert or squad
 FRECKLE	FACT	It may darken in the summer sun
 FREEDOM	BLANK	___ of speech
 FREIGHT	LINK	Word before train or car
 FRENZY	BLANK	Feeding ___
-FRIGHT	PUN	Stage problem?
-FRUGAL	PAIR	Opposite of extravagant
+FRIGHT	BLANK	Stage ___
+FRUGAL	LINK	Word before living or shopper
 FUNERAL	LINK	Word before home, march or parlor
 FURIOUS	BLANK	The Fast and the ___
 FUTILE	BLANK	Resistance is ___
-FAIRWAY	FACT	It runs from the tee toward the green
+FAIRWAY	PUN	Carnival route?
 FAMILIAR	EXAMPLE	Witch's black cat, say
 FANFARE	BLANK	Copland's "___ for the Common Man"
 FAREWELL	BLANK	A ___ to Arms
-FEDORA	FACT	Indiana Jones wears one
+FEDORA	FACT	It takes its name from an 1882 play
 FESTIVE	PUN	Like decked halls?
 FILLET	LINK	Word before knife or steak
 FINALE	BLANK	Fireworks' grand ___
-FINESSE	FACT	Bridge players often try one
+FINESSE	FACT	A bridge play that bets on where a card sits
 FIREWORK	EXAMPLE	Roman candle, for one
 FITNESS	LINK	Word before tracker or instructor
 FLAMINGO	FACT	Its color comes from shrimp and algae
@@ -86,11 +86,11 @@ FOREHEAD	FACT	Harry Potter's scar is on it
 FORTRESS	BLANK	___ of Solitude
 FOUNTAIN	EXAMPLE	Rome's Trevi, for one
 FRAGRANT	BLANK	Hong Kong means "___ harbor"
-FREEWAY	EXAMPLE	Los Angeles's 405, for one
+FREEWAY	PUN	Path with no price tag?
 FRIGID	PAIR	Opposite of torrid
 FROLIC	FACT	Do as puppies in fresh snow
 FRONTIER	BLANK	Space: the final ___
-FUMBLE	FACT	Do as a nervous quarterback might
+FUMBLE	BLANK	___ for words
 FUNGUS	FACT	Penicillin comes from one
 FURROW	MISDIRECT	Knit, as one's brow
 FUSION	FACT	It powers the sun
@@ -104,7 +104,7 @@ GARMENT	EXAMPLE	Sari or sarong, say
 GARNISH	EXAMPLE	Parsley sprig, perhaps
 GAUGE	LINK	Word after rain, tire or fuel
 GAZEBO	FACT	Liesl and Rolf sing in one in The Sound of Music
-GENERAL	PAIR	Opposite of specific
+GENERAL	LINK	Word before store, public or election
 GENEROUS	PAIR	Opposite of stingy
 GENIUS	EXAMPLE	Einstein, for one
 GENRE	EXAMPLE	Sci-fi or horror, say
@@ -113,10 +113,10 @@ GESTURE	EXAMPLE	Thumbs-up, for one
 GLACIER	FACT	It can carve out a U-shaped valley
 GLANCE	BLANK	At first ___
 GLARE	FACT	Polarized sunglasses cut it
-GLIMPSE	FACT	Fans wait at stage doors hoping for one
+GLIMPSE	PUN	Short sight?
 GLOBAL	LINK	Word before warming or village
-GLORY	BLANK	Morning ___
-GLOSSARY	FACT	It explains a textbook's hard words
+GLORY	LINK	Word before days or hound
+GLOSSARY	FACT	Its name comes from the Greek for tongue
 GOBLET	BLANK	Harry Potter and the ___ of Fire
 GOSPEL	EXAMPLE	Mark or Luke, for one
 GOURMET	PUN	Person of refined taste?
@@ -128,11 +128,11 @@ GRATEFUL	BLANK	The ___ Dead
 GRAVITY	PUN	Serious attraction?
 GRAZE	MISDIRECT	Skin, as a knee
 GREASE	FACT	Travolta and Newton-John starred in it
-GRIEF	BLANK	Good ___!
+GRIEF	LINK	Word before counselor or therapy
 GRIMACE	FACT	A sour lemon may cause one
 GRIND	PUN	Daily routine at the coffee shop?
 GRIT	FACT	Sandpaper is graded by it
-GROCERY	LINK	Word before list, bag or cart
+GROCERY	LINK	Word before clerk or haul
 GROTTO	BLANK	Capri's Blue ___
 GUARDIAN	MISDIRECT	A ward has one
 GUIDANCE	LINK	Word before counselor or system
@@ -143,25 +143,25 @@ GALLANT	BLANK	Goofus and ___
 GARLAND	BLANK	Judy ___ of The Wizard of Oz
 GENETIC	LINK	Word before code or testing
 GERANIUM	FACT	Its name comes from the Greek for crane
-GHASTLY	BLANK	What a ___ mistake!
-GIGANTIC	FACT	Like Goliath
+GHASTLY	LINK	Word before grin or pallor
+GIGANTIC	FACT	Its root is a Greek word for giant
 GINGER	BLANK	___ ale
-GLEAM	BLANK	A ___ in one's eye
-GLISTEN	FACT	Do as sweat on a brow
+GLEAM	BLANK	A ___ of hope
+GLISTEN	FACT	It rhymes with listen
 GLOOM	PAIR	Doom's partner
 GNAW	FACT	Rodents must do it to keep their teeth short
-GOALIE	MISDIRECT	Crease defender
+GOALIE	PUN	Player who's always saving?
 GORGEOUS	BLANK	Drop-dead ___
 GRADUATE	FACT	Don a cap and gown for the big day
-GRANARY	PAIR	Silo's cousin
-GRAPPLE	FACT	Do as pirates with hooked irons
+GRANARY	FACT	Ancient Egypt stored the Nile's harvest in one
+GRAPPLE	FACT	It comes from an old word for a hook
 GREET	BLANK	Meet and ___
 GRIDDLE	FACT	Short-order cooks flip burgers on it
 GROVEL	PUN	Do the crawl before the boss?
 GRUDGE	BLANK	Bear a ___ against
 GRUELING	PUN	Making porridge?
 GUILD	BLANK	Screen Actors ___
-GALLOP	BLANK	At full ___
+GALLOP	PAIR	Canter's speedier cousin
 GARBAGE	LINK	Word before truck, bag or disposal
 GASP	MISDIRECT	It's drawn in surprise
 GAZETTE	FACT	Its name comes from a small Venetian coin
@@ -173,11 +173,11 @@ GLOSSY	PAIR	Opposite of matte
 GOGGLES	FACT	Skiers pull them over their eyes
 GOSLING	BLANK	Actor Ryan ___
 GRAFFITI	EXAMPLE	Banksy's stencils, say
-GRIMY	FACT	Like a coal miner after a shift
+GRIMY	BLANK	Gritty and ___
 GROOVE	PUN	Vinyl track?
 GLITTER	FACT	It gets everywhere after a craft project
 GOVERNOR	EXAMPLE	Reagan or Schwarzenegger, once
-GERMANY	FACT	Oktoberfest started there
+GERMANY	FACT	Bavaria and Saxony are two of its states
 GREECE	FACT	Crete and Rhodes belong to it
 HABIT	MISDIRECT	A nun gets into it every morning
 HABITAT	EXAMPLE	Rainforest, for one
@@ -190,18 +190,18 @@ HARDSHIP	PUN	Tough vessel?
 HARMONY	PUN	Sound relationship?
 HARNESS	FACT	Skydivers and window washers wear one
 HARVEST	LINK	Word before moon or time
-HASSLE	EXAMPLE	Long airport line, for one
+HASSLE	LINK	Word before free or factor
 HASTE	BLANK	___ makes waste
 HATCHET	LINK	Word before job or man
-HAUL	PUN	Big catch?
+HAUL	BLANK	Long-___ trucker
 HAVEN	PUN	Port in a storm?
 HAVOC	FACT	Mark Antony cries it in Julius Caesar
-HAZARD	MISDIRECT	A bunker is one
+HAZARD	LINK	Word before pay or lights
 HEADLINE	MISDIRECT	Top the bill
 HEALTHY	PAIR	Opposite of sickly
 HEARTY	BLANK	Hale and ___
-HECTIC	PAIR	Opposite of leisurely
-HEIR	MISDIRECT	One named in a will
+HECTIC	LINK	Word before pace or schedule
+HEIR	PUN	Air apparent?
 HELIUM	PUN	It raises voices?
 HERALD	BLANK	Hark! The ___ Angels Sing
 HERITAGE	LINK	Word before site or month
@@ -211,10 +211,10 @@ HIDEOUS	PAIR	Opposite of gorgeous
 HIGHWAY	LINK	Word before robbery or patrol
 HINDER	BLANK	Help or ___?
 HINGE	FACT	A clam's shell opens on it
-HISTORY	MISDIRECT	It's said to repeat itself
+HISTORY	FACT	Herodotus is called the father of it
 HOARD	PUN	Dragon's nest egg?
 HOARSE	PUN	Sounding like a horse?
-HOAX	EXAMPLE	Piltdown Man, for one
+HOAX	BLANK	The Great Moon ___ of 1835
 HOLY	LINK	Word before grail, cow or water
 HOMAGE	BLANK	Pay ___ to
 HORIZON	FACT	Ships seem to sink below it
@@ -223,28 +223,28 @@ HOSPITAL	LINK	Word before bed, wing or gown
 HOSTILE	LINK	Word before takeover or witness
 HOVER	PUN	Act like a helicopter parent?
 HUMBLE	BLANK	Eat ___ pie
-HUMID	PAIR	Opposite of arid
+HUMID	LINK	Word before climate or summer
 HUNCH	MISDIRECT	A detective may play one
-HURDLE	MISDIRECT	Something to get over
-HURL	PUN	Throw up?
+HURDLE	BLANK	Clear the last ___
+HURL	FACT	An Irish sport is named for it
 HUSBAND	PAIR	Wife's partner
 HUSTLE	MISDIRECT	Con at pool
 HYBRID	EXAMPLE	Liger or Prius, say
 HYGIENE	LINK	Word after dental or personal
-HYMN	PAIR	Psalm's cousin
+HYMN	PUN	Tune sung to Him?
 HYPHEN	FACT	Mother-in-law has two
-HALLMARK	FACT	It's stamped on silver to show purity
+HALLMARK	LINK	Word before card or channel
 HAMLET	PUN	Great Dane?
 HANGAR	PUN	Garage for a jumbo?
 HARDWARE	PAIR	Software's partner
 HEADACHE	EXAMPLE	Migraine, for one
 HEADWAY	FACT	A ship gains it by moving forward
 HEARSAY	FACT	Courts usually won't admit it as evidence
-HEFTY	FACT	Like a sumo wrestler
+HEFTY	LINK	Word before sum, fine or bag
 HELM	MISDIRECT	Captain's post
 HEROIC	LINK	Word before couplet or effort
 HIGHLAND	LINK	Word before fling or games
-HOBBLE	FACT	Do as one with a sprained ankle
+HOBBLE	FACT	Annie Wilkes does it to a novelist in Misery
 HOMEWORK	BLANK	The dog ate my ___
 HORDE	LINK	Word after zombie or Mongol
 HORNET	FACT	It builds a paper nest from chewed wood
@@ -255,18 +255,18 @@ HUDDLE	FACT	Football teams form one before a play
 HUMANE	BLANK	The ___ Society
 HUNDRED	FACT	Pennies in a dollar
 HUNGER	LINK	Word before strike or pangs
-HUTCH	MISDIRECT	Where the good china may be kept
+HUTCH	BLANK	Starsky and ___
 HYDRANT	FACT	Parking in front of it can earn a ticket
 HAIRCUT	EXAMPLE	Bob or mullet, say
 HALIBUT	FACT	Both of its eyes are on one side
-HAMSTER	PUN	Rather cheeky pet?
-HANDY	BLANK	Come in ___
-HARDLY	BLANK	___ a day goes by
+HAMSTER	PUN	Rodent with a lot of cheek?
+HANDY	LINK	Word before man or dandy
+HARDLY	BLANK	___ a soul in sight
 HARSH	FACT	Like lye soap on the skin
-HATRED	PAIR	Opposite of love
+HATRED	PAIR	Opposite of love, as a feeling
 HECTARE	FACT	It's about two and a half acres
 HEDGEHOG	EXAMPLE	Sonic, for one
-HERRING	LINK	Word after red or pickled
+HERRING	FACT	Rollmops are pickled ones
 HEXAGON	MISDIRECT	Many a nut has this outline
 HOLIDAY	EXAMPLE	Thanksgiving, for one
 HOSTEL	FACT	Guests often share dorm rooms in one
@@ -274,20 +274,20 @@ HUNGARY	PUN	Starving nation, by the sound of it?
 HAYSTACK	FACT	Monet painted one again and again
 IDENTITY	LINK	Word before theft or crisis
 IDIOM	PUN	Saying you can't take at its word?
-IGNITE	PUN	Light up?
+IGNITE	FACT	Do as a spark plug does to fuel
 IGNORANT	PAIR	Opposite of learned
 ILLEGAL	FACT	Like jaywalking in many places
 ILLUSION	EXAMPLE	Mirage, for one
 IMAGINE	FACT	John Lennon released it in 1971
 IMITATE	FACT	Do as a mockingbird does
-IMMENSE	BLANK	It gives me ___ pleasure
+IMMENSE	FACT	It comes from the Latin for unmeasured
 IMMUNE	LINK	Word before system or response
 IMPACT	LINK	Word before crater or zone
-IMPAIR	FACT	Alcohol may do it to driving
+IMPAIR	FACT	It comes from a Latin word meaning 'worse'
 IMPLY	PAIR	Infer's partner
-IMPOLITE	PAIR	Opposite of courteous
+IMPOLITE	BLANK	It's ___ to stare
 IMPORT	EXAMPLE	Car from overseas, say
-IMPOSE	BLANK	I don't mean to ___
+IMPOSE	BLANK	___ a curfew
 IMPRESS	BLANK	Dress to ___
 IMPROVE	PAIR	Opposite of worsen
 IMPULSE	LINK	Word before buy or control
@@ -299,10 +299,10 @@ INDUSTRY	EXAMPLE	Steelmaking, for one
 INFLATE	MISDIRECT	Pad, as a bill
 INHABIT	PUN	Wear a nun's robe?
 INHERIT	MISDIRECT	Come into, as money
-INITIAL	MISDIRECT	Sign off on, in short
+INITIAL	FACT	Harry S Truman's middle S is only one
 INMATE	PUN	Cell dweller?
 INNOCENT	FACT	Thirteen popes have taken this name
-INQUIRY	BLANK	A line of ___
+INQUIRY	BLANK	A detective's line of ___
 INSIGHT	PUN	Within view?
 INSIST	BLANK	All right, if you ___
 INSPIRE	PUN	Breathe in?
@@ -319,20 +319,20 @@ INTRUDE	EXAMPLE	Crash a party, say
 INVALID	BLANK	___ password, try again
 INVEST	EXAMPLE	Buy stocks, say
 INVOICE	PUN	Singing well?
-INVOLVE	EXAMPLE	Drag into a feud, say
+INVOLVE	BLANK	Don't ___ me in this
 IRONY	EXAMPLE	A fire station burning down, say
 ISSUE	MISDIRECT	Bone of contention
 ICEBERG	PUN	Titanic obstacle?
-IGUANA	FACT	Marine ones swim off the Galapagos
-ILLNESS	PAIR	Opposite of health
+IGUANA	FACT	A marine one swims off the Galapagos
+ILLNESS	FACT	A doctor's note may excuse you from school after one
 IMMORTAL	FACT	Like the gods, unlike us
 IMPEACH	FACT	The House may do it to a president
 IMPLANT	EXAMPLE	Pacemaker, for one
 INCIDENT	BLANK	The plane landed without ___
-INCISOR	FACT	A beaver's is orange
+INCISOR	EXAMPLE	An elephant's tusk, for one
 INFINITY	LINK	Word before pool, scarf or symbol
 INFERNO	PUN	Dante's hot spot?
-INKLING	BLANK	Had no ___ of the surprise
+INKLING	PUN	Tiny bit of ink?
 INSOMNIA	PUN	Real eye-opener?
 INTERNET	LINK	Word before cafe or troll
 INTRIGUE	LINK	Word after palace or political
@@ -340,33 +340,33 @@ IRRITATE	EXAMPLE	Chafe or nag, say
 ISOLATE	PUN	Make an island of?
 ITALIC	PAIR	Roman's partner in print
 INDICATE	EXAMPLE	Flash a turn signal, say
-INFORMAL	PAIR	Opposite of stuffy
+INFORMAL	LINK	Word before wear, chat or poll
 INLAND	LINK	Word before sea or waterway
 INNING	MISDIRECT	The seventh one has a stretch
 INTERN	MISDIRECT	A resident outranks one
 IRRIGATE	MISDIRECT	Flush, as a wound
-INSPECT	EXAMPLE	Kick the tires of, say
+INSPECT	FACT	It comes from a Latin word meaning 'look into'
 INTERCOM	MISDIRECT	It's used for paging
 INVERT	EXAMPLE	Flip an hourglass, say
 IMMERSE	MISDIRECT	Bury, as oneself in a book
 INDIGO	LINK	Word before bunting or dye
-INGOT	FACT	Fort Knox stores gold ones
+INGOT	FACT	Bullion is often stored as one
 INSULATE	MISDIRECT	Protect from shocks
-INTACT	PAIR	Opposite of shattered
+INTACT	BLANK	Still ___ after the crash
 IRELAND	FACT	Dublin is its capital
 ICELAND	FACT	Its Blue Lagoon is a geothermal spa
-JACKAL	BLANK	The Day of the ___
+JACKAL	BLANK	Forsyth's The Day of the ___
 JAGGED	PAIR	Opposite of smooth, as a blade's edge
 JANITOR	FACT	Its name comes from the Latin for door
 JARGON	EXAMPLE	Legalese, for one
-JASMINE	LINK	Word before rice or oil
+JASMINE	FACT	Aladdin's princess shares its name
 JAVELIN	PUN	Point of a track meet?
 JEALOUS	FACT	Like Othello
 JEOPARDY	PUN	Risky quiz show?
 JERSEY	LINK	Kind of cow or shore
 JESTER	EXAMPLE	Yorick, for one
 JETTY	MISDIRECT	Arm reaching into the sea
-JOURNAL	LINK	Word after medical or scientific
+JOURNAL	EXAMPLE	Nature or Science, say
 JOURNEY	BLANK	___ to the Center of the Earth
 JOVIAL	PUN	Merry, by Jove?
 JUBILEE	LINK	Word after cherries or golden
@@ -382,7 +382,7 @@ JOLT	MISDIRECT	Wake-up call
 JOUST	FACT	Renaissance fairs stage it
 JUPITER	PAIR	Juno's partner
 JACKPOT	MISDIRECT	A one-armed bandit pays it
-JIFFY	PUN	Two shakes of a lamb's tail?
+JIFFY	LINK	Word before pop or lube
 KARAOKE	FACT	Its name means "empty orchestra" in Japanese
 KEEPSAKE	EXAMPLE	Lock of hair, say
 KERNEL	PUN	Pop star?
@@ -390,7 +390,7 @@ KETCHUP	MISDIRECT	Red topping for dogs
 KEYBOARD	LINK	Word before shortcut or warrior
 KEYNOTE	LINK	Word before speaker or address
 KIDNEY	LINK	Word before bean or stone
-KILN	FACT	Hops are dried in one
+KILN	FACT	Bricks are baked in one
 KINDLE	MISDIRECT	Amazon reader
 KINGDOM	LINK	Word after animal or United
 KIOSK	EXAMPLE	Airport check-in screen, say
@@ -407,4 +407,4 @@ KESTREL	FACT	It hangs in the air while hunting
 KHAKI	LINK	Word before green, pants or shorts
 KIMONO	FACT	An obi holds it closed
 KINETIC	PAIR	Potential's partner in physics
-KRILL	FACT	Its oil is sold as a supplement
+KRILL	FACT	Its name is Norwegian for small fish

@@ -2,7 +2,7 @@ LABEL	LINK	Word after record, designer or warning
 LAGOON	FACT	An atoll encircles one
 LAMENT	EXAMPLE	Elegy, for one
 LANDMARK	LINK	Kind of case or decision
-LANGUAGE	FACT	Esperanto was invented as one
+LANGUAGE	LINK	Word before barrier, arts or skills
 LANTERN	LINK	Word after magic, paper or Chinese
 LAPSE	BLANK	A Momentary ___ of Reason
 LARVA	FACT	It comes between egg and pupa
@@ -11,7 +11,7 @@ LATITUDE	PAIR	Longitude's partner
 LATTER	PAIR	Former's partner
 LAUNDRY	LINK	Word before list, basket or room
 LAVENDER	FACT	Its fields carpet Provence each summer
-LAVISH	PAIR	Opposite of frugal
+LAVISH	LINK	Word before praise, party or spread
 LAWSUIT	PUN	Legal attire?
 LAYOUT	EXAMPLE	QWERTY, for one
 LEAFLET	FACT	One of three on a typical clover
@@ -22,13 +22,13 @@ LEDGER	FACT	Heath who played the Joker
 LEFTOVER	PUN	Dish best served cold?
 LEGACY	LINK	Kind of admission or code
 LEGAL	LINK	Word before tender, eagle or pad
-LEGEND	PUN	Key figure?
-LEGIBLE	PUN	Easy to make out?
+LEGEND	EXAMPLE	Bigfoot, for one
+LEGIBLE	FACT	What a good font must be above all
 LEISURE	BLANK	Marry in haste, repent at ___
 LENIENT	PUN	Easy on sentences?
 LENTIL	FACT	Esau traded his birthright for its stew
 LEOPARD	LINK	Kind of seal, gecko or shark
-LESSEN	PAIR	Opposite of heighten
+LESSEN	MISDIRECT	Take a little off the top
 LETHAL	BLANK	___ Weapon (1987 film)
 LETTUCE	EXAMPLE	Romaine, for one
 LEVER	EXAMPLE	Seesaw, for one
@@ -44,55 +44,55 @@ LITERAL	PAIR	Opposite of figurative
 LITTER	BLANK	Runt of the ___
 LIVELY	BLANK	Look ___!
 LOBSTER	LINK	Word before bisque, pot or roll
-LOCATE	PUN	Spot the spot?
+LOCATE	BLANK	Please ___ the nearest exit
 LOCKER	BLANK	Davy Jones's ___
 LOCUST	BLANK	Honey ___ tree
-LODGE	MISDIRECT	Masons meet in one
-LOFTY	PAIR	Opposite of lowly
+LODGE	FACT	Masons meet in one
+LOFTY	LINK	Word before ambitions, ideals or peaks
 LOGIC	LINK	Kind of puzzle or gate
 LOTION	EXAMPLE	Sunscreen, for one
-LOYALTY	LINK	Word before card, program or points
+LOYALTY	LINK	Word before oath, test or card
 LUGGAGE	FACT	Samsonite makes it
 LULLABY	PUN	Rock music?
 LUMBER	LINK	Word before jack, yard or mill
 LURE	EXAMPLE	An angler's spinner, for one
 LURK	BLANK	Danger may ___ around any corner
-LUSH	MISDIRECT	One who's often tight
+LUSH	LINK	Word before carpet, lawn or rainforest
 LUXURY	LINK	Word before liner, car or goods
 LYRICS	FACT	Bernie Taupin writes them for Elton John
-LIBERATE	PAIR	Opposite of enslave
-LINEAGE	FACT	Genealogists trace it
-LONGING	EXAMPLE	Homesickness, for one
+LIBERATE	FACT	Do for Paris what the Allies did in 1944
+LINEAGE	PUN	Roots and branches?
+LONGING	BLANK	A ___ for home
 LOOKOUT	BLANK	On the ___ for bargains
 LOOSEN	BLANK	___ the purse strings
-LUKEWARM	MISDIRECT	Like a so-so reception
+LUKEWARM	LINK	Word before water, reception or support
 LAUREL	PAIR	Hardy's partner
-LOOPHOLE	PUN	Legal way out?
-LITERATE	BLANK	Financially ___
-LANDLORD	PAIR	Opposite of tenant
+LOOPHOLE	FACT	Tax lawyers often hunt for one
+LITERATE	PUN	Good with letters?
+LANDLORD	PUN	Master of the house?
 LATELY	BLANK	What Have You Done for Me ___
 LEMONADE	FACT	Beyonce's 2016 album
 LULL	BLANK	___ into a false sense of security
 LYNX	EXAMPLE	Bobcat, for one
 LIGAMENT	FACT	A sprain stretches or tears one
 LINEN	BLANK	Wash your dirty ___ in public
-LOATHE	PAIR	Opposite of adore
-LOITER	BLANK	Do not ___ near the entrance
+LOATHE	BLANK	Love it or ___ it
+LOITER	FACT	Police may move you along for doing it
 LOOM	BLANK	Fruit of the ___
 LURCH	BLANK	Leave in the ___
 LASSO	BLANK	Wonder Woman's ___ of Truth
 LEMUR	BLANK	Ring-tailed ___
-LIVID	MISDIRECT	Black and blue
+LIVID	FACT	It comes from the Latin for bluish
 MACHINE	LINK	Word before gun, learning or shop
 MAGAZINE	PUN	Powder room on a warship?
 MAGICIAN	EXAMPLE	Houdini, for one
-MAGNIFY	BLANK	My soul doth ___ the Lord
+MAGNIFY	FACT	Do what microscopes and telescopes do
 MAINTAIN	BLANK	___ a healthy weight
 MAJESTY	PUN	Royal address?
 MAJORITY	PAIR	Opposite of minority
 MALARIA	FACT	Quinine treats it
 MAMMAL	FACT	Every one has hair at some stage of life
-MAMMOTH	FACT	Siberia's permafrost preserves some
+MAMMOTH	PAIR	Mastodon's cousin
 MANAGER	LINK	Word after bank, stage or campaign
 MANDATE	FACT	Election winners often claim one
 MANICURE	PAIR	Pedicure's partner
@@ -102,16 +102,16 @@ MANTLE	MISDIRECT	It lies beneath the crust
 MANUAL	PUN	Hands-on guide?
 MANURE	PUN	Stable output?
 MARATHON	PUN	Long run?
-MARGIN	MISDIRECT	Space beside a column
+MARGIN	LINK	Word before call or of error
 MARIGOLD	FACT	Day of the Dead altars glow with it
 MARINE	LINK	Word before biologist, corps or life
-MARITIME	LINK	Kind of law or museum
-MARRIAGE	MISDIRECT	It may be arranged, or annulled
+MARITIME	LINK	Kind of law, museum or province
+MARRIAGE	PUN	Tie that binds?
 MARROW	BLANK	Chilled to the ___
 MARVEL	FACT	Spider-Man's comic book publisher
 MASCARA	MISDIRECT	It may run when you cry
 MASSIVE	BLANK	A ___ heart attack
-MASTERY	MISDIRECT	Command of a subject
+MASTERY	FACT	What an apprentice works toward
 MATERIAL	MISDIRECT	A comic's stock
 MATINEE	FACT	Its name comes from French for morning
 MATTRESS	PUN	Spring collection?
@@ -120,11 +120,11 @@ MAXIMUM	LINK	Word before capacity or overdrive
 MAYHEM	FACT	Allstate commercials personify it
 MEANDER	FACT	It's named for a river in Turkey
 MEASURE	MISDIRECT	Bar in a score
-MECHANIC	PUN	Grease monkey?
+MECHANIC	MISDIRECT	Worker with a lift and a jack
 MEDDLE	FACT	Pink Floyd album of 1971
 MEDICAL	LINK	Word before school, records or examiner
 MEDIEVAL	PUN	From knight time?
-MEDIOCRE	PAIR	Opposite of stellar
+MEDIOCRE	FACT	Its Latin root means halfway up a mountain
 MEDITATE	EXAMPLE	Chant om, perhaps
 MEDLEY	FACT	Swim race using all four strokes
 MEEK	PAIR	Opposite of assertive
@@ -147,16 +147,16 @@ MESH	LINK	Kind of network or fence
 MESSAGE	BLANK	___ in a bottle
 METAPHOR	EXAMPLE	"All the world's a stage," for one
 METEOR	LINK	Word before shower or crater
-METHOD	LINK	Kind of acting or actor
+METHOD	BLANK	There's ___ in my madness
 MICROBE	EXAMPLE	Bacterium, for one
 MIDDAY	FACT	When shadows are shortest
 MIDNIGHT	BLANK	Burn the ___ oil
-MIDWAY	FACT	Pacific battle of 1942
+MIDWAY	LINK	Word before Atoll or Airport
 MIGRAINE	FACT	An aura may come before one
 MIGRATE	MISDIRECT	Go from one platform to another
 MILDEW	FACT	Old shower curtains may grow it
 MILITARY	LINK	Word before police, academy or base
-MILLION	PUN	Grand squared?
+MILLION	PAIR	Billion's little brother
 MINERAL	LINK	Word before water, oil or kingdom
 MINGLE	BLANK	Single and ready to ___
 MINIMUM	LINK	Word before wage or requirement
@@ -168,14 +168,14 @@ MISCHIEF	BLANK	Harry Potter's "___ managed"
 MISERY	BLANK	___ loves company
 MISFIT	BLANK	Island of ___ Toys
 MISHAP	EXAMPLE	Fender bender, for one
-MISLEAD	MISDIRECT	Do what a red herring does
+MISLEAD	PUN	Give a bad steer?
 MISPLACE	EXAMPLE	Leave your keys who knows where, say
 MISSION	EXAMPLE	Apollo 11, for one
-MISTAKE	PUN	Bad take?
+MISTAKE	EXAMPLE	Typo, for one
 MIXTURE	EXAMPLE	Alloy, for one
-MOBILE	FACT	Alexander Calder made hanging ones
+MOBILE	LINK	Word before phone, home or app
 MOCK	LINK	Word before turtle, trial or exam
-MODERATE	MISDIRECT	Chair a panel
+MODERATE	LINK	Word before drinker, climate or income
 MODERN	PAIR	Opposite of ancient
 MODEST	BLANK	A ___ Proposal
 MODIFY	FACT	Act on a noun, as an adjective does
@@ -185,18 +185,18 @@ MOMENTUM	BLANK	Conservation of ___
 MONARCH	PUN	Royal flier?
 MONGOOSE	EXAMPLE	Rikki-Tikki-Tavi, for one
 MONITOR	LINK	Word after baby, heart or hall
-MONOTONE	PUN	One-note delivery?
+MONOTONE	EXAMPLE	A robot's speech, perhaps
 MONSOON	FACT	It usually reaches Kerala in early June
 MONTHLY	FACT	Like most rent payments
 MONUMENT	BLANK	The Washington ___
 MOODY	BLANK	The ___ Blues
-MOOR	MISDIRECT	Tie up in port
-MORALE	BLANK	___ booster
+MOOR	FACT	The Hound of the Baskervilles is set on one
+MORALE	BLANK	___, Welfare and Recreation
 MORNING	LINK	Kind of glory, sickness or star
-MORSEL	BLANK	Every last ___ was eaten
+MORSEL	EXAMPLE	A crumb or a nibble, say
 MORTGAGE	FACT	Its name comes from Old French for dead pledge
 MOSAIC	FACT	Tesserae make one up
-MOSQUITO	PUN	Little sucker?
+MOSQUITO	PUN	Pest with a lot of buzz?
 MOTION	MISDIRECT	It may be carried at a meeting
 MOTIVE	BLANK	Ulterior ___
 MOTORWAY	EXAMPLE	The M25, for one
@@ -212,13 +212,13 @@ MUSICIAN	EXAMPLE	Cellist, for one
 MUSTANG	FACT	Ford sports car since 1964
 MUSTARD	BLANK	Cut the ___
 MUTINY	BLANK	___ on the Bounty
-MUTTER	EXAMPLE	Talk to yourself, perhaps
+MUTTER	EXAMPLE	Grumble to yourself, say
 MUTUAL	LINK	Kind of fund or friend
 MUZZLE	MISDIRECT	Front of a barrel
 MYSTERY	LINK	Word before meat or shopper
 MAGNOLIA	FACT	Mississippi's nickname comes from it
 MANGROVE	FACT	The Sundarbans is a forest of it
-NAMELY	BLANK	Two choices, ___ fight or flight
+NAMELY	FACT	Writers use it to introduce specifics
 NARRATE	FACT	Do Morgan Freeman's job in March of the Penguins
 NATIVE	LINK	Word before speaker or tongue
 NAUTICAL	LINK	Kind of mile or chart
@@ -226,14 +226,14 @@ NAVIGATE	FACT	Sailors once did it by the stars
 NEARLY	BLANK	___ Headless Nick
 NECKLACE	EXAMPLE	Choker, for one
 NECTAR	FACT	Drink of the Greek gods
-NEGATIVE	MISDIRECT	Something developed in a darkroom
-NEGLECT	PAIR	Opposite of nurture
+NEGATIVE	FACT	Like the charge on an electron
+NEGLECT	EXAMPLE	Forget to water a houseplant, say
 NERVOUS	LINK	Kind of system or breakdown
 NETWORK	MISDIRECT	Make contacts
-NEUTRAL	MISDIRECT	Not in gear
-NEWCOMER	PUN	Fresh face?
-NICKNAME	MISDIRECT	Handle
-NIMBLE	PAIR	Opposite of clumsy
+NEUTRAL	PUN	Gear that goes nowhere?
+NEWCOMER	FACT	Rookie of the Year goes to one
+NICKNAME	PUN	Pet name?
+NIMBLE	BLANK	Jack be ___, Jack jump over the candlestick
 NITROGEN	FACT	Its atomic number is 7
 NOBLE	LINK	Kind of gas, metal or cause
 NOMAD	EXAMPLE	Bedouin, for one
@@ -241,14 +241,14 @@ NOMINATE	MISDIRECT	Name for a post
 NONSENSE	EXAMPLE	Jabberwocky, for one
 NOTABLE	PUN	Worth jotting down?
 NOTEBOOK	EXAMPLE	Moleskine, for one
-NOTION	BLANK	I haven't the faintest ___
-NOURISH	PAIR	Opposite of starve
+NOTION	EXAMPLE	A hunch or a whim, say
+NOURISH	EXAMPLE	Supply protein and vitamins, say
 NOVELTY	LINK	Kind of song, item or act
-NOVICE	MISDIRECT	One who hasn't yet taken vows
+NOVICE	PUN	Rookie with a habit?
 NUANCE	FACT	From the French for shade
-NUCLEUS	MISDIRECT	Control center of a cell
+NUCLEUS	FACT	Rutherford discovered it in 1911
 NUISANCE	LINK	Word before call or value
-NUMERAL	EXAMPLE	Arabic 7, for one
+NUMERAL	PUN	Figure you can count on?
 NUMEROUS	BLANK	Too ___ to mention
 NURTURE	PAIR	Nature's partner
 NUTMEG	FACT	Mace comes from the same fruit
@@ -256,21 +256,21 @@ NUTRIENT	EXAMPLE	Vitamin C, for one
 NYLON	FACT	DuPont developed it in the 1930s
 NAIVE	PAIR	Opposite of streetwise
 NAUSEA	FACT	Sartre's first novel
-NEEDY	MISDIRECT	Like a clingy partner
+NEEDY	BLANK	Aid for the ___
 NESTLE	FACT	Swiss maker of Nescafe
 NEUTRON	PAIR	Proton's partner in the nucleus
 NICHE	LINK	Kind of market or product
-NOSTRIL	PUN	It may flare up?
+NOSTRIL	FACT	Its twin takes over the airflow every few hours
 NOTIFY	EXAMPLE	Send a push alert, say
 NURSERY	LINK	Word before rhyme or school
 NAVAL	LINK	Kind of base, officer or academy
 NOVELIST	EXAMPLE	Jane Austen, for one
 NUTSHELL	MISDIRECT	Kernel's case
-NAMESAKE	EXAMPLE	Junior, for one
+NAMESAKE	BLANK	Jhumpa Lahiri's novel "The ___"
 NEPTUNE	FACT	Roman god with a trident
 NOVEMBER	FACT	American Thanksgiving falls in it
-NAPE	FACT	A mother cat carries her kittens by it
-NARWHAL	PUN	Unicorn of the sea?
+NAPE	FACT	A low ponytail brushes against it
+NARWHAL	PAIR	Beluga's closest cousin
 NEEDLESS	BLANK	___ to say
 NETBALL	FACT	Game derived from basketball, played seven a side
 NEWBORN	FACT	An Apgar score rates one
@@ -278,7 +278,7 @@ NONSTOP	LINK	Kind of flight or action
 NOTATION	EXAMPLE	Shorthand, for one
 NOTHING	PUN	Love, at Wimbledon?
 NUCLEAR	LINK	Kind of family or option
-NETTLE	PUN	Get under one's skin?
+NETTLE	LINK	Word before rash or tea
 NEBULA	EXAMPLE	The Horsehead, for one
 OBEDIENT	PAIR	Opposite of defiant
 OBLIGE	BLANK	Noblesse ___
@@ -287,26 +287,26 @@ OBSCURE	BLANK	Jude the ___
 OBSERVE	MISDIRECT	Keep, as a fast
 OBSTACLE	PUN	Something to get over?
 OBTAIN	EXAMPLE	Buy or inherit, say
-OBVIOUS	BLANK	Captain ___
+OBVIOUS	BLANK	Stating the ___
 OCCASION	EXAMPLE	Birthday, for one
 OCCUR	MISDIRECT	Strike, as a thought
 OCTAGON	FACT	An American stop sign is one
 OCTAVE	PUN	From do to do?
 OCTOPUS	PUN	Ink slinger?
-OFFEND	MISDIRECT	Break the law
+OFFEND	PUN	Step on someone's toes?
 OFFICIAL	EXAMPLE	Referee, for one
 OINTMENT	BLANK	A fly in the ___
-OMEN	EXAMPLE	Red sky at morning, say
+OMEN	BLANK	The ___ (1976 horror film)
 OMISSION	PAIR	Commission's partner
-OMIT	PAIR	Opposite of include
-ONGOING	PAIR	Opposite of completed
+OMIT	BLANK	___ needless words
+ONGOING	BLANK	An ___ investigation
 ONLOOKER	EXAMPLE	Rubbernecker, for one
 ONSET	BLANK	The sudden ___ of symptoms
-OPAQUE	PAIR	Opposite of transparent
+OPAQUE	LINK	Word before tights or glass
 OPERATE	EXAMPLE	Remove an appendix, say
 OPINION	LINK	Word before poll or piece
 OPPONENT	PAIR	Opposite of teammate
-OPPOSE	MISDIRECT	Face in a match
+OPPOSE	EXAMPLE	Vote no on a motion, say
 OPTICAL	LINK	Kind of illusion or fiber
 OPTIMISM	PAIR	Opposite of pessimism
 OPTION	LINK	Word after stock or nuclear
@@ -320,24 +320,24 @@ ORGANIC	LINK	Kind of matter or farm
 ORIGIN	MISDIRECT	Where two axes cross
 ORNAMENT	EXAMPLE	Bauble, for one
 ORPHAN	EXAMPLE	Oliver Twist, for one
-OSTRICH	PUN	Head-in-the-sand type?
+OSTRICH	PAIR	Emu's African cousin
 OUTBREAK	FACT	Dustin Hoffman virus thriller of 1995
 OUTCOME	EXAMPLE	A draw, for one
-OUTDATED	PUN	Past its sell-by date?
+OUTDATED	LINK	Word before attitudes, laws or stereotypes
 OUTGOING	MISDIRECT	Like a retiring president
 OUTING	EXAMPLE	Picnic, for one
 OUTLAW	PUN	In-law's opposite?
 OUTLINE	EXAMPLE	Silhouette, for one
 OUTLOOK	FACT	Microsoft's email program
-OUTRAGE	PUN	Storm of protest?
+OUTRAGE	PUN	Rage on the outside?
 OVATION	BLANK	Standing ___
 OVERCOME	BLANK	We Shall ___
-OVERDUE	FACT	Like a library book kept too long
+OVERDUE	LINK	Word before notice, fine or payment
 OVERFLOW	LINK	Word before pipe or crowd
 OVERLOOK	MISDIRECT	Have a view of
 OVERSEAS	LINK	Word before student or territory
-OVERSEE	FACT	Do a foreman's job
-OVERTAKE	PUN	Get ahead in the fast lane?
+OVERSEE	EXAMPLE	Act as foreman for a crew, say
+OVERTAKE	FACT	Drivers in the US usually do it on the left
 OVERVIEW	PAIR	Opposite of a deep dive
 OATMEAL	FACT	Quaker sells it in a round canister
 OBSOLETE	FACT	Like the floppy disk, today

@@ -17,38 +17,38 @@ SITE	LINK	Word after web or camp
 SKID	BLANK	___ Row, rundown part of town
 SKIM	LINK	Word before milk or board
 SKIT	EXAMPLE	Monty Python's 'Dead Parrot', for one
-SLAB	PUN	Hefty piece of cake?
+SLAB	LINK	Word before bacon or serif
 SLAT	FACT	One of many in a futon frame
-SLOG	EXAMPLE	Hike through knee-deep snow, say
+SLOG	EXAMPLE	Wading through a dull 900-page report, say
 SMOG	FACT	Its name joins smoke and fog
-SMUG	PUN	Like the cat that ate the canary?
+SMUG	EXAMPLE	Like a know-it-all proved right, say
 SNAG	PUN	Catch in a sweater?
 SNOB	PUN	One with a nose for status?
-SNUB	BLANK	___-nosed revolver
+SNUB	EXAMPLE	Refuse to shake hands with, say
 SOLE	PUN	Only fish?
-SOOT	FACT	A candle can leave it on a ceiling
+SOOT	FACT	Peppered moths darkened where it coated tree bark
 SOUL	LINK	Word before food or mate
 SPAN	LINK	Word after life or attention
 SPAR	EXAMPLE	Boom or yard, on a ship
-SPAT	EXAMPLE	Fight over the last cookie, say
+SPAT	FACT	A dapper 1920s man wore one over each shoe
 SPRY	PAIR	Opposite of doddering
 SPUR	BLANK	On the ___ of the moment
 STAG	LINK	Word before party or beetle
-STOW	MISDIRECT	Put in the hold
-STUB	PUN	Short end of a pencil?
-STUN	LINK	Word before gun or grenade
+STOW	FACT	Flight attendants ask you to do it with your bag
+STUB	PUN	Pencil that's been through a lot?
+STUN	LINK	Word before gun, grenade or baton
 SULK	FACT	Do as Achilles did in his tent
-SWAB	MISDIRECT	Clean the deck
-SWAT	PUN	Strike against a mosquito?
-SEEP	MISDIRECT	Run at a crawl
+SWAB	FACT	Doctors take one to test for strep throat
+SWAT	FACT	Cows do it to pests with their tails
+SEEP	BLANK	Damp cold can ___ into your bones
 SUMO	FACT	Salt is tossed into its ring before a bout
 SILT	FACT	Ancient Egypt's floods left it on the fields
-SLIT	FACT	A pencil skirt often has one at the back
-SARI	FACT	It is worn over a short blouse and petticoat
+SLIT	FACT	A cat's pupil shrinks to one in bright light
+SARI	FACT	It goes on over a choli and a petticoat
 SERF	FACT	One freed by Russia's 1861 reform
 SATIN	LINK	Word before finish or sheets
-SAUNA	FACT	Water is ladled onto its hot stones
-SALSA	PUN	Hot number on the dance floor?
+SAUNA	FACT	Water is ladled onto stones inside it
+SALSA	PUN	Dance served with nachos?
 SAINT	LINK	Word before Bernard or Nick
 SCALP	PUN	Make a killing on concert tickets?
 SCENT	EXAMPLE	Lavender or musk, say
@@ -56,34 +56,34 @@ SCRAP	LINK	Word before book or heap
 SEDAN	EXAMPLE	Toyota Camry, for one
 SENSE	LINK	Word after sixth or common
 SHACK	BLANK	The B-52's hit 'Love ___'
-SHAWL	EXAMPLE	Lace mantilla, for one
+SHAWL	EXAMPLE	Jewish tallit, for one
 SHEER	MISDIRECT	Utter, as folly
-SHIFT	LINK	Word before key or dress
+SHIFT	MISDIRECT	Key to upper case
 SHRUB	EXAMPLE	Azalea, for one
 SHRUG	BLANK	A Gallic ___
 SIEGE	EXAMPLE	Leningrad's 872 days, for one
 SKIMP	BLANK	Don't ___ on the cheese
 SLANT	FACT	Italic letters have one
-SLATE	PUN	Something wiped clean for a fresh start?
+SLATE	MISDIRECT	Party ticket
 SLEEK	PAIR	Opposite of shaggy
 SLEET	FACT	It falls as tiny ice pellets
 SLUMP	MISDIRECT	Hitter's bad run
 SLUSH	LINK	Word before fund or pile
-SMEAR	MISDIRECT	Sling mud at a rival
-SMIRK	BLANK	Wipe that ___ off your face!
-SNARL	MISDIRECT	Jam on the freeway
+SMEAR	MISDIRECT	Sample on a slide
+SMIRK	EXAMPLE	Look on a cat that got the cream, say
+SNARL	PUN	Hairy situation?
 SNEER	PUN	Contemptuous lip service?
 SNOUT	FACT	A boar digs for food with it
 SOGGY	PAIR	Opposite of crispy
 SPASM	EXAMPLE	Hiccup, for one
 SPECK	BLANK	Just a ___ on the horizon
 SPITE	BLANK	In ___ of the rain
-SPOOF	EXAMPLE	Spaceballs, for one
+SPOOF	EXAMPLE	Spaceballs, to Star Wars
 SPREE	LINK	Word after crime or spending
 SPRIG	BLANK	Garnish with a ___ of mint
 SQUAD	LINK	Word after firing or bomb
-SQUAT	MISDIRECT	Take over an empty building
-STAIN	MISDIRECT	Finish that lets the grain show through
+SQUAT	LINK	Word before thrust or rack
+STAIN	LINK	Word before remover or resistant
 STAKE	PUN	What's at risk for a vampire?
 STALL	MISDIRECT	Cut out at a red light
 STARK	BLANK	___ raving mad
@@ -93,7 +93,7 @@ STRAY	LINK	Word before cat or bullet
 STRUT	MISDIRECT	Wing support
 STUNT	LINK	Word before double or man
 SUITE	PUN	Sweet spot for honeymooners?
-SURGE	MISDIRECT	Spike on the power line
+SURGE	LINK	Word before protector or pricing
 SWARM	FACT	Locusts may form one many miles wide
 SWIFT	FACT	Bird that can fly for months without landing
 SWOOP	BLANK	In one fell ___
@@ -103,9 +103,9 @@ STEER	PUN	Beef on the hoof?
 STALK	MISDIRECT	Shadow, as a lion does a zebra
 STUMP	LINK	Word before speech or grinder
 STALE	LINK	Word before mate or air
-SCOFF	BLANK	___ at the very idea
-SCOLD	PAIR	Opposite of praise
-SCOWL	PUN	Look that knits the brows?
+SCOFF	EXAMPLE	Snort 'Yeah, right!' at a claim, say
+SCOLD	EXAMPLE	Shout 'Bad dog!' at a puppy, say
+SCOWL	PUN	Mean mug?
 SEIZE	MISDIRECT	Lock up, as a rusty engine
 SHADY	PAIR	Opposite of sunny, for a garden spot
 SHAFT	LINK	Word after elevator or drive
@@ -114,54 +114,54 @@ SHIRK	EXAMPLE	Leave the dishes to others, say
 SHOAL	FACT	A ship may run aground on one
 SHREW	BLANK	The Taming of the ___
 SNOOP	EXAMPLE	Read someone's diary, say
-SPAWN	FACT	Salmon swim upstream to do it
-STASH	EXAMPLE	Cookies hidden in a sock drawer, say
+SPAWN	LINK	Word after frog or toad
+STASH	EXAMPLE	Cookies tucked in a sock drawer, say
 STRUM	PAIR	Pluck's cousin, on a ukulele
-SWIRL	MISDIRECT	Give a glass of red a spin
+SWIRL	FACT	Sommeliers do it to wine before sniffing
 SUSHI	EXAMPLE	California roll, for one
-SPIRE	FACT	The Chrysler Building has a famous one
+SPIRE	FACT	It takes One World Trade Center to 1,776 feet
 SIEVE	BLANK	A memory like a ___
 SEOUL	FACT	It hosted the 1988 Summer Olympics
 SEINE	FACT	Notre-Dame stands on an island in it
 SADDLE	PUN	It has a horn but never honks?
 SAFARI	FACT	Its name is Swahili for 'journey'
 SALARY	LINK	Word before cap or range
-SALUTE	MISDIRECT	Tip one's hat to
+SALUTE	MISDIRECT	Private greeting
 SAMPLE	LINK	Word after blood or soil
 SANITY	PAIR	Opposite of madness
 SATIRE	EXAMPLE	Swift's 'A Modest Proposal', for one
-SCARCE	BLANK	Make yourself ___
+SCARCE	BLANK	Beat it! Make yourself ___!
 SCENIC	LINK	Word before route or drive
 SCHEME	LINK	Word after color or rhyme
-SCORCH	FACT	A hot iron may do it to silk
+SCORCH	FACT	Too hot an iron will do it to silk
 SCRAPE	PUN	Spot of trouble on the knee?
 SCULPT	PUN	Define one's abs?
 SELDOM	BLANK	Where ___ is heard a discouraging word
 SENATE	FACT	Each state sends two members to it
 SEQUEL	EXAMPLE	The Godfather Part II, for one
-SERENE	PAIR	Opposite of frantic
-SERMON	MISDIRECT	Sunday address
-SHABBY	PAIR	Opposite of spiffy
+SERENE	BLANK	Monaco's prince is His ___ Highness
+SERMON	BLANK	___ on the Mount
+SHABBY	BLANK	Not too ___ for a first try!
 SHRINK	MISDIRECT	Head doctor
-SHREWD	PAIR	Opposite of gullible
-SHRIEK	BLANK	Let out a ___ of laughter
+SHREWD	BLANK	She's a ___ judge of character
+SHRIEK	EXAMPLE	Startled 'Eek!' at a mouse, say
 SIESTA	FACT	Its name comes from Latin for 'sixth hour'
 SIMMER	PUN	Be a little steamed?
 SIZZLE	BLANK	Sell the ___, not the steak
 SLEUTH	EXAMPLE	Hercule Poirot, for one
 SLOGAN	EXAMPLE	"Just do it," for one
-SLOUCH	BLANK	He's no ___ at chess
+SLOUCH	EXAMPLE	Hunch over a desk all day, say
 SMUDGE	EXAMPLE	Inky thumbprint on a page, say
 SNOOZE	LINK	Word before button or fest
 SOLEMN	PAIR	Opposite of frivolous
 SONNET	EXAMPLE	"Shall I compare thee to a summer's day?" for one
-SOOTHE	EXAMPLE	Rock a crying baby, say
+SOOTHE	PAIR	Opposite of irritate, as skin
 SORROW	BLANK	Parting is such sweet ___
 SPHERE	BLANK	___ of influence
 SPRAIN	FACT	It injures a ligament, not a muscle
 SPROUT	LINK	Word after bean or alfalfa
 SQUINT	FACT	Nearsighted people do it to see far away
-SQUIRM	PUN	Act like live bait?
+SQUIRM	PUN	Act like a worm, or a suspect, on the hook?
 STANZA	EXAMPLE	Quatrain or tercet, say
 STAPLE	EXAMPLE	Milk or eggs, for one
 STARCH	FACT	It's sprayed on shirts before ironing
@@ -170,52 +170,52 @@ STINGY	PAIR	Opposite of generous
 STITCH	BLANK	A ___ in time saves nine
 STRAIT	EXAMPLE	Gibraltar or Hormuz, say
 STRIDE	BLANK	Take it in ___
-STURDY	PAIR	Opposite of flimsy
-SUBTLE	PAIR	Opposite of heavy-handed
+STURDY	PAIR	Opposite of rickety or spindly
+SUBTLE	BLANK	About as ___ as a sledgehammer
 SUMMIT	MISDIRECT	Meeting at the top
-SUPERB	PAIR	Opposite of abysmal
+SUPERB	BLANK	The ___ lyrebird can mimic a chainsaw
 SUPPLE	PAIR	Opposite of stiff, as leather
 SWERVE	EXAMPLE	Dodge a pothole, say
 SWIVEL	LINK	Word before chair or stool
 SYMBOL	EXAMPLE	Ampersand, for one
-SEETHE	BLANK	___ with rage
-SICKLE	BLANK	Hammer and ___
+SEETHE	BLANK	Thou shalt not ___ a kid in his mother's milk
+SICKLE	PAIR	Hammer's partner on the Soviet flag
 SLEIGH	LINK	Word before bells or ride
 SORBET	FACT	It may cleanse the palate between courses
-STENCH	PUN	Air of decay?
+STENCH	FACT	A skunk's spray leaves a lasting one
 SAHARA	FACT	Timbuktu sits at its southern edge
 SWEDEN	FACT	Alfred Nobel's homeland
 SPARSE	PAIR	Opposite of dense, as a forest
 SALVAGE	LINK	Word before yard or rights
 SARDINE	FACT	Lisbon's June festivals feature it grilled
 SATCHEL	BLANK	Pitcher ___ Paige
-SCALPEL	MISDIRECT	Sharp instrument used in an operation
+SCALPEL	PUN	Instrument that gets a patient to open up?
 SCANDAL	EXAMPLE	Watergate, for one
 SCARLET	BLANK	The ___ Letter
 SCENERY	PUN	What a ham may chew?
 SCHOLAR	LINK	Word after Rhodes or Fulbright
 SCREECH	FACT	Brakes may make one before a crash
-SEAGULL	PUN	Beach bum with wings?
+SEAGULL	EXAMPLE	Jonathan Livingston, for one
 SERPENT	FACT	It tempted Eve in the Garden of Eden
 SHAMPOO	FACT	Its bottle may say 'Lather, rinse, repeat'
 SHATTER	BLANK	___ the world record
 SHELTER	LINK	Word after tax or bomb
 SHERIFF	EXAMPLE	Woody in Toy Story, for one
 SHIMMER	FACT	Hot asphalt seems to do it in summer
-SHRIVEL	FACT	Grapes do it as they dry into raisins
+SHRIVEL	FACT	Salt makes a slug do it
 SHUFFLE	MISDIRECT	Drag one's feet
 SIBLING	BLANK	___ rivalry
-SINCERE	PAIR	Opposite of two-faced
+SINCERE	BLANK	The Great Pumpkin picks the most ___ patch
 SLENDER	PAIR	Opposite of stout
 SLUMBER	BLANK	Preteen's ___ party
 SMUGGLE	MISDIRECT	Run, as rum or guns
 SNORKEL	FACT	Some U-boats used one in World War Two
-SNUGGLE	EXAMPLE	Spoon, say
+SNUGGLE	EXAMPLE	Share body heat under a quilt, say
 SOPRANO	EXAMPLE	Maria Callas, for one
-SPARROW	MISDIRECT	Jack of the Black Pearl
+SPARROW	LINK	Word after house or tree
 SPATULA	FACT	Bakers use one to spread frosting
 SPINACH	FACT	Eggs Florentine is made with it
-STADIUM	PUN	Place full of fans?
+STADIUM	PUN	Bowl that seats a crowd?
 STAMINA	PUN	Asset in the long run?
 STEALTH	LINK	Word before bomber or mode
 STUBBLE	FACT	Harvested fields are covered in it
@@ -238,20 +238,20 @@ SCRAMBLE	MISDIRECT	Get fighters airborne fast
 SCRIBBLE	EXAMPLE	Toddler's crayon art, say
 SERGEANT	LINK	Word after drill or staff
 SHORTAGE	PAIR	Opposite of surplus
-SHOULDER	PUN	Something to cry on?
+SHOULDER	PUN	Chip holder for a sore loser?
 SIDEWALK	LINK	Word before sale or cafe
 SINISTER	FACT	In Latin it meant 'on the left'
 SKELETON	LINK	Word before key or crew
-SLUGGISH	PAIR	Opposite of peppy
+SLUGGISH	EXAMPLE	Like traffic at rush hour, say
 SNOWBALL	LINK	Word before effect or fight
 SOLITUDE	BLANK	One Hundred Years of ___
 SORCERER	BLANK	The ___'s Apprentice
 SOUVENIR	EXAMPLE	Eiffel Tower snow globe, say
-SPACIOUS	PAIR	Opposite of cramped
+SPACIOUS	BLANK	O beautiful for ___ skies
 SPECTRUM	BLANK	Both ends of the political ___
-SPLENDID	BLANK	In ___ isolation
+SPLENDID	BLANK	Britain's 19th-century policy of ___ isolation
 SPLINTER	BLANK	A ___ group broke away
-SPRINKLE	MISDIRECT	Light shower
+SPRINKLE	MISDIRECT	Dust, as a baker does a cake
 SQUABBLE	EXAMPLE	Kids' tussle over the front seat, say
 SQUIRREL	PAIR	Chipmunk's cousin
 STAGNANT	PUN	Like a pond going nowhere?

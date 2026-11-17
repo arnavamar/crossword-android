@@ -1,9 +1,9 @@
 ABANDON	BLANK	___ ship!
-ABBEY	EXAMPLE	Tintern or Fountains, for example
+ABBEY	LINK	Word after Downton or Northanger
 ABILITY	BLANK	To the best of my ___
 ABOARD	BLANK	All ___!
 ABROAD	LINK	Word after study or travel
-ABRUPT	MISDIRECT	Short with someone
+ABRUPT	FACT	Its Latin root means "broken off"
 ABSENT	BLANK	___ without leave
 ABSOLUTE	LINK	Word before zero or power
 ABSORB	FACT	Do as a black shirt does with sunlight
@@ -15,26 +15,26 @@ ACCEPT	PAIR	Opposite of reject
 ACCESS	LINK	Word before road, code or point
 ACCIDENT	BLANK	An ___ waiting to happen
 ACCOUNT	PUN	Teller's story?
-ACCURATE	PUN	Not missing a thing?
-ACCUSE	MISDIRECT	Point the finger at
-ACHIEVE	MISDIRECT	Reach, as a goal
-ACQUIRE	MISDIRECT	Develop, as a taste
+ACCURATE	BLANK	Historically ___
+ACCUSE	EXAMPLE	Call someone a thief, say
+ACHIEVE	EXAMPLE	Break a world record, say
+ACQUIRE	EXAMPLE	Buy a rival company, say
 ACRE	BLANK	Hundred ___ Wood
-ACROBAT	MISDIRECT	Tumbler under the big top
+ACROBAT	PUN	Big-top pro at flipping out?
 ACTIVIST	EXAMPLE	Greta Thunberg, for one
-ACTUAL	PAIR	Opposite of virtual
+ACTUAL	BLANK	In ___ fact
 ACUTE	PAIR	Opposite of chronic
 ADAPT	EXAMPLE	Turn a novel into a film, say
 ADDER	PUN	One doing sums?
 ADDRESS	BLANK	Gettysburg ___
-ADEQUATE	PAIR	Sufficient's cousin
+ADEQUATE	LINK	Word before notice, funding or housing
 ADHESIVE	LINK	Type of bandage or label
 ADJUST	EXAMPLE	Fix one's tie, say
 ADMIRAL	EXAMPLE	Nelson or Nimitz, for one
-ADMIRE	PAIR	Opposite of despise
+ADMIRE	EXAMPLE	Hang a poster of a hero, say
 ADMIT	BLANK	___ one, on a ticket
-ADOPT	MISDIRECT	Embrace, as an idea
-ADORABLE	EXAMPLE	Like a sleeping puppy, say
+ADOPT	EXAMPLE	Bring home a shelter dog, say
+ADORABLE	PUN	Aww-inspiring?
 ADVANCE	PAIR	Opposite of retreat
 ADVERB	FACT	It often ends in -ly
 ADVISE	EXAMPLE	Say "You should rest," for example
@@ -45,38 +45,38 @@ AGENDA	BLANK	Hidden ___, secret motive
 AGILE	EXAMPLE	Like a mountain goat, say
 AGONY	BLANK	The ___ and the Ecstasy
 AIRCRAFT	LINK	Word before carrier or hangar
-AIRLINE	EXAMPLE	Delta or Qantas, for one
+AIRLINE	LINK	Word before food, ticket or pilot
 AIRPORT	EXAMPLE	Heathrow or O'Hare, say
-ALCOVE	FACT	A bed or bookcase may fit into one
-ALGEBRA	FACT	Its name comes from Arabic
+ALCOVE	LINK	Kind of tub, shower or bed
+ALGEBRA	PAIR	Geometry's partner in school
 ALIBI	EXAMPLE	"I was at the movies," say
 ALIGN	PUN	Put ducks in a row?
 ALLERGY	FACT	Peanuts can trigger a deadly one
 ALLIANCE	BLANK	Rebel ___
-ALLOY	FACT	Steel is one; iron is not
-ALLY	PAIR	Opposite of foe
+ALLOY	LINK	Word before wheels or steel
+ALLY	BLANK	___ McBeal
 ALMANAC	EXAMPLE	The Old Farmer's, for one
 ALOE	FACT	Its gel is often put on sunburn
 ALPHA	LINK	Word before male or dog
 ALPHABET	LINK	Word before soup or blocks
 ALTAR	BLANK	Left at the ___
-ALTER	MISDIRECT	Take in, as a dress
+ALTER	EXAMPLE	Shorten a hem, say
 ALTITUDE	FACT	Air gets thinner as it increases
 AMATEUR	FACT	It comes from the Latin for "lover"
 AMBER	FACT	Insects can be trapped in it for millions of years
 AMBITION	PUN	Drive with no car?
 AMNESIA	FACT	Jason Bourne has it
 AMPLE	PAIR	Opposite of scant
-AMPLIFY	PUN	Give a speaker more power?
-ANALOGY	BLANK	Draw an ___
+AMPLIFY	EXAMPLE	Use a megaphone, say
+ANALOGY	EXAMPLE	"Hand is to glove as foot is to sock," say
 ANATOMY	FACT	Henry Gray wrote a classic textbook on it
-ANCESTOR	PAIR	Opposite of descendant
+ANCESTOR	FACT	Genealogists trace a family back to one
 ANCHOR	FACT	Popeye has one tattooed on his arm
-ANCHOVY	FACT	Classic Caesar dressing contains it
+ANCHOVY	LINK	Kind of paste, fillet or butter
 ANCIENT	LINK	Word before Rome or Greece
 ANECDOTE	FACT	A best man's speech often includes one
-ANNOUNCE	MISDIRECT	Break, as news
-ANNUAL	MISDIRECT	Bloomer that lasts one season
+ANNOUNCE	EXAMPLE	Read out the winner, say
+ANNUAL	PAIR	Perennial's partner in a seed catalog
 ANTELOPE	BLANK	Where the deer and the ___ play
 ANTENNA	MISDIRECT	It picks up waves
 ANTHEM	FACT	Crowds stand for it before a big game
@@ -86,23 +86,23 @@ ANVIL	FACT	An ear bone is named for it
 ANXIOUS	BLANK	___ to please
 APOLOGY	BLANK	I owe you an ___
 APPARENT	LINK	Word after heir
-APPEAL	FACT	It can send a case to a higher court
+APPEAL	BLANK	Curb ___
 APPENDIX	FACT	It may need removing if it bursts
 APPETITE	PUN	Room for dessert?
-APPLAUD	PUN	Give a hand?
-APPLY	MISDIRECT	Rub in, as lotion
-APPOINT	EXAMPLE	Make someone chairman, say
+APPLAUD	EXAMPLE	Give a standing ovation, say
+APPLY	EXAMPLE	Fill out a college form, say
+APPOINT	FACT	Presidents do it to judges and ambassadors
 APPROACH	LINK	Word before road or shot
-APPROVE	MISDIRECT	Pass, as a budget
+APPROVE	BLANK	"I ___ this message"
 APRICOT	FACT	It shares a genus with the almond
 AQUARIUM	PUN	Place for a school trip?
 AQUATIC	PAIR	Opposite of terrestrial
 ARCADE	LINK	Word before game or machine
-ARCHER	EXAMPLE	Robin Hood, for one
+ARCHER	FACT	Sagittarius is depicted as one
 ARCHIVE	PUN	Home for back issues?
 ARGUMENT	LINK	Word after closing or counter
 ARMCHAIR	LINK	Type of quarterback or critic
-AROMA	FACT	Freshly baked bread gives off one
+AROMA	LINK	Word before therapy or compound
 ARRANGE	EXAMPLE	Set up a meeting, say
 ARREST	LINK	Word after cardiac or house
 ARTERY	PUN	Main road?
@@ -110,18 +110,18 @@ ARTICLE	EXAMPLE	"The" or "an," for example
 ARTISAN	LINK	Type of bread, cheese or baker
 ASHORE	BLANK	Washed ___
 ASPECT	BLANK	16:9 is a common ___ ratio
-ASPHALT	FACT	The La Brea Tar Pits are full of it
+ASPHALT	LINK	Word before jungle or shingles
 ASSEMBLE	BLANK	Avengers, ___!
 ASSET	PAIR	Opposite of liability
-ASSIGN	EXAMPLE	Give homework, say
-ASSIST	MISDIRECT	Pass that sets up a goal
-ASSUME	MISDIRECT	Put on, as a disguise
+ASSIGN	EXAMPLE	Give a detective a case, say
+ASSIST	FACT	In hockey, a point is a goal or one
+ASSUME	PUN	Make an ass of you and me?
 ASTEROID	LINK	Word before belt or field
-ASTONISH	PUN	Knock someone's socks off?
+ASTONISH	EXAMPLE	Pull a rabbit from a hat, say
 ATHLETE	EXAMPLE	Usain Bolt, for one
 ATTACH	EXAMPLE	Add a file to an email, say
 ATTAIN	EXAMPLE	Earn a black belt, say
-ATTEMPT	PUN	Have a crack at?
+ATTEMPT	EXAMPLE	Go after a gold medal, say
 ATTEND	EXAMPLE	Go to a wedding, say
 ATTIRE	LINK	Word after business or wedding
 ATTITUDE	LINK	Word before problem or adjustment
@@ -129,40 +129,40 @@ ATTRACT	BLANK	Opposites ___
 AUBURN	FACT	Alabama city that is home to the Tigers
 AUCTION	PUN	Where a nod could cost you?
 AUDIENCE	MISDIRECT	It may make a full house
-AUDIT	MISDIRECT	Take, as a course, for no credit
-AUDITION	PUN	Trying moment for an actor?
+AUDIT	MISDIRECT	It goes through the books
+AUDITION	FACT	Actors bring a headshot to it
 AVENUE	EXAMPLE	Fifth or Park, say
 AVERAGE	BLANK	Batting ___
 AVIATOR	LINK	Kind of sunglasses or jacket
 AVOCADO	FACT	It ripens only after it is picked
-AWAIT	MISDIRECT	Be in store for
+AWAIT	EXAMPLE	Sit tight for test results, say
 AWARE	BLANK	As far as I'm ___
 AWKWARD	BLANK	An ___ silence
-AWNING	PUN	Sun hat for a storefront?
+AWNING	FACT	It may roll out over a patio
 AXIS	FACT	Germany, Italy and Japan formed it
-AXLE	LINK	Word before grease
-BABBLE	PUN	Sound like a brook?
+AXLE	LINK	Word before grease, load or nut
+BABBLE	FACT	Babies do it before they can speak
 BACHELOR	LINK	Word before party or pad
-BACKBONE	PUN	What a jellyfish lacks?
-BACKPACK	FACT	It may hold a student's books
+BACKBONE	BLANK	Grow a ___!
+BACKPACK	EXAMPLE	JanSport, for one
 BACKYARD	BLANK	Not in my ___
-BAFFLE	PUN	Leave scratching one's head?
+BAFFLE	BLANK	Dazzle them with brilliance, ___ them with baloney
 BAGGAGE	LINK	Word before claim or handler
-BAIL	MISDIRECT	It's posted to secure a release
+BAIL	MISDIRECT	Skipping it can land you in jail
 BALANCE	MISDIRECT	It can be tipped in someone's favor
 BALCONY	FACT	The pope addresses crowds from one
 BALLAD	BLANK	Power ___, 1980s rock staple
 BALLOT	LINK	Word before box or measure
 BALLROOM	PUN	Where Cinderella had her fling?
-BALMY	EXAMPLE	Like a tropical breeze, say
+BALMY	LINK	Word before night or breeze
 BANDAGE	PUN	Strip on a mummy?
 BANDIT	BLANK	One-armed ___
-BANISTER	PUN	Indoor slide for a daring kid?
+BANISTER	BLANK	Slide down the ___
 BANKER	EXAMPLE	Rothschild, for one
 BANKRUPT	PUN	Broke beyond repair?
 BANNER	LINK	Word before year or headline
 BANQUET	LINK	Word before hall or table
-BANTER	PUN	Light exchange?
+BANTER	EXAMPLE	Pals trading jokes at a bar, say
 BARBECUE	LINK	Word before sauce or ribs
 BAREFOOT	BLANK	___ in the Park
 BARGAIN	LINK	Word before basement or hunter
@@ -170,7 +170,7 @@ BARLEY	FACT	Scotch whisky is made from it
 BARON	BLANK	The Red ___
 BARREL	FACT	An oil one holds 42 gallons
 BARRIER	LINK	Word after sound or language
-BARTER	EXAMPLE	Trade eggs for flour, say
+BARTER	EXAMPLE	Trade a cow for magic beans, say
 BASEBALL	FACT	Babe Ruth's game
 BASEMENT	FACT	Common shelter from a tornado
 BASHFUL	FACT	Snow White's blushing dwarf
@@ -182,8 +182,8 @@ BATON	MISDIRECT	A conductor waves it
 BATTERY	EXAMPLE	Double A, for one
 BAUBLE	PUN	Trifle you can't eat?
 BAZAAR	PUN	Strange-sounding place to shop?
-BEAGLE	EXAMPLE	Snoopy, for one
-BEAKER	FACT	Muppet who only says "Meep"
+BEAGLE	FACT	It was the name of Darwin's ship
+BEAKER	MISDIRECT	It may be graduated without a diploma
 BEDROCK	FACT	The Flintstones' hometown
 BEDROOM	LINK	Word before community or eyes
 BEEHIVE	BLANK	Utah, the ___ State
@@ -191,102 +191,102 @@ BEETROOT	FACT	Classic borscht's main ingredient
 BEGINNER	BLANK	___'s luck
 BEGRUDGE	EXAMPLE	Envy a rival's success, say
 BEHOLD	BLANK	Lo and ___
-BELATED	LINK	Word before birthday wishes
-BELIEF	PAIR	Opposite of doubt
+BELATED	LINK	Word before birthday, apology or thanks
+BELIEF	EXAMPLE	Reincarnation, for one
 BELOVED	FACT	Toni Morrison's Pulitzer-winning novel
-BENEATH	PAIR	Opposite of above
-BENEFIT	LINK	Word before concert or package
+BENEATH	BLANK	___ one's dignity
+BENEFIT	PAIR	Cost's partner in an analysis
 BERET	FACT	American Special Forces wear a green one
-BETRAY	PUN	Stab in the back?
-BEVERAGE	PAIR	Food's partner on a menu
+BETRAY	FACT	Judas did it with a kiss
+BEVERAGE	EXAMPLE	Coffee or cola, say
 BEWARE	BLANK	___ the Ides of March
-BEWILDER	EXAMPLE	Stump with a riddle, say
+BEWILDER	PUN	Leave lost in the wilderness?
 BIAS	BLANK	Confirmation ___, a mental blind spot
 BICKER	EXAMPLE	Argue over the remote, say
 BICYCLE	FACT	Tour de France racers ride one
 BILLION	FACT	It has nine zeros
 BINARY	LINK	Kind of star or search
-BIOLOGY	FACT	Charles Darwin's science
+BIOLOGY	MISDIRECT	Class with plenty of cells
 BIRCH	FACT	Finnish sauna whisks are made from its twigs
 BIRTHDAY	BLANK	In your ___ suit
 BISCUIT	FACT	It is served with gravy in the South
-BISECT	EXAMPLE	Halve an angle, say
+BISECT	FACT	A diameter does it to a circle
 BISHOP	FACT	He carries a crosier
 BISON	FACT	The national mammal of the United States
-BIZARRE	PUN	Off the wall?
+BIZARRE	BLANK	Zimmern's ___ Foods
 BLACKOUT	LINK	Word before curtains or date
 BLAND	PAIR	Opposite of spicy
 BLANKET	BLANK	Wet ___, party pooper
-BLATANT	PUN	Right in your face?
+BLATANT	LINK	Word before foul or disregard
 BLEAK	BLANK	___ House, Dickens novel
-BLEMISH	MISDIRECT	It may mar a perfect record
+BLEMISH	EXAMPLE	Scar or wart, say
 BLENDER	PUN	One who mixes well?
 BLESS	PAIR	Opposite of curse
 BLISS	BLANK	Ignorance is ___
 BLIZZARD	FACT	Dairy Queen serves it upside down
 BLOCKADE	FACT	Berlin faced one in 1948
 BLOSSOM	LINK	Word after orange or cherry
-BLUEBELL	PUN	Flower that never rings?
-BLUFF	MISDIRECT	It can be called at the table
-BLUNDER	EXAMPLE	Giving away your queen in chess, say
+BLUEBELL	FACT	Its nodding flowers carpet forest floors in May
+BLUFF	EXAMPLE	Claim to hold four aces, say
+BLUNDER	LINK	Word before "buss," an old gun
 BLUNT	MISDIRECT	Frank, to a fault
-BLURB	EXAMPLE	"A gripping read!" say
-BOAST	PUN	Blow one's own horn?
-BOBSLED	FACT	Jamaica's "Cool Runnings" team raced one
+BLURB	FACT	Praise from other authors often appears in one
+BOAST	EXAMPLE	Ali's "I am the greatest," perhaps
+BOBSLED	PUN	Haircut on runners?
 BOGUS	BLANK	Bill & Ted's ___ Journey
 BONFIRE	FACT	Guy Fawkes Night calls for one
 BOOKMARK	EXAMPLE	Ribbon sewn into a Bible, say
 BOOKWORM	PUN	Novel creature?
 BORDER	LINK	Word before collie or terrier
-BOROUGH	FACT	New York City has five
+BOROUGH	PUN	Rabbit's neighborhood?
 BOTANY	PUN	Growing field?
-BOTHER	PUN	Get under someone's skin?
+BOTHER	BLANK	Pooh's "Oh, ___!"
 BOULDER	FACT	Colorado city at the foot of the Flatirons
 BOUNDARY	EXAMPLE	A fence or a river, perhaps
 BOUNTY	FACT	Ship of a 1789 mutiny
 BOUQUET	FACT	A bride tosses it
 BOUTIQUE	LINK	Kind of hotel or firm
-BRACE	MISDIRECT	Couple of pheasants
+BRACE	PUN	It may straighten a smile?
 BRACELET	LINK	Word after charm or tennis
 BRACKET	LINK	Word after tax or age
-BRAMBLE	PUN	Thorny issue in the garden?
-BRAVERY	EXAMPLE	Running into a burning house, say
-BREADTH	PAIR	Length's partner
-BREED	MISDIRECT	Multiply, as rabbits do
+BRAMBLE	MISDIRECT	Rough patch for a hiker
+BRAVERY	LINK	Word before medal or commendation
+BREADTH	PAIR	Depth's partner in a thorough review
+BREED	FACT	Ranchers do it to improve a herd
 BRIBE	PUN	Palm grease?
 BRIDLE	LINK	Word before path or way
-BRIGADE	FACT	Several battalions make up one
-BRIGHTEN	PAIR	Opposite of darken
-BRISK	MISDIRECT	Crisp, as morning air
-BRISTLE	PUN	Get prickly?
+BRIGADE	LINK	Word after bucket or light
+BRIGHTEN	FACT	Skies may do it after a storm
+BRISK	LINK	Word before walk, trade or pace
+BRISTLE	FACT	A frightened cat's fur may do it
 BRITTLE	BLANK	Peanut ___, a hard candy
-BROADEN	PAIR	Opposite of narrow
+BROADEN	BLANK	___ your horizons
 BROCCOLI	FACT	Its head is a cluster of flower buds
-BROCHURE	EXAMPLE	Travel agency handout, say
-BROKER	PUN	Stock character?
-BRONZE	FACT	Copper and tin form it
-BROOCH	EXAMPLE	Cameo pinned to a lapel, perhaps
+BROCHURE	PUN	Tour guide that never talks?
+BROKER	FACT	It may earn a commission on each sale
+BRONZE	PAIR	Silver's partner on a podium
+BROOCH	FACT	It has a safety catch on the back
 BROWNIE	LINK	Word before points or mix
-BROWSE	MISDIRECT	Feed on shoots, as deer do
+BROWSE	FACT	Deer and web surfers both do it
 BRUNCH	PUN	Lunch that got up early?
 BUDGE	BLANK	Won't ___ an inch
 BUDGET	LINK	Kind of airline or deficit
 BUFFALO	FACT	Spicy wings are named for this New York city
-BUFFET	MISDIRECT	Batter, as strong winds do
+BUFFET	FACT	Sneeze guards often protect the food at one
 BULGE	BLANK	Battle of the ___, 1944
 BULKY	PAIR	Opposite of compact
 BULLETIN	LINK	Kind of board for pinning flyers
 BULLFROG	BLANK	Jeremiah was a ___
-BUNDLE	MISDIRECT	Small fortune
+BUNDLE	EXAMPLE	Cable plus internet in one plan, say
 BUNGALOW	FACT	Its name means "of Bengal"
-BUOY	MISDIRECT	Lift, as spirits
-BURDEN	PUN	Weight on your shoulders?
-BUREAU	MISDIRECT	Chest of drawers
+BUOY	PUN	Boy that bobs at sea?
+BURDEN	BLANK	Beast of ___
+BUREAU	MISDIRECT	It has drawers but no artists
 BURGLAR	LINK	Word before alarm or proof
 BUSINESS	PAIR	Pleasure's partner
-BUSTLE	FACT	It puffed out the back of a Victorian skirt
+BUSTLE	PUN	Behind the times?
 BUTCHER	PAIR	Baker's partner in a rhyme
 BUTLER	EXAMPLE	Batman's Alfred, for one
 BUZZARD	FACT	Americans often use its name for a vulture
-BYLAW	EXAMPLE	A town's ban on fireworks, say
+BYLAW	EXAMPLE	"No dogs on the beach," say
 BYPASS	LINK	Word after triple or gastric
