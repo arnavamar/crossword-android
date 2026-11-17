@@ -100,7 +100,7 @@ COMFORT	LINK	Word before food or zone
 COMMAND	EXAMPLE	"Sit!" or "Stay!", say
 COMMENT	BLANK	"No ___," said the spokesperson
 COMMERCE	BLANK	Chamber of ___
-COMMUTE	EXAMPLE	Drive from the suburbs into the city, say
+COMMUTE	FACT	Rush hour is when many people do it
 COMPACT	FACT	It may hold pressed powder and a mirror
 COMPANY	BLANK	Two's ___, three's a crowd
 COMPARE	BLANK	Shall I ___ thee to a summer's day?
@@ -147,7 +147,7 @@ COUNCIL	BLANK	Survivor's Tribal ___
 COUNTER	LINK	Word after Geiger or bean
 COUNTRY	EXAMPLE	Chile or Peru, for one
 COUNTY	EXAMPLE	Marin or Orange, for one
-COUPON	EXAMPLE	Clipped slip worth 50 cents off, say
+COUPON	LINK	Word before code, book or clipper
 COURAGE	FACT	The Cowardly Lion asked the Wizard for it
 COURIER	BLANK	___ New, a typeface
 COURSE	LINK	Word after golf or crash
@@ -229,7 +229,7 @@ DEDICATE	BLANK	I'd like to ___ this song to my mom
 DEEM	BLANK	As you ___ fit
 DEFAULT	MISDIRECT	It may be set at the factory
 DEFECT	MISDIRECT	Leave one party for another
-DEFICIT	EXAMPLE	Earn $4 million, spend $5 million, say
+DEFICIT	BLANK	Attention ___ disorder
 DEFINE	FACT	Dictionaries do it to words
 DEFT	FACT	It started as a twin of the word daft
 DEFY	BLANK	To ___ gravity
@@ -268,7 +268,7 @@ DIALECT	EXAMPLE	Cockney, for one
 DIALOGUE	EXAMPLE	Plato's Republic, for one
 DIAMETER	FACT	It is twice the radius
 DIAMOND	PUN	Found in the rough?
-DICTATE	EXAMPLE	Bark "My way or the highway!", for one
+DICTATE	FACT	A boss does it while a secretary takes shorthand
 DIGEST	MISDIRECT	It's often condensed
 DIGITAL	PAIR	Opposite of analog
 DIGNITY	BLANK	Death with ___
@@ -380,7 +380,7 @@ ENCHANT	PUN	Do something charming?
 ENCORE	FACT	French for "again"
 ENDLESS	PUN	Like a wedding band?
 ENDURE	MISDIRECT	Last
-ENGAGE	EXAMPLE	Hire a wedding band, say
+ENGAGE	BLANK	___ the clutch
 ENGINEER	EXAMPLE	Casey Jones, for one
 ENGRAVE	FACT	Jewelers do it inside wedding rings
 ENHANCE	EXAMPLE	Brighten a dark photo with software, say
