@@ -30,7 +30,7 @@ ACROSS, DOWN = 0, 1
 STEP = {ACROSS: (0, 1), DOWN: (1, 0)}
 WORDS_SCORED = 40   # placeable words compared before the best one is taken
 ATTEMPTS = 200      # tries per word count before settling for one word fewer
-USAGE_WEIGHT = 0.15 # score lost per earlier use of a word, to spread words across levels
+USAGE_WEIGHT = 0.5  # score a word loses for being used as often as the average word so far
 VOWELS = "AEIOU"
 VOWEL_WEIGHT = 0.7  # a crossing on a vowel scores less than one on a consonant
 CONSONANT_WEIGHT = 1.0
@@ -150,7 +150,18 @@ class Grid:
         return out
 
 
-def build_level(pool, rng, n_words, size, usage):
+def usage_penalties(usage):
+    """Score each word loses for its earlier uses, to spread words across levels.
+
+    It is relative to the mean use over the whole pool (counted as at least 1), so the pull
+    towards rarely used words stays the same from the first level to the last. An absolute
+    penalty kept growing and left late Hard levels stuck on words that are hard to cross.
+    """
+    mean = max(1.0, sum(usage) / len(usage))
+    return [USAGE_WEIGHT * u / mean for u in usage]
+
+
+def build_level(pool, rng, n_words, size, penalty):
     # Each step scans the whole pool in this order until WORDS_SCORED words fit. A smaller sample
     # left late Hard levels with no word that fits, once usage steered towards rarely used words.
     shuffled = rng.sample(range(len(pool)), len(pool))
@@ -159,7 +170,7 @@ def build_level(pool, rng, n_words, size, usage):
         return None
     grid = Grid(size)
     # Start from a longer word so the grid has a spine to hang the rest on.
-    first = max(order[:20], key=lambda i: len(pool[i][0]) - usage[i] * USAGE_WEIGHT + rng.random())
+    first = max(order[:20], key=lambda i: len(pool[i][0]) - penalty[i] + rng.random())
     grid.place(first, pool[first][0], 0, 0, rng.choice((ACROSS, DOWN)))
     used = {first}
     while len(grid.placed) < n_words:
@@ -177,7 +188,7 @@ def build_level(pool, rng, n_words, size, usage):
             for (r, c, d, crossings, weight) in options:
                 growth = grid.area_after(word, r, c, d) - area_now
                 score = (weight * 4 + (MULTI_BONUS if crossings >= 2 else 0)
-                         - growth * 0.05 - usage[i] * USAGE_WEIGHT + rng.random())
+                         - growth * 0.05 - penalty[i] + rng.random())
                 if best is None or score > best[0]:
                     best = (score, i, r, c, d)
             if scored >= WORDS_SCORED:
@@ -272,10 +283,11 @@ def generate(name, tag, levels, words, size, out_dir=ASSETS):
         rng = random.Random(f"{name}-{level}")
         target = lo + (hi - lo) * level / max(1, levels - 1)
         n_words = max(lo, min(hi, round(target + rng.uniform(-0.5, 0.5))))
+        penalty = usage_penalties(usage)
         found = False
         for n in range(n_words, lo - 1, -1):
             for _ in range(ATTEMPTS):
-                built = build_level(pool, rng, n, size, usage)
+                built = build_level(pool, rng, n, size, penalty)
                 if built is None:
                     continue
                 width, height, entries = built

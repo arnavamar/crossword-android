@@ -30,6 +30,17 @@ class LevelStats(unittest.TestCase):
         self.assertFalse(gen.acceptable([2, 2, 1, 2, 1, 2, 2, 1]))  # 5 of 8
 
 
+class UsagePenalty(unittest.TestCase):
+    def test_penalty_is_relative_to_the_mean_use(self):
+        at_mean, twice, unused, _ = gen.usage_penalties([2, 4, 0, 2])  # mean use 2
+        self.assertAlmostEqual(at_mean, gen.USAGE_WEIGHT)
+        self.assertAlmostEqual(twice, 2 * at_mean)
+        self.assertEqual(unused, 0)
+        self.assertAlmostEqual(gen.usage_penalties([4, 4])[0], at_mean)  # at the mean, whatever the mean
+        self.assertEqual(gen.usage_penalties([0, 0, 0]), [0, 0, 0])      # a fresh run costs nothing
+        self.assertAlmostEqual(gen.usage_penalties([1, 0, 0, 0])[0], gen.USAGE_WEIGHT)  # mean counts as 1 at least
+
+
 class SampleRun(unittest.TestCase):
     SAMPLES = {"easy": 30, "medium": 30, "hard": 12}
 
