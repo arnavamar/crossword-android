@@ -22,7 +22,9 @@ TAGS = ("BLANK", "PAIR", "EXAMPLE", "FACT", "LINK", "SPEECH", "PUN", "MISDIRECT"
 MIX = {
     "E": {"BLANK": 30, "PAIR": 15, "EXAMPLE": 20, "FACT": 20, "LINK": 10, "SPEECH": 5},
     "M": {"BLANK": 15, "PAIR": 10, "EXAMPLE": 15, "FACT": 20, "LINK": 15, "PUN": 15, "MISDIRECT": 10},
-    "H": {"BLANK": 5, "EXAMPLE": 8, "FACT": 20, "LINK": 10, "PUN": 20, "MISDIRECT": 25, "CRYPTIC": 12},
+    # Hard targets follow what the review rounds left standing: fair two-sense clues are scarce
+    # for abstract Hard words, so MISDIRECT and PUN sit lower and CRYPTIC higher than first planned.
+    "H": {"BLANK": 8, "EXAMPLE": 8, "FACT": 22, "LINK": 12, "PUN": 17, "MISDIRECT": 16, "CRYPTIC": 17},
 }
 BAND = 5  # points either side
 LETTER_COUNT = re.compile(r"\s*\((\d{1,2})\)$")  # a cryptic clue ends with one, like (5)
