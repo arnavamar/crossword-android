@@ -9,9 +9,9 @@ import com.crossword.game.model.Word
 
 /** [words] is how many words each level of this difficulty holds. */
 enum class Difficulty(val label: String, val key: String, val words: IntRange) {
-    EASY("Easy", "easy", 5..7),
-    MEDIUM("Medium", "medium", 8..10),
-    HARD("Hard", "hard", 11..13),
+    EASY("Easy", "easy", 8..10),
+    MEDIUM("Medium", "medium", 12..14),
+    HARD("Hard", "hard", 16..18),
 }
 
 /** Reads the generated level files from assets, one difficulty at a time, on first use. */

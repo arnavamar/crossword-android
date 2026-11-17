@@ -27,8 +27,19 @@ class LevelAssetsTest {
     }
 
     @Test
+    fun everyWordLineHasAnAnswerAndTwoClues() {
+        for (tier in listOf("easy", "medium", "hard")) {
+            File(assets, "${tier}_words.tsv").readLines().filter { it.isNotBlank() }.forEachIndexed { i, line ->
+                val fields = line.split('\t')
+                assertEquals("$tier word line ${i + 1} has ${fields.size} fields", 3, fields.size)
+                assertTrue("$tier word line ${i + 1} has a blank field", fields.all { it.isNotBlank() })
+            }
+        }
+    }
+
+    @Test
     fun everyLevelIsAValidCrossword() {
-        val limits = mapOf("easy" to (5..7 to 8), "medium" to (8..10 to 10), "hard" to (11..13 to 12))
+        val limits = mapOf("easy" to (8..10 to 8), "medium" to (12..14 to 11), "hard" to (16..18 to 13))
         for ((tier, limit) in limits) {
             val (wordCount, maxSize) = limit
             val words = words(tier)
