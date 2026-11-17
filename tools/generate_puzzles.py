@@ -1,11 +1,12 @@
-"""Generate the crossword levels from tools/clues/*.tsv into the app's assets.
+"""Generate the crossword levels from tools/clues/*.tsv and tools/clues/alt/*.tsv into the app's assets.
 
 Deterministic: the same clue files always produce the same levels.
 
 Output per difficulty, in app/src/main/assets/ (or the --out folder):
-  <tier>_words.tsv   one WORD<TAB>clue per line; a word's id is its line number (0-based)
-  <tier>_levels.txt  one level per line: W,H;id,row,col,dir;id,row,col,dir;...
-                     dir 0 = across, 1 = down; row/col are 0-based from the top left
+  <tier>_words.tsv   one WORD<TAB>clue1<TAB>clue2 per line; a word's id is its line number (0-based)
+  <tier>_levels.txt  one level per line: W,H;id,row,col,dir,k;id,row,col,dir,k;...
+                     dir 0 = across, 1 = down; row/col are 0-based from the top left;
+                     k 0 shows clue 1, k 1 shows clue 2 (see pick_clues)
 
 Usage: python generate_puzzles.py [tier ...] [--levels N] [--out DIR]
 """
@@ -14,6 +15,8 @@ import random
 import statistics
 import sys
 from pathlib import Path
+
+from check_clues import answer_in_clue
 
 ROOT = Path(__file__).resolve().parent.parent
 CLUES = ROOT / "tools" / "clues"
@@ -36,15 +39,32 @@ VOWEL_WEIGHT = 0.7  # a crossing on a vowel scores less than one on a consonant
 CONSONANT_WEIGHT = 1.0
 MULTI_BONUS = 3     # extra score for a placement that crosses two or more words
 MIN_MULTI = 0.80    # share of a level's words that must cross two or more others
+MAX_CRYPTIC = 2     # most cryptic clues a level shows
 
 
-def load_pool(tag):
+def load_pool(tag, clue_dir=CLUES):
+    """The tier's words as (word, clue1, clue2, style), sorted by word.
+
+    Clue 1 comes from <GROUP>.<tag>.tsv (WORD<TAB>Clue); clue 2 and its style from
+    alt/<GROUP>.<tag>.tsv (WORD<TAB>STYLE<TAB>Clue). Exits naming the first word with no clue 2.
+    """
     pool = []
-    for f in sorted(CLUES.glob(f"*.{tag}.tsv")):
+    for f in sorted(clue_dir.glob(f"*.{tag}.tsv")):
+        alt_file = clue_dir / "alt" / f.name
+        alt = {}
+        if alt_file.exists():
+            for line in alt_file.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    word, style, clue = line.split("\t")
+                    alt[word.strip()] = (clue.strip(), style.strip())
         for line in f.read_text(encoding="utf-8").splitlines():
             if line.strip():
                 word, clue = line.split("\t")
-                pool.append((word.strip(), clue.strip()))
+                word = word.strip()
+                clue2, style = alt.get(word, ("", ""))
+                if not clue2:
+                    sys.exit(f"{word} has no second clue in alt/{f.name}")
+                pool.append((word, clue.strip(), clue2, style))
     pool.sort()
     return pool
 
@@ -226,6 +246,45 @@ def acceptable(per_word):
     return sum(1 for n in per_word if n >= 2) / len(per_word) >= MIN_MULTI
 
 
+def shows_cryptic(pool, i, k):
+    return k == 1 and pool[i][3].startswith("CRYPTIC")
+
+
+def pick_clues(entries, pool, usage, flips=None):
+    """The clue each entry shows, in entry order: 0 for clue 1, 1 for clue 2. None rejects the level.
+
+    1. A word alternates between its clues: k = (i + usage[i]) % 2, where usage[i] counts the
+       earlier levels that used word i.
+    2. An entry whose shown clue gives away another answer of the level (a clue word equals that
+       answer or starts with it, check_clues.answer_in_clue with whole_answer_only) shows its other
+       clue instead, if that one gives away no answer. The index of each such entry goes into flips,
+       when flips is a list.
+    3. At most MAX_CRYPTIC cryptic clues show: in entry order, every later one shows clue 1.
+    4. If a shown clue still gives away another answer, returns None: the level is rebuilt.
+    """
+    answers = [pool[e[0]][0] for e in entries]
+
+    def gives_away(n, k):
+        clue = pool[entries[n][0]][1 + k]
+        return any(answer_in_clue(a, clue, whole_answer_only=True) for m, a in enumerate(answers) if m != n)
+
+    ks = [(i + usage[i]) % 2 for (i, *_) in entries]
+    for n, k in enumerate(ks):
+        if gives_away(n, k) and not gives_away(n, 1 - k):
+            ks[n] = 1 - k
+            if flips is not None:
+                flips.append(n)
+    cryptic = 0
+    for n, (i, *_) in enumerate(entries):
+        if shows_cryptic(pool, i, ks[n]):
+            cryptic += 1
+            if cryptic > MAX_CRYPTIC:
+                ks[n] = 0
+    if any(gives_away(n, k) for n, k in enumerate(ks)):
+        return None
+    return ks
+
+
 def validate(pool, width, height, entries):
     """Raise if the level is not a clean freeform crossword."""
     cells = {}
@@ -265,9 +324,9 @@ def validate(pool, width, height, entries):
     assert len(seen) == len(cells), "grid is not connected"
 
 
-def generate(name, tag, levels, words, size, out_dir=ASSETS):
+def generate(name, tag, levels, words, size, out_dir=ASSETS, clue_dir=CLUES):
     """Write <name>_words.tsv and <name>_levels.txt into out_dir; return and print the tier's numbers."""
-    pool = load_pool(tag)
+    pool = load_pool(tag, clue_dir)
     if len(pool) < 100:
         sys.exit(f"{name}: only {len(pool)} words in *.{tag}.tsv")
     usage = [0] * len(pool)
@@ -278,6 +337,8 @@ def generate(name, tag, levels, words, size, out_dir=ASSETS):
     min_level_multi = 1.0
     crossing_letters = []
     max_side = 0
+    cryptic_counts = []          # cryptic clues shown, per level
+    giveaway_flips = giveaway_rejects = 0
     lo, hi = words
     for level in range(levels):
         rng = random.Random(f"{name}-{level}")
@@ -297,6 +358,11 @@ def generate(name, tag, levels, words, size, out_dir=ASSETS):
                 key = tuple(sorted(e[0] for e in entries))
                 if key in seen_sets:
                     continue
+                flips = []
+                ks = pick_clues(entries, pool, usage, flips)
+                if ks is None:
+                    giveaway_rejects += 1
+                    continue
                 validate(pool, width, height, entries)
                 found = True
                 break
@@ -307,7 +373,9 @@ def generate(name, tag, levels, words, size, out_dir=ASSETS):
         seen_sets.add(key)
         for e in entries:
             usage[e[0]] += 1
-        parts = [f"{width},{height}"] + [f"{i},{r},{c},{d}" for (i, r, c, d) in entries]
+        giveaway_flips += len(flips)
+        cryptic_counts.append(sum(1 for (i, *_), k in zip(entries, ks) if shows_cryptic(pool, i, k)))
+        parts = [f"{width},{height}"] + [f"{i},{r},{c},{d},{k}" for (i, r, c, d), k in zip(entries, ks)]
         lines.append(";".join(parts))
         word_counts[len(entries)] = word_counts.get(len(entries), 0) + 1
         level_multi = sum(1 for x in per_word if x >= 2)
@@ -320,7 +388,7 @@ def generate(name, tag, levels, words, size, out_dir=ASSETS):
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / f"{name}_words.tsv").write_text(
-        "".join(f"{w}\t{c}\n" for (w, c) in pool), encoding="utf-8", newline="\n")
+        "".join(f"{w}\t{c1}\t{c2}\n" for (w, c1, c2, _) in pool), encoding="utf-8", newline="\n")
     (out_dir / f"{name}_levels.txt").write_text(
         "\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
@@ -334,12 +402,18 @@ def generate(name, tag, levels, words, size, out_dir=ASSETS):
         max_side=max_side,
         median_reuse=statistics.median(used),
         max_reuse=max(used),
+        cryptic_per_level=sum(cryptic_counts) / len(cryptic_counts),
+        max_cryptic=max(cryptic_counts),
+        giveaway_flips=giveaway_flips,
+        giveaway_rejects=giveaway_rejects,
     )
     print(f"{name}: {levels} levels, pool {len(pool)} words, {len(used)} used, "
           f"words per level {stats['word_counts']}, "
           f"crossing 2+ {stats['multi_share']:.1%} (lowest level {stats['min_level_multi']:.1%}), "
           f"vowel crossings {stats['vowel_share']:.1%}, E {stats['e_share']:.1%}, "
-          f"largest side {max_side}, reuse median {stats['median_reuse']:g} max {stats['max_reuse']}",
+          f"largest side {max_side}, reuse median {stats['median_reuse']:g} max {stats['max_reuse']}, "
+          f"cryptic per level {stats['cryptic_per_level']:.2f} max {stats['max_cryptic']}, "
+          f"giveaway flips {giveaway_flips} rejects {giveaway_rejects}",
           flush=True)
     return stats
 
