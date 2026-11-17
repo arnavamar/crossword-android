@@ -26,7 +26,7 @@ PALE	PAIR	Opposite of tanned
 PALM	EXAMPLE	Coconut tree, for one
 PANDA	FACT	Animal on the World Wildlife Fund logo
 PANIC	LINK	Word before button, attack or room
-PANT	FACT	Cool off, as a hound does on a hot day
+PANT	BLANK	Roll up your ___ leg
 PANTS	BLANK	Ants in your ___
 PAPER	PAIR	Pen's partner
 PARK	EXAMPLE	Yellowstone, for one
@@ -77,10 +77,10 @@ PIRATE	EXAMPLE	Blackbeard, for one
 PIXEL	BLANK	___ art, the look of old video games
 PIZZA	EXAMPLE	Margherita, for one
 PLACE	BLANK	There's no ___ like home
-PLAIN	PAIR	Opposite of ornate
+PLAIN	EXAMPLE	The Serengeti, for one
 PLAN	BLANK	Time for ___ B
 PLANE	EXAMPLE	Boeing 747, for one
-PLANET	FACT	It orbits a star
+PLANET	BLANK	___ of the Apes
 PLANK	BLANK	Walk the ___
 PLANT	EXAMPLE	Fern, for one
 PLATE	FACT	A batter stands beside it
@@ -88,10 +88,10 @@ PLAY	EXAMPLE	Romeo and Juliet, for one
 PLAYER	EXAMPLE	Quarterback, for one
 PLEASE	SPEECH	"I'm begging you!"
 PLENTY	PAIR	Opposite of scarcity
-PLOW	BLANK	Snow ___ truck
+PLOW	FACT	City trucks scrape one along icy streets in winter
 PLUG	BLANK	Spark ___
 PLUM	BLANK	The Sugar ___ Fairy
-PLUMP	PAIR	Opposite of gaunt
+PLUMP	BLANK	Pleasingly ___
 PLUS	BLANK	Bring a ___-one to the wedding
 POCKET	FACT	One of six on a pool table
 POEM	EXAMPLE	Ode, for one
@@ -100,7 +100,7 @@ POINT	BLANK	Get to the ___!
 POISON	EXAMPLE	Arsenic, for one
 POKE	BLANK	___ fun at
 POLAR	PAIR	Opposite of tropical
-POLE	BLANK	___ vault
+POLE	FACT	Firefighters slide down one at the station
 POLICE	BLANK	Call the ___!
 POLITE	BLANK	Not said in ___ company
 POND	LINK	Word before scum or weed
@@ -114,23 +114,23 @@ PORK	BLANK	Pulled ___ sandwich
 PORT	PAIR	Opposite of starboard
 POSE	EXAMPLE	Downward dog, for one
 POST	LINK	Word before card or office
-POSTER	BLANK	___ child
+POSTER	BLANK	Wanted ___ in an Old West town
 POTATO	EXAMPLE	Yukon Gold, for one
 POTION	EXAMPLE	Elixir, for one
 POUCH	FACT	A koala carries its baby in one
 POUND	BLANK	___ sterling, British money
 POUR	BLANK	___ cold water on an idea
-POUT	EXAMPLE	Duck face in a selfie, for one
+POUT	BLANK	Turn that ___ into a smile!
 POWER	LINK	Word before plant or outage
 PRANK	LINK	Word before call or war
 PRAWN	FACT	It turns pink when cooked
 PRESS	LINK	Word before release or conference
 PRETTY	BLANK	___ as a picture
-PRICE	BLANK	___ tag
+PRICE	BLANK	The ___ Is Right
 PRIDE	PAIR	Prejudice's partner, in an Austen title
 PRINCE	EXAMPLE	William or Harry, say
 PRINT	LINK	Word after finger, foot or blue
-PRIZE	EXAMPLE	Nobel, for one
+PRIZE	BLANK	Keep your eyes on the ___
 PROUD	PAIR	Opposite of ashamed
 PROVE	BLANK	___ me wrong
 PUCK	FACT	It's made of hard black rubber
@@ -139,14 +139,14 @@ PUFF	BLANK	I'll huff and I'll ___
 PUFFIN	FACT	It flaps its wings to swim underwater
 PULL	BLANK	___ someone's leg
 PUMA	EXAMPLE	Florida panther, for one
-PUMP	BLANK	___ iron
+PUMP	FACT	You fill up your car's tank at one
 PUNCH	PAIR	Judy's puppet partner
 PUPIL	FACT	It shrinks in bright light
-PUPPET	EXAMPLE	Kermit the Frog, for one
+PUPPET	EXAMPLE	Pinocchio, for one, until he became real
 PUPPY	PAIR	Kitten's canine counterpart
 PURE	BLANK	___ as the driven snow
 PURPLE	FACT	Like Barney the dinosaur
-PURR	FACT	It rumbles in a content kitten's throat
+PURR	FACT	Cheetahs can do it, but lions can't
 PURSE	PAIR	Wallet's cousin
 PUSH	BLANK	When ___ comes to shove
 PUTT	FACT	A hole-in-one never needs one
@@ -160,10 +160,10 @@ PAPAYA	BLANK	Thai green ___ salad
 PEANUT	LINK	Word before brittle or gallery
 PEBBLE	BLANK	A ___ in your shoe
 PENCIL	FACT	Its "lead" contains no real lead
-PERCH	FACT	An owl keeps watch from one
-PIER	BLANK	Chicago's Navy ___
+PERCH	BLANK	Knock someone off their ___
+PIER	FACT	Santa Monica's has a Ferris wheel on it
 PITCH	EXAMPLE	Curveball, for one
-PITY	SPEECH	"What a shame!"
+PITY	BLANK	Throw yourself a ___ party
 PRAISE	PAIR	Opposite of criticize
 PREY	PAIR	Opposite of predator
 PAINT	EXAMPLE	Acrylic or oil, say
@@ -171,15 +171,15 @@ PARIS	FACT	Home of the Eiffel Tower
 PERU	FACT	Lima is its capital
 POLAND	FACT	Chopin's homeland
 PLUTO	FACT	Mickey Mouse's dog
-QUEEN	EXAMPLE	Cleopatra, for one
+QUEEN	LINK	Word before size or mother
 QUIZ	LINK	Word before bowl, show or master
 QUIT	BLANK	___ while you're ahead
 QUICK	SPEECH	"Hurry up!"
-QUIET	SPEECH	"Shh!"
-QUILT	FACT	It may be stitched at a sewing bee
+QUIET	PAIR	Peace's partner
+QUILT	FACT	Grandma may sew one from old shirts
 QUACK	LINK	Word before doctor or remedy
 QUAKE	FACT	San Francisco had a huge one in 1906
-QUART	FACT	One of four in a gallon
+QUART	FACT	A liter is a little more than one
 QUEST	EXAMPLE	The hunt for the Holy Grail, say
 QUOTE	BLANK	___, unquote
 QUEUE	FACT	Londoners stand in one for the bus
@@ -196,10 +196,10 @@ ROD	LINK	Word after lightning or hot
 ROW	BLANK	Three in a ___
 RUG	BLANK	Sweep it under the ___
 RUB	BLANK	Don't ___ it in!
-RIP	BLANK	Let it ___
+RIP	BLANK	___ Van Winkle
 ROB	BLANK	___ Peter to pay Paul
-RAP	SPEECH	[Anybody home?]
-RID	FACT	Free of rats, as the Pied Piper did Hamelin
+RAP	FACT	Eminem is famous for it
+RID	LINK	Word after Mad to name a city in Spain
 RYE	FACT	Pumpernickel is made from it
 ROT	BLANK	Dry ___ in old timber
 RAW	FACT	Like the fish in sashimi
@@ -208,14 +208,14 @@ RACE	EXAMPLE	Kentucky Derby, for one
 RACK	BLANK	___ your brains
 RAFT	FACT	Huck Finn floated down the Mississippi on one
 RAIN	LINK	Word before drop or check
-RAKE	BLANK	___ in the money
+RAKE	FACT	Step on one and its handle may smack your face
 RAMP	FACT	Skateboarders launch off one
-RANCH	BLANK	___ dressing
+RANCH	LINK	Word before dressing or hand
 RARE	PAIR	Opposite of well-done
-RASH	PAIR	Opposite of cautious
+RASH	FACT	Poison ivy can give you one
 READ	BLANK	___ my lips
 REAL	PAIR	Opposite of imaginary
-REAR	BLANK	___-view mirror
+REAR	FACT	A startled horse may do it on its hind legs
 REED	FACT	A clarinet's mouthpiece holds one
 REEF	EXAMPLE	Great Barrier, for one
 REEL	BLANK	Highlight ___
@@ -229,18 +229,18 @@ RING	LINK	Word before leader or tone
 RINK	FACT	Hockey games are played on one
 RIPE	PAIR	Opposite of green, as a banana
 RISE	PAIR	Opposite of fall
-ROAD	LINK	Word before trip, map or block
+ROAD	LINK	Word before trip, rage or kill
 ROAR	BLANK	The ___ of the crowd
 ROBE	FACT	A judge wears one in court
 ROCK	EXAMPLE	Basalt or shale, say
 ROOF	FACT	Santa's sleigh lands on it
-ROOM	EXAMPLE	Den, for one
+ROOM	PAIR	Board's partner, for a lodger
 ROOT	LINK	Word before beer or canal
-ROPE	BLANK	Jump ___
+ROPE	FACT	Cowboys twirl one to make a lasso
 ROSE	FACT	Its hips are rich in vitamin C
 RUBY	FACT	Traditional gift for a fortieth anniversary
 RUDE	SPEECH	"Well, that's uncalled for!"
-RUIN	BLANK	Fall into ___
+RUIN	BLANK	Go to rack and ___
 RULE	BLANK	___ of thumb
 RUNG	BLANK	The bell has ___
 RUSH	LINK	Word after gold or sugar
@@ -249,19 +249,19 @@ RABBIT	EXAMPLE	Bugs or Thumper, say
 RACKET	FACT	Squash is played with one
 RADIO	FACT	Marconi pioneered it
 RADISH	FACT	It adds a spicy crunch to salads
-RAISE	PAIR	Opposite of lower
+RAISE	BLANK	I'll see you and ___ you
 RAISIN	BLANK	___ bran
-RANGE	LINK	Word after free or driving
+RANGE	LINK	Word after free, driving or rifle
 RATTLE	FACT	Some snakes shake one as a warning
 RAVEN	PAIR	Crow's bigger cousin
 RAZOR	BLANK	___-sharp wit
 REACH	BLANK	Keep out of ___ of children
-READY	SPEECH	"All set!"
+READY	BLANK	___, set, go!
 RECESS	FACT	Congress takes one in August
 RECIPE	BLANK	___ for disaster
-RELAX	SPEECH	"Take it easy!"
+RELAX	PAIR	Opposite of tense, for a muscle
 REMOTE	PAIR	Opposite of nearby
-REPAIR	PAIR	Opposite of break
+REPAIR	BLANK	Damaged beyond ___
 REPEAT	BLANK	History tends to ___ itself
 REPLY	BLANK	Hit ___ all
 REPORT	LINK	Word after book or weather
@@ -278,30 +278,30 @@ RIVER	EXAMPLE	Amazon or Mississippi, say
 ROAST	BLANK	___ beef
 ROBBER	PAIR	Cop's opposite, in a kids' game
 ROBIN	PAIR	Batman's partner
-ROBOT	EXAMPLE	R2-D2, for one
+ROBOT	EXAMPLE	WALL-E, for one
 ROCKET	BLANK	It's not ___ science
 RODEO	EXAMPLE	Calgary Stampede, for one
 ROLL	PAIR	Rock's partner
-ROTTEN	PAIR	Opposite of fresh
+ROTTEN	BLANK	Spoiled ___
 ROUGH	BLANK	Diamond in the ___
 ROUND	BLANK	Merry-go-___
-ROUTE	BLANK	Get your kicks on ___ 66
+ROUTE	BLANK	___ 66, the Mother Road
 ROYAL	BLANK	___ flush
 RUBBER	LINK	Word before band or duck
 RULER	FACT	A standard one is 12 inches long
 REMOVE	PAIR	Opposite of put on
-RODENT	FACT	Its front teeth never stop growing
+RODENT	FACT	A rabbit isn't one, despite its gnawing teeth
 RUNWAY	FACT	Models strut down it
 RECORD	FACT	A turntable plays it
 RELAY	FACT	Each runner in it covers one leg
-RAPID	BLANK	___-fire questions
+RAPID	BLANK	___ eye movement, a stage of sleep
 ROME	FACT	The Colosseum stands in it
 RUSSIA	FACT	The Trans-Siberian Railway crosses it
 PUN	BLANK	No ___ intended
 PEP	LINK	Word before rally or squad
-PLOP	PAIR	Splash's softer cousin
+PLOP	PAIR	Fizz's partner in an old antacid jingle
 PIXIE	BLANK	___ cut, a cropped hairdo
-PIGSTY	BLANK	Clean this ___ up!
+PIGSTY	FACT	Its last three letters name a bump on the eyelid
 POWDER	BLANK	Keep your ___ dry
 PATIO	LINK	Word before furniture or door
 PARKA	FACT	An Arctic explorer zips it up
@@ -309,7 +309,7 @@ PECAN	FACT	Texas's state tree
 PLAZA	LINK	Word after toll or shopping
 POLKA	FACT	Weird Al plays it in medleys on the accordion
 PRUNE	FACT	Gardeners do it to roses in late winter
-PILLAR	BLANK	___ of the community
+PILLAR	BLANK	From ___ to post
 POLLEN	FACT	It makes hay fever sufferers sneeze
 RAIL	LINK	Word before road, way or car
 RIDGE	BLANK	Blue ___ Mountains
@@ -317,4 +317,4 @@ ROAM	BLANK	Give me a home where the buffalo ___
 ROLE	BLANK	___ model
 RUMOR	BLANK	___ has it
 RIVAL	EXAMPLE	Red Sox, to a Yankees fan, say
-ROOKIE	BLANK	___ mistake
+ROOKIE	LINK	Word before card or season

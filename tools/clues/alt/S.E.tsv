@@ -1,6 +1,6 @@
 SUN	PAIR	Moon's partner
 SEA	EXAMPLE	Mediterranean, for one
-SAD	PAIR	Opposite of glad
+SAD	BLANK	___ but true
 SIT	BLANK	___ on the fence
 SIX	FACT	An ant's leg count
 SKY	FACT	The sun crosses it daily
@@ -22,7 +22,7 @@ SOB	BLANK	Spare me the ___ story
 SOY	LINK	Word before sauce or milk
 SAP	FACT	Maple syrup is boiled down from it
 SPA	BLANK	Weekend at a health ___
-STY	BLANK	Clean up, your room is a ___!
+STY	FACT	It can make an eyelid red and swollen
 SAG	PAIR	Opposite of perk up
 SAFE	PAIR	Opposite of out, in baseball
 SAIL	BLANK	Set ___ for the islands
@@ -34,10 +34,10 @@ SEAL	FACT	A polar bear's main prey
 SEAT	EXAMPLE	Recliner, for one
 SEED	FACT	An avocado holds a big one
 SEEK	PAIR	Hide's partner, in a game
-SELL	BLANK	Check the ___-by date
+SELL	BLANK	___ like hotcakes
 SEND	EXAMPLE	Ship or fax, say
 SHED	BLANK	Didn't ___ a single tear
-SHIP	EXAMPLE	Freighter or liner, say
+SHIP	LINK	Word before wreck or shape
 SHOE	EXAMPLE	Loafer or sneaker, say
 SHOP	EXAMPLE	Deli, for one
 SHOW	PAIR	Opposite of hide
@@ -66,9 +66,9 @@ SORE	BLANK	A sight for ___ eyes
 SOUP	EXAMPLE	Minestrone, for one
 SOUR	PAIR	Opposite of sweet
 SPIN	LINK	Word before class or doctor
-SPOT	BLANK	In a tight ___
+SPOT	LINK	Word before light or check
 STAR	EXAMPLE	Sirius or Polaris, say
-STAY	SPEECH	"Don't go!"
+STAY	BLANK	___ tuned
 STEP	BLANK	One small ___ for man
 STEW	EXAMPLE	Chili or goulash, say
 STIR	LINK	Word before fry or crazy
@@ -82,7 +82,7 @@ SLAM	BLANK	A ___ dunk
 SLUG	PAIR	Snail's cousin
 SNUG	BLANK	___ as a bug in a rug
 SWAP	BLANK	Let's ___ places for a day
-SACK	FACT	Quarterbacks dread one
+SACK	FACT	A lineman gets one by tackling the quarterback
 SALE	BLANK	Garage ___ on Saturday morning
 SHIN	LINK	Word before guard or bone
 SLIM	BLANK	Odds are ___ to none
@@ -121,7 +121,7 @@ SHIRT	EXAMPLE	Polo or Hawaiian, say
 SHOCK	FACT	An electric eel can give you one
 SHORE	LINK	Word before line, bird or leave
 SHORT	LINK	Word before cake or stop
-SHOUT	PAIR	Opposite of whisper
+SHOUT	BLANK	___ it from the rooftops
 SIGHT	FACT	Glasses can improve it
 SILLY	BLANK	You ___ goose!
 SKATE	LINK	Word after cheap or roller
@@ -129,10 +129,10 @@ SKIRT	LINK	Word after mini or hoop
 SKULL	FACT	Hamlet holds Yorick's in a famous scene
 SLEEP	EXAMPLE	Doze or snooze, say
 SLIDE	LINK	Word after land, mud or water
-SLIME	FACT	Snails leave a trail of it
+SLIME	FACT	Nickelodeon famously dumps it on celebrities
 SLOPE	BLANK	Slippery ___
-SMALL	PAIR	Opposite of large
-SMART	PAIR	Opposite of dumb
+SMALL	LINK	Word before talk or print
+SMART	LINK	Word before phone or cookie
 SMELL	FACT	A dog's is far keener than a person's
 SMILE	SPEECH	"Say cheese!"
 SMOKE	FACT	Beekeepers use it to calm bees
@@ -140,7 +140,7 @@ SNACK	EXAMPLE	Trail mix, for one
 SNAIL	FACT	Escargot is a cooked one
 SNAKE	EXAMPLE	Anaconda, for one
 SNEAK	BLANK	A ___ preview of the new movie
-SNORE	SPEECH	[Loud zzz from the couch]
+SNORE	FACT	Nasal strips are sold to stop it
 SOLID	PAIR	Opposite of hollow
 SOUND	FACT	It travels faster in water than in air
 SOUTH	BLANK	Down in the Deep ___
@@ -149,14 +149,14 @@ SPARE	LINK	Word before tire or ribs
 SPARK	FACT	Striking flint can make one
 SPEAK	BLANK	Actions ___ louder than words
 SPEED	FACT	Cheetahs are famous for it
-SPELL	FACT	Sleeping Beauty fell under one
+SPELL	FACT	Bee contestants do it, letter by letter
 SPEND	BLANK	___ the night at a friend's
 SPICE	BLANK	Variety is the ___ of life
 SPICY	FACT	Like jalapenos and sriracha
 SPILL	BLANK	___ the beans
 SPINE	BLANK	A chill down your ___
 SPOON	FACT	The dish ran away with it
-SPORT	BLANK	Be a good ___
+SPORT	LINK	Word before coat or utility vehicle
 SPRAY	LINK	Word before paint or can
 SQUID	FACT	Calamari is made from it
 STACK	BLANK	Short ___ of pancakes
@@ -164,7 +164,7 @@ STAGE	LINK	Word before coach or fright
 STAIR	LINK	Word before case or well
 STAMP	BLANK	Rubber-___ the committee's plan
 STAND	PAIR	Opposite of sit
-START	PAIR	Opposite of stop
+START	BLANK	Off to a flying ___
 STEAM	FACT	It powered early locomotives
 STEEL	FACT	Pittsburgh's football team is named for it
 STEEP	BLANK	A ___ learning curve
@@ -211,13 +211,13 @@ SERVE	BLANK	To protect and to ___
 SCRUB	BLANK	Surgeons ___ in before operating
 SPADE	PAIR	Shovel's cousin
 SOLVE	BLANK	___ for x in algebra class
-SPOIL	EXAMPLE	Rot or mold, say
-SYRUP	EXAMPLE	Maple or corn, say
+SPOIL	BLANK	Don't ___ the ending for me!
+SYRUP	FACT	About 40 gallons of maple sap make a gallon of it
 SPAIN	FACT	Barcelona is one of its cities
 SAFETY	LINK	Word before pin or belt
 SAILOR	EXAMPLE	Popeye, for one
 SALMON	EXAMPLE	Sockeye, for one
-SCHOOL	EXAMPLE	Hogwarts, for one
+SCHOOL	LINK	Word before bus or yard
 SCREEN	LINK	Word before play, saver or door
 SCREAM	BLANK	Edvard Munch's "The ___"
 SEASON	BLANK	'Tis the ___ to be jolly
@@ -227,7 +227,7 @@ SHADOW	FACT	Wendy sewed Peter Pan's back on
 SHOWER	PAIR	Bath's quicker cousin
 SHOVEL	PAIR	Pail's partner at the beach
 SIGNAL	EXAMPLE	Wave or wink, say
-SILVER	FACT	Traditional gift for a 25th anniversary
+SILVER	FACT	Traditional gift for a twenty-fifth anniversary
 SIMPLE	PAIR	Opposite of complicated
 SISTER	FACT	Venus Williams is Serena's
 SMOOTH	BLANK	It's all ___ sailing from here
@@ -248,7 +248,7 @@ SUNSET	PAIR	Opposite of dawn
 SUPPER	FACT	Leonardo da Vinci painted the Last one
 SANDAL	EXAMPLE	Flip-flop, for one
 SAUCER	BLANK	Flying ___ from outer space
-SEESAW	FACT	Two kids sit on opposite ends of it
+SEESAW	FACT	It works best with two riders of similar weight
 SILENT	PAIR	Opposite of noisy
 SMELLY	BLANK	Phoebe's song "___ Cat" on "Friends"
 SPLASH	BLANK	Make a big ___ in the pool
@@ -256,7 +256,7 @@ STREAM	BLANK	___ of consciousness
 STREET	BLANK	Sesame ___
 STRING	LINK	Word before bean or cheese
 SWITCH	BLANK	Bait and ___
-SPOOKY	BLANK	Mysterious and ___, like the Addams Family
+SPOOKY	BLANK	___ season, a nickname for October
 SHIVER	SPEECH	[I'm freezing]
 SINGLE	PAIR	Opposite of married
 SKINNY	PAIR	Opposite of chubby

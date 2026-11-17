@@ -2,19 +2,19 @@ LACE	LINK	Word after neck or boot
 LADDER	LINK	Word after step or rope
 LADY	PAIR	Lord's partner
 LAKE	EXAMPLE	Tahoe or Erie, say
-LAMB	FACT	Its mother is a ewe
+LAMB	PAIR	Lion's partner in a March saying
 LAMP	FACT	Aladdin rubbed one
 LAND	LINK	Word before lord or slide
 LANE	FACT	Swimmers stay in one during a race
-LAP	FACT	A cat may curl up in one
-LARGE	PAIR	Opposite of small
-LAST	PAIR	Opposite of first
+LAP	FACT	Kids sit on Santa's at the mall
+LARGE	BLANK	By and ___
+LAST	LINK	Word before resort or laugh
 LATE	PAIR	Opposite of early
 LAUGH	SPEECH	[That's hilarious!]
 LAVA	FACT	It makes new land in Hawaii
 LAW	EXAMPLE	Newton's third, for one
 LAWN	LINK	Word before chair or tennis
-LAZY	EXAMPLE	Like a couch potato, say
+LAZY	LINK	Word before Susan or bones
 LEAD	PAIR	Opposite of follow
 LEAF	FACT	Canada's flag shows a red one
 LEAK	BLANK	The boat sprang a ___
@@ -59,10 +59,10 @@ LOCK	BLANK	___, stock and barrel
 LOG	BLANK	Sleep like a ___
 LONG	EXAMPLE	Like a giraffe's neck, say
 LOOK	SPEECH	"Check this out!"
-LOOP	BLANK	Keep me in the ___
+LOOP	FACT	A roller coaster may go upside down in one
 LOOSE	EXAMPLE	Like a wobbly tooth, say
 LOSE	BLANK	Use it or ___ it
-LOST	BLANK	___ and found
+LOST	BLANK	Peter Pan's ___ Boys
 LOT	FACT	A used-car dealer sells from one
 LOUD	EXAMPLE	Like a rock concert, perhaps
 LOVE	BLANK	All you need is ___
@@ -71,7 +71,7 @@ LUCK	BLANK	Beginner's ___
 LUNCH	BLANK	There's no such thing as a free ___
 LUNG	FACT	The left one is smaller, making room for the heart
 LADLE	FACT	The Big Dipper is shaped like one
-LATER	PAIR	Opposite of earlier
+LATER	SPEECH	"See ya, alligator!"
 LAYER	BLANK	Ozone ___
 LEADER	PAIR	Opposite of follower
 LICK	BLANK	___ your wounds
@@ -80,12 +80,12 @@ LINK	BLANK	The missing ___
 LIQUID	FACT	It takes the shape of its container
 LISTEN	SPEECH	"Hear me out!"
 LOCKET	FACT	A loved one's hair may sit inside it
-LOBBY	LINK	Word after gun or tobacco
+LOBBY	FACT	Groups do it to sway lawmakers
 LOUNGE	LINK	Word after cocktail or departure
 LOVELY	SPEECH	"How delightful!"
 LUNAR	PAIR	Solar's cousin
 LEDGE	BLANK	Talk someone off the ___
-LAPTOP	PAIR	Desktop's cousin
+LAPTOP	EXAMPLE	MacBook, for one
 LATCH	LINK	Word before key, for a kid alone after school
 LAUNCH	LINK	Word before pad or date
 LAWYER	EXAMPLE	Atticus Finch, for one
@@ -95,9 +95,9 @@ LOCAL	PAIR	Opposite of global
 LOFT	LINK	Word after hay or choir
 LONELY	BLANK	It's ___ at the top
 LOYAL	BLANK	___ to a fault
-LUMP	BLANK	A ___ in your throat
+LUMP	FACT	Naughty kids may find one of coal in a stocking
 LENGTH	BLANK	At arm's ___
-LACK	BLANK	Not for ___ of trying
+LACK	PAIR	Opposite of abundance
 LONDON	FACT	Big Ben chimes there
 MAD	PAIR	Opposite of sane
 MAGIC	BLANK	Disney's ___ Kingdom
@@ -105,8 +105,8 @@ MAIL	LINK	Word after junk or snail
 MAIN	LINK	Word before land, stream or frame
 MAKE	BLANK	___ hay while the sun shines
 MALL	FACT	Food courts are found in one
-MAN	PAIR	Opposite of woman
-MANGO	FACT	Its tree is in the cashew family
+MAN	LINK	Word before hunt or kind
+MANGO	FACT	Lassi is often flavored with it
 MANY	BLANK	___ hands make light work
 MAP	FACT	A compass rose may sit on one
 MAPLE	FACT	Its sap is boiled into syrup
@@ -125,7 +125,7 @@ MEAN	EXAMPLE	Like a schoolyard bully, say
 MEAT	EXAMPLE	Steak or salami, say
 MEDAL	EXAMPLE	Purple Heart, for one
 MEET	PAIR	Greet's partner
-MELON	EXAMPLE	Cantaloupe, for one
+MELON	LINK	Word after water or musk
 MELT	LINK	Word after tuna or patty
 MEMORY	LINK	Word before card, stick or loss
 MENU	FACT	Diners study it before ordering
@@ -139,7 +139,7 @@ MILK	PAIR	Cookies' partner
 MILL	BLANK	Run of the ___
 MIND	BLANK	Out of sight, out of ___
 MINE	SPEECH	"Dibs!"
-MINT	BLANK	In ___ condition
+MINT	FACT	Coins are stamped out at one
 MINUTE	FACT	One of 1,440 in a day
 MIRROR	FACT	Snow White's evil queen asked hers who was fairest
 MISS	BLANK	___ the mark
@@ -162,37 +162,37 @@ MOTH	PAIR	Butterfly's cousin
 MOTHER	PAIR	Father's partner
 MOTOR	LINK	Word before boat or cycle
 MOUSE	PAIR	Keyboard's partner
-MOUTH	BLANK	Word of ___
+MOUTH	BLANK	Put your foot in your ___
 MOVE	SPEECH	"Out of my way!"
 MOVIE	EXAMPLE	'Toy Story', for one
-MUD	BLANK	Clear as ___
+MUD	FACT	Pigs wallow in it to keep cool
 MUFFIN	BLANK	The ___ Man, who lives on Drury Lane
 MUG	LINK	Word after beer and before shot
 MULE	FACT	It is almost always sterile
 MUSCLE	EXAMPLE	Biceps, for one
 MUSEUM	EXAMPLE	The Louvre, for one
-MUSIC	BLANK	Face the ___
+MUSIC	LINK	Word before box or hall
 MUST	BLANK	The show ___ go on
-MYSELF	SPEECH	"Yours truly"
+MYSELF	FACT	Who I talk to when no one's around
 MAGNET	BLANK	Fridge ___
 MANE	FACT	A zebra's stands straight up
 MARBLE	FACT	Michelangelo carved David from it
 MARS	FACT	Named for the Roman god of war
 MASTER	PAIR	Opposite of servant
 MEADOW	FACT	Cows may graze in one
-MEDIUM	BLANK	A happy ___
+MEDIUM	EXAMPLE	Watercolor or charcoal, say
 MELODY	PAIR	Harmony's partner
 MIGHT	BLANK	___ makes right
 MINER	EXAMPLE	Forty-niner, for one
 MINUS	BLANK	Ten ___ three equals seven
-MOAN	SPEECH	[Ohh, my aching back]
+MOAN	FACT	Harry Potter's ghost Myrtle is named for doing it
 MOAT	FACT	A drawbridge spans it
 MOTEL	FACT	Norman Bates ran one
-MOUND	EXAMPLE	Anthill, for one
+MOUND	FACT	A pitcher throws from it
 MOUNT	BLANK	___ Rushmore
 MUMMY	EXAMPLE	King Tut, for one
 MURAL	EXAMPLE	'The Last Supper', for one
-MAGPIE	FACT	Seeing one alone means sorrow, says a rhyme
+MAGPIE	BLANK	He's a ___, always collecting odds and ends
 MALLET	FACT	Polo players swing one
 MARSH	LINK	Word before mallow or gas
 MAST	LINK	Word after half or main
@@ -206,7 +206,7 @@ MOB	BLANK	Flash ___
 MOIST	EXAMPLE	Like dewy grass, say
 MOLAR	PAIR	Incisor's cousin
 MOMENT	BLANK	In the heat of the ___
-MONK	FACT	Shaolin ones are famous for kung fu
+MONK	FACT	A Shaolin one is famous for kung fu
 MORAL	BLANK	Just here for ___ support
 MOSQUE	FACT	Its prayer wall faces Mecca
 MOTTO	EXAMPLE	'Be prepared', for one
@@ -216,7 +216,7 @@ MALE	EXAMPLE	Uncle or prince, say
 MEXICO	FACT	Its flag shows an eagle eating a snake
 MADRID	FACT	The Prado museum is there
 MOSCOW	FACT	Red Square is there
-MAID	BLANK	___ of honor
+MAID	BLANK	___ Marian, Robin Hood's love
 MANNER	BLANK	Bedside ___
 MARKER	EXAMPLE	Sharpie, for one
 MEND	BLANK	Time to ___ fences
@@ -236,10 +236,10 @@ NAPKIN	FACT	Some diners tuck it into a collar
 NARROW	BLANK	The straight and ___
 NASTY	BLANK	A ___ piece of work
 NATION	EXAMPLE	Japan or Peru, say
-NATURE	BLANK	Second ___
+NATURE	PAIR	Nurture's partner in a debate
 NAVY	LINK	Word before bean or yard
 NEAR	BLANK	___ and dear
-NEAT	PAIR	Opposite of messy
+NEAT	FACT	How to order whiskey with no ice or mixer
 NECK	FACT	A giraffe's has just seven bones
 NEED	BLANK	A friend in ___ is a friend indeed
 NEEDLE	PAIR	Thread's partner
@@ -248,22 +248,22 @@ NET	FACT	A tennis ball must clear it
 NEVER	SPEECH	"Not in a million years!"
 NEW	PAIR	Opposite of used
 NEWS	BLANK	Breaking ___
-NEXT	PAIR	Opposite of previous
+NEXT	BLANK	___ of kin
 NICE	PAIR	Naughty's partner on Santa's list
 NIGHT	LINK	Word before mare or gown
 NINE	FACT	Innings in a regulation baseball game
-NOBODY	PAIR	Opposite of somebody
-NOD	SPEECH	[I agree]
+NOBODY	BLANK	___ knows the trouble I've seen
+NOD	BLANK	___ off during a dull lecture
 NOISE	FACT	Some headphones cancel it
 NONE	BLANK	___ of your business
 NOODLE	EXAMPLE	Udon, for one
-NOON	PAIR	Opposite of midnight
+NOON	FACT	A sundial's shadow points to twelve then
 NORTH	LINK	Word before pole or star
 NOSE	FACT	Pinocchio's grew with every lie
 NOTE	EXAMPLE	C sharp, for one
 NOTICE	BLANK	Until further ___
 NOVEL	EXAMPLE	'Jane Eyre', for one
-NOW	SPEECH	"Right this second!"
+NOW	BLANK	It's ___ or never
 NUMBER	BLANK	Your ___ is up
 NURSE	EXAMPLE	Florence Nightingale, for one
 NUT	PAIR	Bolt's partner
@@ -276,13 +276,13 @@ NANNY	EXAMPLE	Mary Poppins, for one
 NEON	FACT	It glows reddish orange in a tube
 NERVE	BLANK	You've got some ___!
 NEWT	FACT	It can regrow a lost leg
-NORMAL	PAIR	Opposite of weird
+NORMAL	BLANK	The new ___
 NOSY	EXAMPLE	Like a neighbor peeking through blinds, say
 NOTCH	BLANK	Kick it up a ___
 NUGGET	FACT	Prospectors hoped to pan one
 NUMB	EXAMPLE	Like a mouth after a dentist's shot, say
 NOUN	PAIR	Verb's partner
-NAVEL	FACT	Lint can collect in it
+NAVEL	EXAMPLE	Innie or outie, say
 NUN	EXAMPLE	Mother Teresa, for one
 NILE	FACT	It empties into the Mediterranean
 NORWAY	FACT	Oslo is its capital
@@ -294,14 +294,14 @@ NUDGE	BLANK	A ___ in the right direction
 NIP	BLANK	___ it in the bud
 NOR	PAIR	Or's negative cousin
 OAK	FACT	Wine barrels are often made of it
-OAR	FACT	Each member of a racing eight pulls one
+OAR	FACT	A Venice gondolier steers with one
 OAT	LINK	Word before meal, milk or cake
 OBEY	BLANK	Love, honor and ___
 OCEAN	BLANK	___'s Eleven
 ODD	BLANK	The ___ one out
 OFF	BLANK	Hands ___!
 OFFER	BLANK	An ___ you can't refuse
-OFFICE	BLANK	Box ___
+OFFICE	BLANK	Michael Scott's sitcom, The ___
 OFTEN	PAIR	Opposite of rarely
 OIL	PAIR	Vinegar's partner
 OLD	EXAMPLE	Like a dinosaur fossil, say
@@ -320,7 +320,7 @@ OUR	BLANK	___ Father, who art in heaven
 OUT	PAIR	Opposite of safe, in baseball
 OVAL	BLANK	The ___ Office
 OVEN	FACT	Gretel pushed the witch into one
-OVER	PAIR	Opposite of under
+OVER	FACT	Six legal deliveries in cricket make one
 OWE	BLANK	I ___ you one
 OWL	PAIR	Pussycat's partner in a pea-green boat
 OWN	BLANK	Hold your ___
@@ -341,7 +341,7 @@ OPENER	LINK	Word after can or letter
 OUNCE	FACT	Gold is often priced per troy one
 OWNER	LINK	Word after home or land
 OUTER	PAIR	Opposite of inner
-OXEN	FACT	They hauled many covered wagons west
+OXEN	BLANK	Musk ___ roam the Arctic tundra
 OATH	FACT	Doctors take the Hippocratic one
 OBOE	PAIR	Clarinet's cousin
 OPAL	FACT	October's birthstone

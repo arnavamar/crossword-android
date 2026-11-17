@@ -17,7 +17,7 @@ ADVICE	LINK	Word after legal or career
 AFRAID	BLANK	I'm sorry, Dave. I'm ___ I can't do that
 AFRICA	BLANK	I bless the rains down in ___
 AFTER	BLANK	Happily ever ___
-AGAIN	SPEECH	"Encore!"
+AGAIN	BLANK	Try, try ___
 AGE	BLANK	Act your ___
 AGENT	EXAMPLE	James Bond, for one
 AGO	PAIR	Opposite of 'from now'
@@ -59,7 +59,7 @@ ANNOY	FACT	Whining mosquitoes do it to you
 ANSWER	EXAMPLE	Yes or no, say
 ANT	FACT	It can carry many times its own weight
 ANY	LINK	Word before way, how or thing
-ANYONE	EXAMPLE	Tom, Dick or Harry, say
+ANYONE	SPEECH	"Is somebody out there?"
 APART	BLANK	Fall ___ at the seams
 APE	FACT	Unlike most monkeys, it has no tail
 APPEAR	BLANK	Things are not always as they ___
@@ -91,7 +91,7 @@ ATOM	FACT	Protons sit in its nucleus
 ATTACK	SPEECH	"Charge!"
 ATTIC	PAIR	Opposite of a cellar
 AUGUST	FACT	Its name honors a Roman emperor
-AUNT	PAIR	Uncle's partner
+AUNT	PAIR	Uncle's female counterpart
 AUTHOR	BLANK	Search the library by title or ___
 AUTUMN	FACT	Halloween and Thanksgiving are in it
 AVOID	BLANK	___ like the plague
@@ -109,11 +109,11 @@ BADGE	EXAMPLE	Sheriff's star, for one
 BADGER	FACT	Hufflepuff's emblem in Harry Potter
 BAG	EXAMPLE	Backpack, for one
 BAGEL	FACT	It is boiled before it is baked
-BAGGY	PAIR	Opposite of skinny, for jeans
+BAGGY	FACT	Like the knees of old sweatpants
 BAIT	BLANK	___ and switch
 BAKE	EXAMPLE	Make muffins, say
 BAKER	BLANK	Sherlock Holmes lived on ___ Street
-BAKERY	FACT	Croissants come fresh from one
+BAKERY	FACT	Croissants and baguettes come out of its ovens
 BALD	LINK	Word before eagle or spot
 BALL	EXAMPLE	Masquerade, for one
 BALLET	EXAMPLE	Swan Lake, for one
@@ -127,7 +127,7 @@ BAR	LINK	Word before tender or stool
 BARBER	FACT	A striped pole marks one's shop
 BARE	BLANK	The ___ necessities
 BARGE	FACT	It may haul coal on the Mississippi
-BARK	SPEECH	"Woof!"
+BARK	BLANK	His ___ is worse than his bite
 BARN	LINK	Word before owl or dance
 BASE	BLANK	Let's touch ___ next week
 BASIN	FACT	The Amazon River drains a vast one
@@ -138,7 +138,7 @@ BATTER	BLANK	'___ up!' shouts the umpire
 BAY	EXAMPLE	Chesapeake, for one
 BEACH	EXAMPLE	Waikiki, for one
 BEAD	FACT	It slides along an abacus wire
-BEAK	FACT	An eagle's is sharp and hooked
+BEAK	FACT	A parrot cracks seeds with it
 BEAM	BLANK	___ me up, Scotty
 BEAN	EXAMPLE	Kidney or lima, say
 BEAR	BLANK	Grin and ___ it
@@ -156,7 +156,7 @@ BEETLE	BLANK	Volkswagen ___
 BEFORE	PAIR	Opposite of after
 BEG	BLANK	I ___ your pardon
 BEGIN	BLANK	Let the games ___
-BEHAVE	SPEECH	"Mind your manners!"
+BEHAVE	BLANK	Now ___ yourself at Grandma's!
 BEHIND	PAIR	Opposite of ahead
 BELL	EXAMPLE	Big Ben, for one
 BELLY	LINK	Word before button, flop or dance
@@ -164,7 +164,7 @@ BELONG	BLANK	You ___ with Me (Taylor Swift song)
 BELOW	BLANK	___ the belt
 BELT	FACT	Orion's has three stars
 BENCH	EXAMPLE	Pew, for one
-BEND	PAIR	Opposite of straighten
+BEND	BLANK	___ over backward to help
 BERLIN	FACT	A wall divided it from 1961 to 1989
 BERRY	LINK	Word after goose, rasp or straw
 BESIDE	BLANK	That's ___ the point
@@ -175,7 +175,7 @@ BEYOND	BLANK	To infinity and ___!
 BIB	FACT	Lobster eaters often wear one
 BIG	PAIR	Opposite of little
 BIKE	EXAMPLE	Tandem, for one
-BILL	FACT	A platypus has one like a duck's
+BILL	BLANK	The ___ of Rights
 BIN	BLANK	Recycling ___
 BIRD	EXAMPLE	Penguin, for one
 BIRTH	LINK	Word before day, mark or place
@@ -186,9 +186,9 @@ BLADE	LINK	Word after razor or shoulder
 BLAME	BLANK	Play the ___ game
 BLANK	LINK	Word before check or stare
 BLAZE	BLANK	Go out in a ___ of glory
-BLAZER	BLANK	Navy ___ with brass buttons
+BLAZER	PAIR	Sport coat's close cousin
 BLEACH	FACT	Mixing it with ammonia gives off toxic fumes
-BLEAT	SPEECH	"Baa!"
+BLEAT	FACT	Goat kids do it to call their mothers
 BLEED	FACT	New jeans may do it in the wash
 BLEND	BLANK	___ in with the crowd
 BLIND	BLANK	Love is ___
@@ -204,7 +204,7 @@ BLUE	EXAMPLE	Navy or cobalt, say
 BLUR	BLANK	It's all a ___ without my glasses
 BLUSH	BLANK	Words that would make a sailor ___
 BOA	BLANK	She wore a pink feather ___
-BOAR	PAIR	Sow's partner
+BOAR	PAIR	Sow's partner on a hog farm
 BOARD	EXAMPLE	Ouija, for one
 BOAT	EXAMPLE	Canoe, for one
 BODY	FACT	An adult's has 206 bones
