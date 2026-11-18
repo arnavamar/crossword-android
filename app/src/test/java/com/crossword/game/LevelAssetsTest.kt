@@ -12,10 +12,8 @@ import java.io.File
 class LevelAssetsTest {
     private val assets = File("src/main/assets")
 
-    private fun words(tier: String) = File(assets, "${tier}_words.tsv").readLines().filter { it.isNotBlank() }.map {
-        val fields = it.split('\t')
-        Word(fields[0], fields.drop(1))
-    }
+    private fun words(tier: String) =
+        File(assets, "${tier}_words.tsv").readLines().filter { it.isNotBlank() }.map(Word::parse)
 
     private fun levels(tier: String) = File(assets, "${tier}_levels.txt").readLines().filter { it.isNotBlank() }
 
@@ -33,6 +31,17 @@ class LevelAssetsTest {
                 val fields = line.split('\t')
                 assertEquals("$tier word line ${i + 1} has ${fields.size} fields", 3, fields.size)
                 assertTrue("$tier word line ${i + 1} has a blank field", fields.all { it.isNotBlank() })
+            }
+        }
+    }
+
+    @Test
+    fun everyLevelEntryHasFiveFields() {
+        for (tier in listOf("easy", "medium", "hard")) {
+            levels(tier).forEachIndexed { i, line ->
+                for (entry in line.trim().split(';').drop(1)) {
+                    assertEquals("$tier level ${i + 1} entry $entry", 5, entry.split(',').size)
+                }
             }
         }
     }

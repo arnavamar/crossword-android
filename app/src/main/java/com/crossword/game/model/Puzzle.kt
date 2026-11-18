@@ -7,7 +7,15 @@ enum class Direction {
 }
 
 /** An answer and the clues that can be shown for it. */
-class Word(val answer: String, val clues: List<String>)
+class Word(val answer: String, val clues: List<String>) {
+    companion object {
+        /** Reads one line of a words file: the answer, then one tab-separated field per clue. */
+        fun parse(line: String): Word {
+            val fields = line.split('\t')
+            return Word(fields[0], fields.drop(1))
+        }
+    }
+}
 
 data class Entry(
     val number: Int,

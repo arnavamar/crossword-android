@@ -46,16 +46,20 @@ def load_pool(tag, clue_dir=CLUES):
     """The tier's words as (word, clue1, clue2, style), sorted by word.
 
     Clue 1 comes from <GROUP>.<tag>.tsv (WORD<TAB>Clue); clue 2 and its style from
-    alt/<GROUP>.<tag>.tsv (WORD<TAB>STYLE<TAB>Clue). Exits naming the first word with no clue 2.
+    alt/<GROUP>.<tag>.tsv (WORD<TAB>STYLE<TAB>Clue). Exits naming the first word with no clue 2;
+    raises ValueError naming the file and line of an alt line that is not WORD<TAB>STYLE<TAB>Clue.
     """
     pool = []
     for f in sorted(clue_dir.glob(f"*.{tag}.tsv")):
         alt_file = clue_dir / "alt" / f.name
         alt = {}
         if alt_file.exists():
-            for line in alt_file.read_text(encoding="utf-8").splitlines():
+            for n, line in enumerate(alt_file.read_text(encoding="utf-8").splitlines(), 1):
                 if line.strip():
-                    word, style, clue = line.split("\t")
+                    fields = line.split("\t")
+                    if len(fields) != 3:
+                        raise ValueError(f"{alt_file}:{n}: expected WORD<TAB>STYLE<TAB>Clue, got {line!r}")
+                    word, style, clue = fields
                     alt[word.strip()] = (clue.strip(), style.strip())
         for line in f.read_text(encoding="utf-8").splitlines():
             if line.strip():
@@ -173,9 +177,10 @@ class Grid:
 def usage_penalties(usage):
     """Score each word loses for its earlier uses, to spread words across levels.
 
-    It is relative to the mean use over the whole pool (counted as at least 1), so the pull
-    towards rarely used words stays the same from the first level to the last. An absolute
-    penalty kept growing and left late Hard levels stuck on words that are hard to cross.
+    It is relative to the mean use over the whole pool, counted as at least 1. Once the mean use
+    reaches 1 the pull towards rarely used words stays the same from then to the last level; in
+    the first levels, while the mean is under 1, a word used once loses the full USAGE_WEIGHT. An
+    absolute penalty kept growing and left late Hard levels stuck on words that are hard to cross.
     """
     mean = max(1.0, sum(usage) / len(usage))
     return [USAGE_WEIGHT * u / mean for u in usage]
@@ -326,6 +331,8 @@ def validate(pool, width, height, entries):
 
 def generate(name, tag, levels, words, size, out_dir=ASSETS, clue_dir=CLUES):
     """Write <name>_words.tsv and <name>_levels.txt into out_dir; return and print the tier's numbers."""
+    if levels < 1:
+        sys.exit(f"{name}: levels must be at least 1, got {levels}")
     pool = load_pool(tag, clue_dir)
     if len(pool) < 100:
         sys.exit(f"{name}: only {len(pool)} words in *.{tag}.tsv")
@@ -413,7 +420,7 @@ def generate(name, tag, levels, words, size, out_dir=ASSETS, clue_dir=CLUES):
           f"vowel crossings {stats['vowel_share']:.1%}, E {stats['e_share']:.1%}, "
           f"largest side {max_side}, reuse median {stats['median_reuse']:g} max {stats['max_reuse']}, "
           f"cryptic per level {stats['cryptic_per_level']:.2f} max {stats['max_cryptic']}, "
-          f"giveaway flips {giveaway_flips} rejects {giveaway_rejects}",
+          f"giveaway flips {giveaway_flips}, attempts rejected for a giveaway {giveaway_rejects}",
           flush=True)
     return stats
 

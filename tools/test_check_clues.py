@@ -282,6 +282,31 @@ class StyleGuide(unittest.TestCase):
                     word, style, clue = line
                     self.assertEqual(cc.check_alt(word, tier, style, clue, ""), [])
 
+    def section_5(self):
+        text = GUIDE.read_text(encoding="utf-8")
+        found = re.search(r"^## 5\. The mix\n(.*?)(?=^## )", text, re.M | re.S)
+        self.assertIsNotNone(found, "section 5 is missing from the style guide")
+        return found.group(1)
+
+    def test_style_guide_mix_table_matches_the_checker(self):
+        rows = [[cell.strip() for cell in line.strip().strip("|").split("|")]
+                for line in self.section_5().splitlines() if line.startswith("|")]
+        self.assertEqual(rows[0], ["Tag", "Easy", "Medium", "Hard"])
+        for column, tier in enumerate("EMH", start=1):
+            guide = {row[0]: int(row[column]) for row in rows[2:] if row[column] != "no"}
+            with self.subTest(tier=tier):
+                self.assertEqual(guide, cc.MIX[tier])
+
+    def test_style_guide_worked_numbers_match_the_checker(self):
+        text = self.section_5()
+        # Both examples use a file of 300 words, so one percent is three clues.
+        easy, hard = cc.MIX["E"]["BLANK"], cc.MIX["H"]["CRYPTIC"]
+        self.assertIn(f"BLANK's {easy} percent is {easy * 3} clues, "
+                      f"and the band allows {(easy - cc.BAND) * 3} to {(easy + cc.BAND) * 3}", text)
+        self.assertIn(f"CRYPTIC's {hard} percent is {hard * 3} clues "
+                      f"({(hard - cc.BAND) * 3} to {(hard + cc.BAND) * 3})", text)
+        self.assertIn(f"within {cc.BAND} points of its target", text)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -3,6 +3,8 @@ package com.crossword.game
 import com.crossword.game.model.Puzzle
 import com.crossword.game.model.Word
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertThrows
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class PuzzleParseTest {
@@ -26,5 +28,29 @@ class PuzzleParseTest {
     @Test(expected = IllegalArgumentException::class)
     fun aClueIndexTheWordLacksIsRejected() {
         Puzzle.parse("3,3;0,0,0,0;1,0,0,1,1;2,0,2,1", words) // CAR has one clue
+    }
+
+    @Test
+    fun anEntryWithThreeFieldsIsRejected() {
+        val e = assertThrows(IllegalArgumentException::class.java) {
+            Puzzle.parse("3,3;0,0,0,0;1,0,0,1;2,0,2", words)
+        }
+        assertTrue(e.message, e.message!!.contains("4 or 5 fields") && e.message!!.endsWith("2,0,2"))
+    }
+
+    @Test
+    fun anEntryWithSixFieldsIsRejected() {
+        val e = assertThrows(IllegalArgumentException::class.java) {
+            Puzzle.parse("3,3;0,0,0,0,0,0;1,0,0,1;2,0,2,1", words)
+        }
+        assertTrue(e.message, e.message!!.contains("4 or 5 fields") && e.message!!.endsWith("0,0,0,0,0,0"))
+    }
+
+    @Test
+    fun aWordLineHoldsTheAnswerThenOneFieldPerClue() {
+        val two = Word.parse("CAT\tPet that purrs\tTom or tabby")
+        assertEquals("CAT", two.answer)
+        assertEquals(listOf("Pet that purrs", "Tom or tabby"), two.clues)
+        assertEquals(listOf("Vehicle"), Word.parse("CAR\tVehicle").clues) // a v1.2 line: one clue
     }
 }

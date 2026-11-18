@@ -1,6 +1,7 @@
 package com.crossword.game.data
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.content.res.AssetManager
 import com.crossword.game.model.Direction
 import com.crossword.game.model.GameState
@@ -21,11 +22,7 @@ class PuzzleRepository(private val assets: AssetManager) {
     private val packs = mutableMapOf<Difficulty, Pack>()
 
     private fun pack(d: Difficulty): Pack = packs.getOrPut(d) {
-        // Each word line is the answer, then one tab-separated field per clue.
-        val words = readLines("${d.key}_words.tsv").map { line ->
-            val fields = line.split('\t')
-            Word(fields[0], fields.drop(1))
-        }
+        val words = readLines("${d.key}_words.tsv").map(Word::parse)
         Pack(words, readLines("${d.key}_levels.txt"))
     }
 
@@ -42,8 +39,8 @@ class PuzzleRepository(private val assets: AssetManager) {
 }
 
 /** Solved levels and in-progress grids, kept in SharedPreferences. */
-class ProgressStore(context: Context) {
-    private val prefs = context.getSharedPreferences("progress", Context.MODE_PRIVATE)
+class ProgressStore(private val prefs: SharedPreferences) {
+    constructor(context: Context) : this(context.getSharedPreferences("progress", Context.MODE_PRIVATE))
 
     /** Index i is true when level i + 1 is solved. */
     fun solvedFlags(d: Difficulty, total: Int): BooleanArray {
@@ -66,16 +63,28 @@ class ProgressStore(context: Context) {
         prefs.edit().putString("solved_${d.key}", sb.toString()).apply()
     }
 
-    /** Levels (1-based) with at least one letter saved in the grid, solved or not. */
-    fun startedLevels(d: Difficulty): Set<Int> {
+    /**
+     * Levels (1-based) with at least one letter saved in the grid, solved or not. A save counts only
+     * when it carries the level's current [signature], the way loadGame accepts it: after an update
+     * that changed a level, openGame drops the old save, so the level is not started.
+     */
+    fun startedLevels(d: Difficulty, signature: (level: Int) -> Int): Set<Int> {
         val prefix = "game_${d.key}_"
         val started = HashSet<Int>()
         for ((key, value) in prefs.all) {
             if (!key.startsWith(prefix)) continue
-            val letters = (value as? String)?.split("|")?.getOrNull(1) ?: continue
-            if (letters.isNotBlank()) key.removePrefix(prefix).toIntOrNull()?.let(started::add)
+            val level = key.removePrefix(prefix).toIntOrNull() ?: continue
+            val parts = savedParts(value as? String ?: continue, signature(level)) ?: continue
+            if (parts[1].isNotBlank()) started.add(level)
         }
         return started
+    }
+
+    /** The fields of a saved game, or null when it is not a save of the level with this [signature]. */
+    private fun savedParts(saved: String, signature: Int): List<String>? {
+        val parts = saved.split("|")
+        // Six fields were saved before the timer existed; those load with no time.
+        return parts.takeIf { it.size in 6..7 && it[0] == signature.toString() }
     }
 
     fun saveGame(d: Difficulty, level: Int, signature: Int, s: GameState) {
@@ -92,9 +101,8 @@ class ProgressStore(context: Context) {
     }
 
     fun loadGame(d: Difficulty, level: Int, signature: Int, puzzle: Puzzle): GameState? {
-        val parts = prefs.getString("game_${d.key}_$level", null)?.split("|") ?: return null
-        // Six fields were saved before the timer existed; those load with no time.
-        if (parts.size !in 6..7 || parts[0] != signature.toString() || parts[1].length != puzzle.size) return null
+        val parts = prefs.getString("game_${d.key}_$level", null)?.let { savedParts(it, signature) } ?: return null
+        if (parts[1].length != puzzle.size) return null
         val start = GameState.start(puzzle)
         return start.copy(
             letters = parts[1],

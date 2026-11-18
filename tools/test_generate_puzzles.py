@@ -4,25 +4,15 @@ Run from the repo root: python -m unittest discover -s tools -p "test_*.py" -v
 """
 import contextlib
 import io
+import os
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
 
 import generate_puzzles as gen
 from check_clues import answer_in_clue
-
-def lines_in(path):
-    """Non-blank lines in path; 0 if it does not exist."""
-    if not path.exists():
-        return 0
-    return sum(1 for line in path.read_text(encoding="utf-8").splitlines() if line.strip())
-
-
-# Hard is sampled only once every Hard alt file has as many lines as its clue 1 file. The Hard
-# writers fill their files in steps, so a file can exist before it is finished. Task 10 must see no skip.
-HARD_ALT_UNFINISHED = [f"{f.name} ({lines_in(gen.CLUES / 'alt' / f.name)} of {lines_in(f)} lines)"
-                       for f in sorted(gen.CLUES.glob("*.H.tsv"))
-                       if lines_in(gen.CLUES / "alt" / f.name) < lines_in(f)]
 
 
 def quiet_generate(name, **cfg):
@@ -67,6 +57,9 @@ class UsagePenalty(unittest.TestCase):
         self.assertAlmostEqual(gen.usage_penalties([4, 4])[0], at_mean)  # at the mean, whatever the mean
         self.assertEqual(gen.usage_penalties([0, 0, 0]), [0, 0, 0])      # a fresh run costs nothing
         self.assertAlmostEqual(gen.usage_penalties([1, 0, 0, 0])[0], gen.USAGE_WEIGHT)  # mean counts as 1 at least
+        # Mean use 1.5: a word used six times loses 6 / 1.5 = 4 times the weight, and nothing else loses any.
+        self.assertEqual(gen.usage_penalties([0, 0, 0, 6])[:3], [0, 0, 0])
+        self.assertAlmostEqual(gen.usage_penalties([0, 0, 0, 6])[3], 4 * gen.USAGE_WEIGHT)
 
 
 class LoadPool(unittest.TestCase):
@@ -89,6 +82,13 @@ class LoadPool(unittest.TestCase):
         with self.assertRaises(SystemExit) as exited:
             gen.load_pool("E", clue_dir=self.dir)
         self.assertIn("ACE", str(exited.exception.code))
+
+    def test_a_malformed_alt_line_names_its_file_and_line(self):
+        write(self.dir / "alt" / "AB.E.tsv", ["ABLE\tBLANK\tReady, willing and ___", "ACE\tTop card"])
+        with self.assertRaises(ValueError) as raised:
+            gen.load_pool("E", clue_dir=self.dir)
+        self.assertIn("AB.E.tsv:2", str(raised.exception))
+        self.assertIn("ACE", str(raised.exception))
 
 
 class PickClues(unittest.TestCase):
@@ -134,8 +134,6 @@ class SampleRun(unittest.TestCase):
     def test_goals_hold_on_a_sample(self):
         for name, n in self.SAMPLES.items():
             with self.subTest(tier=name):
-                if name == "hard" and HARD_ALT_UNFINISHED:
-                    self.skipTest(f"Hard alt files not finished: {', '.join(HARD_ALT_UNFINISHED)}")
                 cfg = dict(gen.TIERS[name], levels=n)
                 with tempfile.TemporaryDirectory() as d:
                     s = quiet_generate(name, out_dir=Path(d), **cfg)
@@ -166,13 +164,40 @@ class SampleRun(unittest.TestCase):
                                           f"{shown!r} gives away {other}")
 
     def test_same_input_gives_the_same_levels(self):
-        cfg = dict(gen.TIERS["easy"], levels=10)
+        # Two runs in separate processes with different string hash seeds, which is what would
+        # change the output if anything iterated a set of strings.
         outputs = []
-        for _ in range(2):
+        for seed in ("1", "2"):
             with tempfile.TemporaryDirectory() as d:
-                quiet_generate("easy", out_dir=Path(d), **cfg)
-                outputs.append((Path(d) / "easy_levels.txt").read_bytes())
-        self.assertEqual(outputs[0], outputs[1])
+                subprocess.run([sys.executable, gen.__file__, "easy", "--levels", "10", "--out", d],
+                               env=dict(os.environ, PYTHONHASHSEED=seed), check=True, capture_output=True)
+                outputs.append([(Path(d) / f"easy_{kind}").read_bytes() for kind in ("levels.txt", "words.tsv")])
+        self.assertEqual(outputs[0][0], outputs[1][0], "levels differ between hash seeds")
+        self.assertEqual(outputs[0][1], outputs[1][1], "words differ between hash seeds")
+
+    def test_a_word_that_returns_swaps_its_clue(self):
+        # A small pool of real Easy words, so a 60-level run brings words back many times. The usage
+        # count that generate keeps is what turns clue 1 into clue 2 on a return: if it stopped
+        # counting, every word would show the same clue each time.
+        with tempfile.TemporaryDirectory() as tmp:
+            clues, out = Path(tmp) / "clues", Path(tmp) / "out"
+            lines = [ln for ln in (gen.CLUES / "AB.E.tsv").read_text(encoding="utf-8").splitlines() if ln.strip()]
+            write(clues / "AB.E.tsv", lines)
+            answers = [ln.split("\t")[0] for ln in lines]
+            write(clues / "alt" / "AB.E.tsv", [f"{w}\tFACT\tSome fact" for w in answers])
+            quiet_generate("easy", out_dir=out, clue_dir=clues, **dict(gen.TIERS["easy"], levels=60))
+            _, levels = read_output(out, "easy")
+        shown = {}  # word id -> the clue index it showed at each use, in level order
+        for entries in levels:
+            for e in entries:
+                shown.setdefault(e[0], []).append(e[4])
+        returns = swaps = 0
+        for ks in shown.values():
+            for before, after in zip(ks, ks[1:]):
+                returns += 1
+                swaps += before != after
+        self.assertGreaterEqual(returns, 100)  # words do come back
+        self.assertGreaterEqual(swaps / returns, 0.9)  # only a giveaway can keep a clue from swapping
 
 
 class CrypticCap(unittest.TestCase):
@@ -211,6 +236,25 @@ class CommandLine(unittest.TestCase):
             lines = (Path(d) / "easy_levels.txt").read_text(encoding="utf-8").splitlines()
             self.assertEqual(len(lines), 3)
             self.assertFalse((Path(d) / "medium_levels.txt").exists())
+
+    def test_zero_levels_exits_with_a_message(self):
+        with tempfile.TemporaryDirectory() as d:
+            with self.assertRaises(SystemExit) as exited:
+                gen.main(["easy", "--levels", "0", "--out", d])
+        self.assertIn("at least 1", str(exited.exception.code))
+
+
+class AssetsMatchClues(unittest.TestCase):
+    def test_each_words_file_is_what_the_clue_files_give(self):
+        # No regeneration: a clue edited after the levels were built leaves the app showing the old text.
+        for name, cfg in gen.TIERS.items():
+            with self.subTest(tier=name):
+                path = gen.ASSETS / f"{name}_words.tsv"
+                self.assertTrue(path.is_file(), f"{path} is missing")
+                want = [f"{w}\t{c1}\t{c2}" for (w, c1, c2, _) in gen.load_pool(cfg["tag"])]
+                got = path.read_bytes().decode("utf-8").split("\n")
+                self.assertEqual(got.pop(), "", f"{path} must end with one newline and use LF")
+                self.assertEqual(got, want, f"{path} is out of date: run generate_puzzles.py {name}")
 
 
 if __name__ == "__main__":

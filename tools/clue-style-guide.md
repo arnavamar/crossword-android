@@ -2,7 +2,7 @@
 
 This guide is for writing clue 2, the second clue for each answer in the game.
 
-Every answer already has clue 1, a plain definition, in `tools/clues/<GROUP>.<TIER>.tsv`. Clue 2 gives the player a different way into the same word. Levels switch between the two clues, so a player meets both.
+Every answer already has clue 1, mostly a short definition (some are blanks or examples), in `tools/clues/<GROUP>.<TIER>.tsv`. Clue 2 gives the player a different way into the same word. Levels switch between the two clues, so a player meets both.
 
 Readers check every clue 2 against this guide. When the guide and your taste disagree, follow the guide.
 
@@ -165,19 +165,19 @@ Each number is a share of the clues in a tier, in percent. "No" means the tag is
 
 | Tag | Easy | Medium | Hard |
 |---|---|---|---|
-| BLANK | 30 | 15 | 5 |
+| BLANK | 30 | 15 | 8 |
 | PAIR | 15 | 10 | no |
 | EXAMPLE | 20 | 15 | 8 |
-| FACT | 20 | 20 | 20 |
-| LINK | 10 | 15 | 10 |
+| FACT | 20 | 20 | 22 |
+| LINK | 10 | 15 | 12 |
 | SPEECH | 5 | no | no |
-| PUN | no | 15 | 20 |
-| MISDIRECT | no | 10 | 25 |
-| CRYPTIC | no | no | 12 |
+| PUN | no | 15 | 17 |
+| MISDIRECT | no | 10 | 16 |
+| CRYPTIC | no | no | 17 |
 
 - Every tag must land within 5 points of its target. BLANK on Easy may be anywhere from 25 to 35 percent.
 - Hit the mix inside each file you write, not only across the tier. If every file is inside the band, the tier is too.
-- Worked numbers: in an Easy file of 300 words, BLANK's 30 percent is 90 clues, and the band allows 75 to 105. In a Hard file of 300 words, CRYPTIC's 12 percent is 36 clues (21 to 51).
+- Worked numbers: in an Easy file of 300 words, BLANK's 30 percent is 90 clues, and the band allows 75 to 105. In a Hard file of 300 words, CRYPTIC's 17 percent is 51 clues (36 to 66).
 - Aim at the target, not the edge of the band. The band leaves room for rounding and for clues that readers send back.
 - Count your tags per file before you hand in. A full run of the checker prints each tier's shares, but it checks them against the band only once every file of that tier exists.
 

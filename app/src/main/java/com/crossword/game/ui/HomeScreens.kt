@@ -209,7 +209,7 @@ fun LevelsScreen(vm: AppViewModel, d: Difficulty) {
     val tick = vm.progressTick
     val total = remember(d) { vm.repo.levelCount(d) }
     val solved = remember(d, tick) { vm.store.solvedFlags(d, total) }
-    val started = remember(d, tick) { vm.store.startedLevels(d) }
+    val started = remember(d, tick) { vm.store.startedLevels(d) { level -> vm.repo.signature(d, level) } }
     val next = remember(d, tick) { vm.store.nextLevel(d, total) }
     val solvedCount = solved.count { it }
     // Every block before the next level's is one heading plus SECTION tiles. Open on that block's
