@@ -1,0 +1,4 @@
+# Level and clue data are generated with LF endings and compared byte for byte by the tests.
+app/src/main/assets/*.tsv text eol=lf
+app/src/main/assets/*.txt text eol=lf
+tools/clues/**/*.tsv text eol=lf
